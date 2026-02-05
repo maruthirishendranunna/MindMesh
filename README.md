@@ -26,5 +26,3 @@ The system uses a Large Language Model (LLM) with Retrieval-Augmented Generation
 
 ## Goal
 To design a scalable architecture that separates semantic retrieval from real-time data processing while enabling natural language interaction with IoT systems.
-
-To design a scalable architecture that separates semantic retrieval from real-time data processing while enabling natural language interaction with IoT systems.
