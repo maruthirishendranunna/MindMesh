@@ -26,3 +26,22 @@ The system uses a Large Language Model (LLM) with Retrieval-Augmented Generation
 
 ## Goal
 To design a scalable architecture that separates semantic retrieval from real-time data processing while enabling natural language interaction with IoT systems.
+
+Week 4: 
+
+# MindMesh – Real-Time Telemetry System
+
+## Project Overview
+This project implements a real-time telemetry monitoring system using MQTT and a future RAG-based AI pipeline.
+
+## Project Structure
+- mqtt/publisher → Telemetry generation
+- mqtt/subscriber → Telemetry reception
+- data → Topic descriptions for vector DB
+- docs → Documentation
+
+## How to Run Publisher
+python mqtt/publisher/f1_mqtt_publisher.py
+
+## How to Run Subscriber
+python mqtt/subscriber/f1_mqtt_subscriber.py
