@@ -136,9 +136,7 @@ Install winget install Python.Python.3.12(Using CMD)
 py -0p using this you can verify if the version is in your path variables or not.
 
 Create virtual environment for your project
-Go to your project:
-cd C:\chaitu\Chaitanya_code\MindMesh
-Create venv:
+Create venv(locally):
 py -3.12 -m venv .venv
 Activate the venv:
 .\.venv\Scripts\activate
