@@ -45,9 +45,9 @@ def main():
         )
         added += 1
 
-    print(f"✅ Stored {added} topic descriptions in ChromaDB")
-    print(f"📁 Persisted at: {PERSIST_DIR}")
-    print(f"📦 Collection: {COLLECTION_NAME}")
+    print(f" Stored {added} topic descriptions in ChromaDB")
+    print(f" Persisted at: {PERSIST_DIR}")
+    print(f" Collection: {COLLECTION_NAME}")
 
 if __name__ == "__main__":
     main()

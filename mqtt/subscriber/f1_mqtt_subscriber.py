@@ -29,6 +29,7 @@ def get_latest_value(topic):
     return topic_cache.get(topic, None)
 
 client = mqtt.Client()
+client.reconnect_delay_set(min_delay=1, max_delay=5)
 client.on_connect = on_connect
 client.on_message = on_message
 

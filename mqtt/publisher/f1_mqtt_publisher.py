@@ -164,6 +164,7 @@ def publish(client, team, driver, metric, value):
 
 def main():
     client = mqtt.Client()
+    client.reconnect_delay_set(min_delay=1, max_delay=5)
     client.connect(BROKER, PORT, 60)
 
     # Round-robin circuit order (not random)

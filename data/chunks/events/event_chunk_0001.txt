@@ -1,0 +1,200 @@
+{"timestamp": "2026-02-25 12:02:17", "type": "RACE_LEADER_CHANGED", "data": {"leader": "mercedes/hamilton", "lap": "2"}}
+{"timestamp": "2026-02-25 12:02:17", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "320.97"}}
+{"timestamp": "2026-02-25 12:02:32", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "mclaren/norris", "fastest_speed": "301.78"}}
+{"timestamp": "2026-02-25 12:02:47", "type": "RACE_LEADER_CHANGED", "data": {"leader": "redbull/perez", "lap": "2"}}
+{"timestamp": "2026-02-25 12:02:47", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "mclaren/norris", "fastest_speed": "320.11"}}
+{"timestamp": "2026-02-25 12:02:47", "type": "LAP_CHANGED", "data": {"driver": "redbull/perez", "from": 1, "to": 2, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:03:02", "type": "RACE_LEADER_CHANGED", "data": {"leader": "redbull/verstappen", "lap": "2"}}
+{"timestamp": "2026-02-25 12:03:02", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "redbull/perez", "fastest_speed": "336.54"}}
+{"timestamp": "2026-02-25 12:03:02", "type": "LAP_CHANGED", "data": {"driver": "redbull/verstappen", "from": 1, "to": 2, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:03:02", "type": "LAP_CHANGED", "data": {"driver": "redbull/perez", "from": 2, "to": 1, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:03:02", "type": "LAP_CHANGED", "data": {"driver": "mercedes/hamilton", "from": 2, "to": 1, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:03:17", "type": "RACE_LEADER_CHANGED", "data": {"leader": "astonmartin/alonso", "lap": "3"}}
+{"timestamp": "2026-02-25 12:03:17", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "334.12"}}
+{"timestamp": "2026-02-25 12:03:17", "type": "ACCIDENT_DETECTED", "data": {"driver": "mercedes/russell", "circuit": "Bahrain", "lap": 2, "sector": "3"}}
+{"timestamp": "2026-02-25 12:03:17", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/alonso", "from": 2, "to": 3, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:03:17", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/stroll", "from": 1, "to": 2, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:03:32", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "mclaren/norris", "fastest_speed": "325.09"}}
+{"timestamp": "2026-02-25 12:03:32", "type": "ACCIDENT_DETECTED", "data": {"driver": "redbull/verstappen", "circuit": "Bahrain", "lap": 2, "sector": "3"}}
+{"timestamp": "2026-02-25 12:03:47", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "322.91"}}
+{"timestamp": "2026-02-25 12:03:47", "type": "LAP_CHANGED", "data": {"driver": "redbull/perez", "from": 1, "to": 2, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:03:47", "type": "ACCIDENT_DETECTED", "data": {"driver": "mclaren/norris", "circuit": "Bahrain", "lap": 2, "sector": "3"}}
+{"timestamp": "2026-02-25 12:04:02", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "redbull/perez", "fastest_speed": "325.22"}}
+{"timestamp": "2026-02-25 12:04:17", "type": "RACE_LEADER_CHANGED", "data": {"leader": "astonmartin/alonso", "lap": "4"}}
+{"timestamp": "2026-02-25 12:04:17", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "redbull/perez", "fastest_speed": "314.84"}}
+{"timestamp": "2026-02-25 12:04:17", "type": "LAP_CHANGED", "data": {"driver": "mclaren/norris", "from": 2, "to": 3, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:04:17", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/alonso", "from": 3, "to": 4, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:04:32", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "redbull/perez", "fastest_speed": "267.14"}}
+{"timestamp": "2026-02-25 12:04:32", "type": "ACCIDENT_DETECTED", "data": {"driver": "mclaren/piastri", "circuit": "Bahrain", "lap": 2, "sector": "3"}}
+{"timestamp": "2026-02-25 12:04:47", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "redbull/perez", "fastest_speed": "274.01"}}
+{"timestamp": "2026-02-25 12:04:47", "type": "LAP_CHANGED", "data": {"driver": "redbull/perez", "from": 2, "to": 3, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:05:02", "type": "RACE_LEADER_CHANGED", "data": {"leader": "mclaren/norris", "lap": "3"}}
+{"timestamp": "2026-02-25 12:05:02", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "260.46"}}
+{"timestamp": "2026-02-25 12:05:02", "type": "LAP_CHANGED", "data": {"driver": "redbull/perez", "from": 3, "to": 2, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:05:02", "type": "LAP_CHANGED", "data": {"driver": "mercedes/hamilton", "from": 1, "to": 2, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:05:02", "type": "LAP_CHANGED", "data": {"driver": "mclaren/piastri", "from": 2, "to": 3, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:05:02", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/alonso", "from": 4, "to": 3, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:05:17", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "266.99"}}
+{"timestamp": "2026-02-25 12:05:32", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "304.67"}}
+{"timestamp": "2026-02-25 12:05:32", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/stroll", "from": 2, "to": 3, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:05:48", "type": "RACE_LEADER_CHANGED", "data": {"leader": "mercedes/hamilton", "lap": "3"}}
+{"timestamp": "2026-02-25 12:05:48", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "289.5"}}
+{"timestamp": "2026-02-25 12:05:48", "type": "LAP_CHANGED", "data": {"driver": "mercedes/hamilton", "from": 2, "to": 3, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:06:03", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "318.39"}}
+{"timestamp": "2026-02-25 12:06:18", "type": "RACE_LEADER_CHANGED", "data": {"leader": "mclaren/piastri", "lap": "4"}}
+{"timestamp": "2026-02-25 12:06:18", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "321.26"}}
+{"timestamp": "2026-02-25 12:06:18", "type": "LAP_CHANGED", "data": {"driver": "mclaren/piastri", "from": 3, "to": 4, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:06:33", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "297.3"}}
+{"timestamp": "2026-02-25 12:06:48", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "321.22"}}
+{"timestamp": "2026-02-25 12:06:48", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/stroll", "from": 3, "to": 4, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:07:03", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "300.17"}}
+{"timestamp": "2026-02-25 12:07:03", "type": "LAP_CHANGED", "data": {"driver": "redbull/perez", "from": 2, "to": 1, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:07:03", "type": "LAP_CHANGED", "data": {"driver": "mclaren/norris", "from": 3, "to": 2, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:07:03", "type": "LAP_CHANGED", "data": {"driver": "mclaren/piastri", "from": 4, "to": 3, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:07:03", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/stroll", "from": 4, "to": 2, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:07:18", "type": "RACE_LEADER_CHANGED", "data": {"leader": "mercedes/hamilton", "lap": "3"}}
+{"timestamp": "2026-02-25 12:07:18", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "304.78"}}
+{"timestamp": "2026-02-25 12:07:18", "type": "LAP_CHANGED", "data": {"driver": "mclaren/norris", "from": 2, "to": 3, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:07:18", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/stroll", "from": 2, "to": 3, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:07:33", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "307.18"}}
+{"timestamp": "2026-02-25 12:07:33", "type": "LAP_CHANGED", "data": {"driver": "redbull/perez", "from": 1, "to": 2, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:07:48", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "316.09"}}
+{"timestamp": "2026-02-25 12:08:03", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "232.45"}}
+{"timestamp": "2026-02-25 12:08:03", "type": "ACCIDENT_DETECTED", "data": {"driver": "mclaren/piastri", "circuit": "Silverstone", "lap": 3, "sector": "2"}}
+{"timestamp": "2026-02-25 12:08:18", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "redbull/perez", "fastest_speed": "268.04"}}
+{"timestamp": "2026-02-25 12:08:33", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "redbull/perez", "fastest_speed": "274.12"}}
+{"timestamp": "2026-02-25 12:08:48", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "redbull/perez", "fastest_speed": "286.21"}}
+{"timestamp": "2026-02-25 12:09:03", "type": "RACE_LEADER_CHANGED", "data": {"leader": "astonmartin/stroll", "lap": "4"}}
+{"timestamp": "2026-02-25 12:09:03", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "mclaren/norris", "fastest_speed": "284.59"}}
+{"timestamp": "2026-02-25 12:09:03", "type": "LAP_CHANGED", "data": {"driver": "redbull/verstappen", "from": 2, "to": 1, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:09:03", "type": "ACCIDENT_DETECTED", "data": {"driver": "redbull/perez", "circuit": "Spa-Francorchamps", "lap": 2, "sector": "1"}}
+{"timestamp": "2026-02-25 12:09:03", "type": "LAP_CHANGED", "data": {"driver": "mercedes/hamilton", "from": 3, "to": 2, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:09:03", "type": "LAP_CHANGED", "data": {"driver": "mclaren/norris", "from": 3, "to": 2, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:09:03", "type": "LAP_CHANGED", "data": {"driver": "mclaren/piastri", "from": 3, "to": 2, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:09:03", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/stroll", "from": 3, "to": 1, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:09:18", "type": "RACE_LEADER_CHANGED", "data": {"leader": "mclaren/norris", "lap": "3"}}
+{"timestamp": "2026-02-25 12:09:18", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "mclaren/norris", "fastest_speed": "260.5"}}
+{"timestamp": "2026-02-25 12:09:18", "type": "LAP_CHANGED", "data": {"driver": "mclaren/norris", "from": 2, "to": 3, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:09:18", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/stroll", "from": 1, "to": 2, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:09:33", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "mclaren/norris", "fastest_speed": "217.03"}}
+{"timestamp": "2026-02-25 12:09:48", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "257.44"}}
+{"timestamp": "2026-02-25 12:09:48", "type": "LAP_CHANGED", "data": {"driver": "redbull/verstappen", "from": 1, "to": 2, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:10:03", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "288.09"}}
+{"timestamp": "2026-02-25 12:10:03", "type": "LAP_CHANGED", "data": {"driver": "mercedes/russell", "from": 2, "to": 3, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:10:18", "type": "RACE_LEADER_CHANGED", "data": {"leader": "mercedes/russell", "lap": "3"}}
+{"timestamp": "2026-02-25 12:10:18", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "248.29"}}
+{"timestamp": "2026-02-25 12:10:33", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "mclaren/norris", "fastest_speed": "267.67"}}
+{"timestamp": "2026-02-25 12:10:33", "type": "LAP_CHANGED", "data": {"driver": "mclaren/piastri", "from": 2, "to": 3, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:10:48", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "313.62"}}
+{"timestamp": "2026-02-25 12:11:03", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "332.16"}}
+{"timestamp": "2026-02-25 12:11:03", "type": "LAP_CHANGED", "data": {"driver": "redbull/perez", "from": 2, "to": 3, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:11:03", "type": "LAP_CHANGED", "data": {"driver": "mercedes/hamilton", "from": 2, "to": 1, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:11:03", "type": "LAP_CHANGED", "data": {"driver": "mercedes/russell", "from": 3, "to": 2, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:11:03", "type": "LAP_CHANGED", "data": {"driver": "mclaren/piastri", "from": 3, "to": 2, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:11:03", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/alonso", "from": 3, "to": 4, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:11:18", "type": "RACE_LEADER_CHANGED", "data": {"leader": "astonmartin/alonso", "lap": "4"}}
+{"timestamp": "2026-02-25 12:11:18", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "272.43"}}
+{"timestamp": "2026-02-25 12:11:18", "type": "LAP_CHANGED", "data": {"driver": "redbull/verstappen", "from": 2, "to": 3, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:11:18", "type": "LAP_CHANGED", "data": {"driver": "mercedes/russell", "from": 2, "to": 3, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:11:18", "type": "LAP_CHANGED", "data": {"driver": "mclaren/piastri", "from": 2, "to": 3, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:11:33", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "redbull/verstappen", "fastest_speed": "319.75"}}
+{"timestamp": "2026-02-25 12:11:33", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/stroll", "from": 2, "to": 3, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:11:48", "type": "RACE_LEADER_CHANGED", "data": {"leader": "astonmartin/alonso", "lap": "5"}}
+{"timestamp": "2026-02-25 12:11:48", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "redbull/verstappen", "fastest_speed": "325.6"}}
+{"timestamp": "2026-02-25 12:11:48", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/alonso", "from": 4, "to": 5, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:12:03", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "redbull/verstappen", "fastest_speed": "318.5"}}
+{"timestamp": "2026-02-25 12:12:03", "type": "LAP_CHANGED", "data": {"driver": "mercedes/hamilton", "from": 1, "to": 2, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:12:18", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "redbull/verstappen", "fastest_speed": "298.79"}}
+{"timestamp": "2026-02-25 12:12:33", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "321.94"}}
+{"timestamp": "2026-02-25 12:12:33", "type": "LAP_CHANGED", "data": {"driver": "redbull/verstappen", "from": 3, "to": 4, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:12:33", "type": "ACCIDENT_DETECTED", "data": {"driver": "redbull/perez", "circuit": "Bahrain", "lap": 3, "sector": "3"}}
+{"timestamp": "2026-02-25 12:12:33", "type": "LAP_CHANGED", "data": {"driver": "mclaren/norris", "from": 3, "to": 4, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:12:48", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "301.5"}}
+{"timestamp": "2026-02-25 12:13:03", "type": "RACE_LEADER_CHANGED", "data": {"leader": "astonmartin/alonso", "lap": "6"}}
+{"timestamp": "2026-02-25 12:13:03", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "316.59"}}
+{"timestamp": "2026-02-25 12:13:03", "type": "LAP_CHANGED", "data": {"driver": "redbull/verstappen", "from": 4, "to": 2, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:13:03", "type": "LAP_CHANGED", "data": {"driver": "redbull/perez", "from": 3, "to": 2, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:13:03", "type": "LAP_CHANGED", "data": {"driver": "mercedes/hamilton", "from": 2, "to": 3, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:13:03", "type": "LAP_CHANGED", "data": {"driver": "mclaren/norris", "from": 4, "to": 3, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:13:03", "type": "LAP_CHANGED", "data": {"driver": "mclaren/piastri", "from": 3, "to": 4, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:13:03", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/alonso", "from": 5, "to": 3, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:13:03", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/stroll", "from": 3, "to": 4, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:13:18", "type": "RACE_LEADER_CHANGED", "data": {"leader": "mclaren/piastri", "lap": "4"}}
+{"timestamp": "2026-02-25 12:13:18", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "298.9"}}
+{"timestamp": "2026-02-25 12:13:33", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "312.65"}}
+{"timestamp": "2026-02-25 12:13:33", "type": "LAP_CHANGED", "data": {"driver": "mclaren/norris", "from": 3, "to": 4, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:13:33", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/alonso", "from": 3, "to": 4, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:13:48", "type": "RACE_LEADER_CHANGED", "data": {"leader": "mclaren/norris", "lap": "4"}}
+{"timestamp": "2026-02-25 12:13:48", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "316.34"}}
+{"timestamp": "2026-02-25 12:13:48", "type": "LAP_CHANGED", "data": {"driver": "redbull/perez", "from": 2, "to": 3, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:14:03", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "332.93"}}
+{"timestamp": "2026-02-25 12:14:18", "type": "RACE_LEADER_CHANGED", "data": {"leader": "astonmartin/stroll", "lap": "5"}}
+{"timestamp": "2026-02-25 12:14:18", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "326.03"}}
+{"timestamp": "2026-02-25 12:14:18", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/stroll", "from": 4, "to": 5, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:14:33", "type": "RACE_LEADER_CHANGED", "data": {"leader": "astonmartin/alonso", "lap": "5"}}
+{"timestamp": "2026-02-25 12:14:33", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "307.22"}}
+{"timestamp": "2026-02-25 12:14:33", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/alonso", "from": 4, "to": 5, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:14:48", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "286.41"}}
+{"timestamp": "2026-02-25 12:14:48", "type": "LAP_CHANGED", "data": {"driver": "mercedes/hamilton", "from": 3, "to": 4, "circuit": "Monza"}}
+{"timestamp": "2026-02-25 12:15:03", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "mercedes/hamilton", "fastest_speed": "300.97"}}
+{"timestamp": "2026-02-25 12:15:03", "type": "LAP_CHANGED", "data": {"driver": "mercedes/hamilton", "from": 4, "to": 3, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:15:03", "type": "LAP_CHANGED", "data": {"driver": "mercedes/russell", "from": 3, "to": 2, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:15:03", "type": "LAP_CHANGED", "data": {"driver": "mclaren/norris", "from": 4, "to": 3, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:15:03", "type": "LAP_CHANGED", "data": {"driver": "mclaren/piastri", "from": 4, "to": 3, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:15:03", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/alonso", "from": 5, "to": 3, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:15:03", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/stroll", "from": 5, "to": 4, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:15:18", "type": "RACE_LEADER_CHANGED", "data": {"leader": "astonmartin/stroll", "lap": "4"}}
+{"timestamp": "2026-02-25 12:15:18", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "mercedes/hamilton", "fastest_speed": "315.71"}}
+{"timestamp": "2026-02-25 12:15:18", "type": "LAP_CHANGED", "data": {"driver": "redbull/verstappen", "from": 2, "to": 3, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:15:18", "type": "LAP_CHANGED", "data": {"driver": "mercedes/russell", "from": 2, "to": 3, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:15:33", "type": "RACE_LEADER_CHANGED", "data": {"leader": "mercedes/hamilton", "lap": "4"}}
+{"timestamp": "2026-02-25 12:15:33", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "mercedes/hamilton", "fastest_speed": "333.13"}}
+{"timestamp": "2026-02-25 12:15:33", "type": "LAP_CHANGED", "data": {"driver": "mercedes/hamilton", "from": 3, "to": 4, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:15:33", "type": "LAP_CHANGED", "data": {"driver": "mclaren/piastri", "from": 3, "to": 4, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:15:33", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/alonso", "from": 3, "to": 4, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:15:48", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "mercedes/hamilton", "fastest_speed": "323.48"}}
+{"timestamp": "2026-02-25 12:15:48", "type": "LAP_CHANGED", "data": {"driver": "mclaren/norris", "from": 3, "to": 4, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:16:03", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "306.11"}}
+{"timestamp": "2026-02-25 12:16:03", "type": "ACCIDENT_DETECTED", "data": {"driver": "mercedes/hamilton", "circuit": "Silverstone", "lap": 4, "sector": "2"}}
+{"timestamp": "2026-02-25 12:16:03", "type": "ACCIDENT_DETECTED", "data": {"driver": "mclaren/piastri", "circuit": "Silverstone", "lap": 4, "sector": "1"}}
+{"timestamp": "2026-02-25 12:16:18", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "318.16"}}
+{"timestamp": "2026-02-25 12:16:33", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "313.21"}}
+{"timestamp": "2026-02-25 12:16:33", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/alonso", "from": 4, "to": 5, "circuit": "Silverstone"}}
+{"timestamp": "2026-02-25 12:16:48", "type": "RACE_LEADER_CHANGED", "data": {"leader": "astonmartin/alonso", "lap": "5"}}
+{"timestamp": "2026-02-25 12:16:48", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "315.88"}}
+{"timestamp": "2026-02-25 12:17:03", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "299.92"}}
+{"timestamp": "2026-02-25 12:17:03", "type": "LAP_CHANGED", "data": {"driver": "redbull/verstappen", "from": 3, "to": 2, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:17:03", "type": "LAP_CHANGED", "data": {"driver": "redbull/perez", "from": 3, "to": 2, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:17:03", "type": "LAP_CHANGED", "data": {"driver": "mercedes/hamilton", "from": 4, "to": 2, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:17:18", "type": "RACE_LEADER_CHANGED", "data": {"leader": "mercedes/russell", "lap": "3"}}
+{"timestamp": "2026-02-25 12:17:18", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "254.69"}}
+{"timestamp": "2026-02-25 12:17:18", "type": "LAP_CHANGED", "data": {"driver": "mclaren/norris", "from": 4, "to": 3, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:17:18", "type": "LAP_CHANGED", "data": {"driver": "mclaren/piastri", "from": 4, "to": 3, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:17:18", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/alonso", "from": 5, "to": 3, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:17:18", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/stroll", "from": 4, "to": 3, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:17:33", "type": "RACE_LEADER_CHANGED", "data": {"leader": "mclaren/norris", "lap": "4"}}
+{"timestamp": "2026-02-25 12:17:33", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "197.56"}}
+{"timestamp": "2026-02-25 12:17:33", "type": "LAP_CHANGED", "data": {"driver": "mclaren/norris", "from": 3, "to": 4, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:17:48", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "179.7"}}
+{"timestamp": "2026-02-25 12:18:03", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "mercedes/russell", "fastest_speed": "164.58"}}
+{"timestamp": "2026-02-25 12:18:18", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/alonso", "fastest_speed": "232.93"}}
+{"timestamp": "2026-02-25 12:18:33", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "mclaren/norris", "fastest_speed": "311.2"}}
+{"timestamp": "2026-02-25 12:18:33", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/alonso", "from": 3, "to": 4, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:18:48", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "mclaren/norris", "fastest_speed": "287.89"}}
+{"timestamp": "2026-02-25 12:18:48", "type": "LAP_CHANGED", "data": {"driver": "redbull/perez", "from": 2, "to": 3, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:18:48", "type": "LAP_CHANGED", "data": {"driver": "mercedes/hamilton", "from": 2, "to": 3, "circuit": "Spa-Francorchamps"}}
+{"timestamp": "2026-02-25 12:19:03", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "mclaren/norris", "fastest_speed": "321.71"}}
+{"timestamp": "2026-02-25 12:19:18", "type": "RACE_LEADER_CHANGED", "data": {"leader": "astonmartin/alonso", "lap": "6"}}
+{"timestamp": "2026-02-25 12:19:18", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "mclaren/norris", "fastest_speed": "274.63"}}
+{"timestamp": "2026-02-25 12:19:18", "type": "LAP_CHANGED", "data": {"driver": "redbull/verstappen", "from": 2, "to": 4, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:19:18", "type": "LAP_CHANGED", "data": {"driver": "redbull/perez", "from": 3, "to": 4, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:19:18", "type": "LAP_CHANGED", "data": {"driver": "mercedes/hamilton", "from": 3, "to": 2, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:19:18", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/alonso", "from": 4, "to": 6, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:19:18", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/stroll", "from": 3, "to": 4, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:19:33", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "270.67"}}
+{"timestamp": "2026-02-25 12:19:48", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "redbull/perez", "fastest_speed": "314.26"}}
+{"timestamp": "2026-02-25 12:20:03", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "327.97"}}
+{"timestamp": "2026-02-25 12:20:18", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "323.97"}}
+{"timestamp": "2026-02-25 12:20:18", "type": "LAP_CHANGED", "data": {"driver": "astonmartin/stroll", "from": 4, "to": 5, "circuit": "Bahrain"}}
+{"timestamp": "2026-02-25 12:20:33", "type": "FASTEST_DRIVER_CHANGED", "data": {"fastest_driver": "astonmartin/stroll", "fastest_speed": "324.32"}}
+{"timestamp": "2026-02-25 12:20:33", "type": "LAP_CHANGED", "data": {"driver": "redbull/perez", "from": 4, "to": 5, "circuit": "Bahrain"}}

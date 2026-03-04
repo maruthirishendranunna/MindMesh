@@ -72,6 +72,7 @@ def get_team_avg_speed(team: str):
 # ---------- Run loop ----------
 def start_cache_listener():
     client = mqtt.Client()
+    client.reconnect_delay_set(min_delay=1, max_delay=5)
     client.on_connect = on_connect
     client.on_message = on_message
 

@@ -1,0 +1,511 @@
+{
+  "snapshot_time": "2026-02-25 17:43:16",
+  "telemetry": {
+    "redbull": {
+      "verstappen": {
+        "circuit": {
+          "value": "Monza",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "race_laps": {
+          "value": "53",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "lap": {
+          "value": "41",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "lap_remaining": {
+          "value": "12",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "sector": {
+          "value": "1",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "speed": {
+          "value": "313.76",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "rpm": {
+          "value": "6875.53",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "gear": {
+          "value": "8",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "engine_temp": {
+          "value": "120",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "fuel_level": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "drs": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "accident": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        }
+      },
+      "perez": {
+        "circuit": {
+          "value": "Monza",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "race_laps": {
+          "value": "53",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "lap": {
+          "value": "46",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "lap_remaining": {
+          "value": "7",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "sector": {
+          "value": "1",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "speed": {
+          "value": "255.92",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "rpm": {
+          "value": "8592.77",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "gear": {
+          "value": "5",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "engine_temp": {
+          "value": "120",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "fuel_level": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "drs": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "accident": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        }
+      }
+    },
+    "mercedes": {
+      "hamilton": {
+        "circuit": {
+          "value": "Monza",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "race_laps": {
+          "value": "53",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "lap": {
+          "value": "44",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "lap_remaining": {
+          "value": "9",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "sector": {
+          "value": "2",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "speed": {
+          "value": "83.4",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "rpm": {
+          "value": "5364.97",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "gear": {
+          "value": "2",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "engine_temp": {
+          "value": "118.13",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "fuel_level": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "drs": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "accident": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        }
+      },
+      "russell": {
+        "circuit": {
+          "value": "Monza",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "race_laps": {
+          "value": "53",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "lap": {
+          "value": "44",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "lap_remaining": {
+          "value": "9",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "sector": {
+          "value": "1",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "speed": {
+          "value": "29.59",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "rpm": {
+          "value": "3783.3",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "gear": {
+          "value": "1",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "engine_temp": {
+          "value": "119.83",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "fuel_level": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "drs": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "accident": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        }
+      }
+    },
+    "mclaren": {
+      "norris": {
+        "circuit": {
+          "value": "Monza",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "race_laps": {
+          "value": "53",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "lap": {
+          "value": "45",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "lap_remaining": {
+          "value": "8",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "sector": {
+          "value": "1",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "speed": {
+          "value": "211.33",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "rpm": {
+          "value": "7422.48",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "gear": {
+          "value": "5",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "engine_temp": {
+          "value": "119.78",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "fuel_level": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "drs": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "accident": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        }
+      },
+      "piastri": {
+        "circuit": {
+          "value": "Monza",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "race_laps": {
+          "value": "53",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "lap": {
+          "value": "41",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "lap_remaining": {
+          "value": "12",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "sector": {
+          "value": "3",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "speed": {
+          "value": "47.18",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "rpm": {
+          "value": "4441.72",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "gear": {
+          "value": "1",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "engine_temp": {
+          "value": "119.68",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "fuel_level": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "drs": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "accident": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        }
+      }
+    },
+    "astonmartin": {
+      "alonso": {
+        "circuit": {
+          "value": "Monza",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "race_laps": {
+          "value": "53",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "lap": {
+          "value": "44",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "lap_remaining": {
+          "value": "9",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "sector": {
+          "value": "2",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "speed": {
+          "value": "262.61",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "rpm": {
+          "value": "7649.25",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "gear": {
+          "value": "6",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "engine_temp": {
+          "value": "119.9",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "fuel_level": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "drs": {
+          "value": "1",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "accident": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        }
+      },
+      "stroll": {
+        "circuit": {
+          "value": "Monza",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "race_laps": {
+          "value": "53",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "lap": {
+          "value": "41",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "lap_remaining": {
+          "value": "12",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "sector": {
+          "value": "1",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "speed": {
+          "value": "88.63",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "rpm": {
+          "value": "5097.97",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "gear": {
+          "value": "3",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "engine_temp": {
+          "value": "118.91",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "fuel_level": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "drs": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        },
+        "accident": {
+          "value": "0",
+          "timestamp": "2026-02-25 17:43:15"
+        }
+      }
+    }
+  },
+  "analytics": {
+    "fastest_driver": {
+      "value": "redbull/verstappen",
+      "timestamp": "2026-02-25 17:43:12"
+    },
+    "fastest_speed": {
+      "value": "303.27",
+      "timestamp": "2026-02-25 17:43:12"
+    },
+    "leader_driver": {
+      "value": "redbull/perez",
+      "timestamp": "2026-02-25 17:43:12"
+    },
+    "leader_lap": {
+      "value": "45",
+      "timestamp": "2026-02-25 17:43:12"
+    },
+    "team_avg_speed/redbull": {
+      "value": "277.07",
+      "timestamp": "2026-02-25 17:43:12"
+    },
+    "team_avg_speed/mercedes": {
+      "value": "32.94",
+      "timestamp": "2026-02-25 17:43:12"
+    },
+    "team_avg_speed/mclaren": {
+      "value": "126.14",
+      "timestamp": "2026-02-25 17:43:12"
+    },
+    "team_avg_speed/astonmartin": {
+      "value": "140.72",
+      "timestamp": "2026-02-25 17:43:12"
+    },
+    "Spa-Francorchamps/fastest_driver": {
+      "value": "mercedes/russell",
+      "timestamp": "2026-02-25 17:40:42"
+    },
+    "Spa-Francorchamps/fastest_speed": {
+      "value": "268.38",
+      "timestamp": "2026-02-25 17:40:42"
+    },
+    "Spa-Francorchamps/leader_driver": {
+      "value": "astonmartin/stroll",
+      "timestamp": "2026-02-25 17:40:42"
+    },
+    "Spa-Francorchamps/leader_lap": {
+      "value": "38",
+      "timestamp": "2026-02-25 17:40:42"
+    },
+    "Bahrain/fastest_driver": {
+      "value": "mercedes/russell",
+      "timestamp": "2026-02-25 17:42:42"
+    },
+    "Bahrain/fastest_speed": {
+      "value": "264.3",
+      "timestamp": "2026-02-25 17:42:42"
+    },
+    "Bahrain/leader_driver": {
+      "value": "redbull/verstappen",
+      "timestamp": "2026-02-25 17:42:42"
+    },
+    "Bahrain/leader_lap": {
+      "value": "50",
+      "timestamp": "2026-02-25 17:42:42"
+    },
+    "Monza/fastest_driver": {
+      "value": "redbull/verstappen",
+      "timestamp": "2026-02-25 17:43:12"
+    },
+    "Monza/fastest_speed": {
+      "value": "303.27",
+      "timestamp": "2026-02-25 17:43:12"
+    },
+    "Monza/leader_driver": {
+      "value": "redbull/perez",
+      "timestamp": "2026-02-25 17:43:12"
+    },
+    "Monza/leader_lap": {
+      "value": "45",
+      "timestamp": "2026-02-25 17:43:12"
+    },
+    "Silverstone/fastest_driver": {
+      "value": "astonmartin/stroll",
+      "timestamp": "2026-02-25 17:38:42"
+    },
+    "Silverstone/fastest_speed": {
+      "value": "324.56",
+      "timestamp": "2026-02-25 17:38:42"
+    },
+    "Silverstone/leader_driver": {
+      "value": "astonmartin/stroll",
+      "timestamp": "2026-02-25 17:38:42"
+    },
+    "Silverstone/leader_lap": {
+      "value": "45",
+      "timestamp": "2026-02-25 17:38:42"
+    }
+  }
+}

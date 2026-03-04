@@ -1,0 +1,259 @@
+Snapshot taken at 2026-02-25 12:07:03.
+
+Verstappen from Redbull is racing at Silverstone. He is currently on lap 2. His speed is 198.96 km/h. Engine RPM is 7097.59. Gear position is 5. Remaining fuel is 36.43 kg. DRS status is 0.
+Perez from Redbull is racing at Silverstone. He is currently on lap 1. His speed is 143.86 km/h. Engine RPM is 6857.03. Gear position is 3. Remaining fuel is 41.58 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Silverstone. He is currently on lap 3. His speed is 76.54 km/h. Engine RPM is 4712.85. Gear position is 3. Remaining fuel is 73.7 kg. DRS status is 0.
+Russell from Mercedes is racing at Silverstone. He is currently on lap 2. His speed is 215.12 km/h. Engine RPM is 7521.98. Gear position is 5. Remaining fuel is 43.15 kg. DRS status is 0.
+Norris from Mclaren is racing at Silverstone. He is currently on lap 2. His speed is 86.61 km/h. Engine RPM is 5476.12. Gear position is 2. Remaining fuel is 39.41 kg. DRS status is 0.
+Piastri from Mclaren is racing at Silverstone. He is currently on lap 3. His speed is 84.26 km/h. Engine RPM is 5394.78. Gear position is 2. Remaining fuel is 75.71 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Silverstone. He is currently on lap 3. His speed is 94.56 km/h. Engine RPM is 5751.45. Gear position is 2. Remaining fuel is 37.56 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Silverstone. He is currently on lap 2. His speed is 311.8 km/h. Engine RPM is 6840.68. Gear position is 8. Remaining fuel is 74.4 kg. DRS status is 0.
+The current race leader is mclaren/piastri on lap 4.
+The fastest driver is astonmartin/stroll with a speed of 300.17 km/h.
+
+Snapshot taken at 2026-02-25 12:07:18.
+
+Verstappen from Redbull is racing at Silverstone. He is currently on lap 2. His speed is 174.2 km/h. Engine RPM is 7135.56. Gear position is 4. Remaining fuel is 36.01 kg. DRS status is 0.
+Perez from Redbull is racing at Silverstone. He is currently on lap 1. His speed is 171.72 km/h. Engine RPM is 7063.33. Gear position is 4. Remaining fuel is 41.16 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Silverstone. He is currently on lap 3. His speed is 94.54 km/h. Engine RPM is 5750.88. Gear position is 2. Remaining fuel is 73.29 kg. DRS status is 0.
+Russell from Mercedes is racing at Silverstone. He is currently on lap 2. His speed is 165.14 km/h. Engine RPM is 7534.56. Gear position is 3. Remaining fuel is 42.72 kg. DRS status is 0.
+Norris from Mclaren is racing at Silverstone. He is currently on lap 3. His speed is 25.35 km/h. Engine RPM is 3624.32. Gear position is 1. Remaining fuel is 38.98 kg. DRS status is 0.
+Piastri from Mclaren is racing at Silverstone. He is currently on lap 3. His speed is 80.9 km/h. Engine RPM is 5278.05. Gear position is 2. Remaining fuel is 75.31 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Silverstone. He is currently on lap 3. His speed is 44.14 km/h. Engine RPM is 4327.9. Gear position is 1. Remaining fuel is 37.09 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Silverstone. He is currently on lap 3. His speed is 313.49 km/h. Engine RPM is 6870.86. Gear position is 8. Remaining fuel is 74.01 kg. DRS status is 0.
+The current race leader is mercedes/hamilton on lap 3.
+The fastest driver is astonmartin/stroll with a speed of 304.78 km/h.
+
+Snapshot taken at 2026-02-25 12:07:33.
+
+Verstappen from Redbull is racing at Silverstone. He is currently on lap 2. His speed is 140.99 km/h. Engine RPM is 7360.23. Gear position is 2. Remaining fuel is 35.52 kg. DRS status is 0.
+Perez from Redbull is racing at Silverstone. He is currently on lap 2. His speed is 189.71 km/h. Engine RPM is 7586.06. Gear position is 4. Remaining fuel is 40.7 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Silverstone. He is currently on lap 3. His speed is 40.22 km/h. Engine RPM is 4181.2. Gear position is 1. Remaining fuel is 72.78 kg. DRS status is 0.
+Russell from Mercedes is racing at Silverstone. He is currently on lap 2. His speed is 64.74 km/h. Engine RPM is 4718.35. Gear position is 2. Remaining fuel is 42.27 kg. DRS status is 0.
+Norris from Mclaren is racing at Silverstone. He is currently on lap 3. His speed is 33.76 km/h. Engine RPM is 3939.29. Gear position is 1. Remaining fuel is 38.51 kg. DRS status is 0.
+Piastri from Mclaren is racing at Silverstone. He is currently on lap 3. His speed is 81.86 km/h. Engine RPM is 5311.55. Gear position is 2. Remaining fuel is 74.86 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Silverstone. He is currently on lap 3. His speed is 54.63 km/h. Engine RPM is 4720.89. Gear position is 1. Remaining fuel is 36.56 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Silverstone. He is currently on lap 3. His speed is 325.81 km/h. Engine RPM is 7090.67. Gear position is 8. Remaining fuel is 73.59 kg. DRS status is 0.
+The current race leader is mercedes/hamilton on lap 3.
+The fastest driver is astonmartin/stroll with a speed of 307.18 km/h.
+
+Snapshot taken at 2026-02-25 12:07:48.
+
+Verstappen from Redbull is racing at Silverstone. He is currently on lap 2. His speed is 77.22 km/h. Engine RPM is 5150.51. Gear position is 2. Remaining fuel is 35.04 kg. DRS status is 0.
+Perez from Redbull is racing at Silverstone. He is currently on lap 2. His speed is 195.39 km/h. Engine RPM is 7751.18. Gear position is 4. Remaining fuel is 40.21 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Silverstone. He is currently on lap 3. His speed is 43.35 km/h. Engine RPM is 4298.51. Gear position is 1. Remaining fuel is 72.32 kg. DRS status is 0.
+Russell from Mercedes is racing at Silverstone. He is currently on lap 2. His speed is 66.03 km/h. Engine RPM is 4762.87. Gear position is 2. Remaining fuel is 41.77 kg. DRS status is 0.
+Norris from Mclaren is racing at Silverstone. He is currently on lap 3. His speed is 53.18 km/h. Engine RPM is 4666.54. Gear position is 1. Remaining fuel is 38.02 kg. DRS status is 0.
+Piastri from Mclaren is racing at Silverstone. He is currently on lap 3. His speed is 53.54 km/h. Engine RPM is 4680.06. Gear position is 1. Remaining fuel is 74.51 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Silverstone. He is currently on lap 3. His speed is 119.34 km/h. Engine RPM is 6076.1. Gear position is 3. Remaining fuel is 36.07 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Silverstone. He is currently on lap 3. His speed is 297.87 km/h. Engine RPM is 7626.0. Gear position is 7. Remaining fuel is 73.17 kg. DRS status is 0.
+The current race leader is mercedes/hamilton on lap 3.
+The fastest driver is astonmartin/stroll with a speed of 316.09 km/h.
+
+Snapshot taken at 2026-02-25 12:08:03.
+
+Verstappen from Redbull is racing at Silverstone. He is currently on lap 2. His speed is 65.02 km/h. Engine RPM is 5109.86. Gear position is 1. Remaining fuel is 34.86 kg. DRS status is 0.
+Perez from Redbull is racing at Silverstone. He is currently on lap 2. His speed is 256.8 km/h. Engine RPM is 6777.85. Gear position is 7. Remaining fuel is 39.77 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Silverstone. He is currently on lap 3. His speed is 81.46 km/h. Engine RPM is 5725.71. Gear position is 1. Remaining fuel is 71.79 kg. DRS status is 0.
+Russell from Mercedes is racing at Silverstone. He is currently on lap 2. His speed is 31.67 km/h. Engine RPM is 3861.22. Gear position is 1. Remaining fuel is 41.27 kg. DRS status is 0.
+Norris from Mclaren is racing at Silverstone. He is currently on lap 3. His speed is 114.85 km/h. Engine RPM is 5933.01. Gear position is 3. Remaining fuel is 37.61 kg. DRS status is 0.
+Piastri from Mclaren is racing at Silverstone. He is currently on lap 3. His speed is 0.0 km/h. Engine RPM is 2000.0. Gear position is 1. Remaining fuel is 74.25 kg. DRS status is 0. An accident has been detected.
+Alonso from Astonmartin is racing at Silverstone. He is currently on lap 3. His speed is 150.23 km/h. Engine RPM is 6439.14. Gear position is 4. Remaining fuel is 35.56 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Silverstone. He is currently on lap 3. His speed is 188.26 km/h. Engine RPM is 7543.91. Gear position is 4. Remaining fuel is 72.65 kg. DRS status is 0.
+The current race leader is mercedes/hamilton on lap 3.
+The fastest driver is astonmartin/stroll with a speed of 232.45 km/h.
+
+Snapshot taken at 2026-02-25 12:08:18.
+
+Verstappen from Redbull is racing at Silverstone. He is currently on lap 2. His speed is 47.43 km/h. Engine RPM is 4118.42. Gear position is 2. Remaining fuel is 34.39 kg. DRS status is 0.
+Perez from Redbull is racing at Silverstone. He is currently on lap 2. His speed is 242.57 km/h. Engine RPM is 7363.23. Gear position is 6. Remaining fuel is 39.32 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Silverstone. He is currently on lap 3. His speed is 40.59 km/h. Engine RPM is 4195.05. Gear position is 1. Remaining fuel is 71.38 kg. DRS status is 0.
+Russell from Mercedes is racing at Silverstone. He is currently on lap 2. His speed is 71.68 km/h. Engine RPM is 5359.33. Gear position is 1. Remaining fuel is 40.76 kg. DRS status is 0.
+Norris from Mclaren is racing at Silverstone. He is currently on lap 3. His speed is 220.77 km/h. Engine RPM is 7670.19. Gear position is 5. Remaining fuel is 37.12 kg. DRS status is 0.
+Piastri from Mclaren is racing at Silverstone. He is currently on lap 3. His speed is 81.94 km/h. Engine RPM is 4884.86. Gear position is 3. Remaining fuel is 73.99 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Silverstone. He is currently on lap 3. His speed is 191.95 km/h. Engine RPM is 6913.63. Gear position is 5. Remaining fuel is 35.09 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Silverstone. He is currently on lap 3. His speed is 86.03 km/h. Engine RPM is 5896.83. Gear position is 1. Remaining fuel is 72.29 kg. DRS status is 0.
+The current race leader is mercedes/hamilton on lap 3.
+The fastest driver is redbull/perez with a speed of 268.04 km/h.
+
+Snapshot taken at 2026-02-25 12:08:33.
+
+Verstappen from Redbull is racing at Silverstone. He is currently on lap 2. His speed is 63.52 km/h. Engine RPM is 5053.65. Gear position is 1. Remaining fuel is 34.03 kg. DRS status is 0.
+Perez from Redbull is racing at Silverstone. He is currently on lap 2. His speed is 267.73 km/h. Engine RPM is 7869.6. Gear position is 6. Remaining fuel is 38.85 kg. DRS status is 1.
+Hamilton from Mercedes is racing at Silverstone. He is currently on lap 3. His speed is 54.34 km/h. Engine RPM is 4357.8. Gear position is 2. Remaining fuel is 70.88 kg. DRS status is 0.
+Russell from Mercedes is racing at Silverstone. He is currently on lap 2. His speed is 113.34 km/h. Engine RPM is 5884.94. Gear position is 3. Remaining fuel is 40.24 kg. DRS status is 0.
+Norris from Mclaren is racing at Silverstone. He is currently on lap 3. His speed is 263.72 km/h. Engine RPM is 7859.19. Gear position is 6. Remaining fuel is 36.63 kg. DRS status is 0.
+Piastri from Mclaren is racing at Silverstone. He is currently on lap 3. His speed is 129.01 km/h. Engine RPM is 6383.89. Gear position is 3. Remaining fuel is 73.53 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Silverstone. He is currently on lap 3. His speed is 294.93 km/h. Engine RPM is 7415.18. Gear position is 7. Remaining fuel is 34.66 kg. DRS status is 1.
+Stroll from Astonmartin is racing at Silverstone. He is currently on lap 3. His speed is 53.56 km/h. Engine RPM is 4680.73. Gear position is 1. Remaining fuel is 71.87 kg. DRS status is 0.
+The current race leader is mercedes/hamilton on lap 3.
+The fastest driver is redbull/perez with a speed of 274.12 km/h.
+
+Snapshot taken at 2026-02-25 12:08:48.
+
+Verstappen from Redbull is racing at Silverstone. He is currently on lap 2. His speed is 48.5 km/h. Engine RPM is 4491.32. Gear position is 1. Remaining fuel is 33.57 kg. DRS status is 0.
+Perez from Redbull is racing at Silverstone. He is currently on lap 2. His speed is 288.11 km/h. Engine RPM is 7424.47. Gear position is 7. Remaining fuel is 38.41 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Silverstone. He is currently on lap 3. His speed is 41.88 km/h. Engine RPM is 4243.57. Gear position is 1. Remaining fuel is 70.43 kg. DRS status is 0.
+Russell from Mercedes is racing at Silverstone. He is currently on lap 2. His speed is 120.87 km/h. Engine RPM is 6124.71. Gear position is 3. Remaining fuel is 39.79 kg. DRS status is 0.
+Norris from Mclaren is racing at Silverstone. He is currently on lap 3. His speed is 286.05 km/h. Engine RPM is 8382.84. Gear position is 6. Remaining fuel is 36.18 kg. DRS status is 0.
+Piastri from Mclaren is racing at Silverstone. He is currently on lap 3. His speed is 132.36 km/h. Engine RPM is 6490.8. Gear position is 3. Remaining fuel is 73.0 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Silverstone. He is currently on lap 3. His speed is 39.6 km/h. Engine RPM is 3536.33. Gear position is 3. Remaining fuel is 34.55 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Silverstone. He is currently on lap 3. His speed is 89.19 km/h. Engine RPM is 5115.57. Gear position is 3. Remaining fuel is 71.43 kg. DRS status is 0.
+The current race leader is mercedes/hamilton on lap 3.
+The fastest driver is redbull/perez with a speed of 286.21 km/h.
+
+Snapshot taken at 2026-02-25 12:09:03.
+
+Verstappen from Redbull is racing at Spa-Francorchamps. He is currently on lap 1. His speed is 42.21 km/h. Engine RPM is 4255.78. Gear position is 1. Remaining fuel is 33.12 kg. DRS status is 0.
+Perez from Redbull is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 202.05 km/h. Engine RPM is 6000. Gear position is 2. Remaining fuel is 38.05 kg. DRS status is 0. An accident has been detected.
+Hamilton from Mercedes is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 37.97 km/h. Engine RPM is 4096.79. Gear position is 1. Remaining fuel is 69.97 kg. DRS status is 0.
+Russell from Mercedes is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 107.88 km/h. Engine RPM is 6213.17. Gear position is 2. Remaining fuel is 39.36 kg. DRS status is 0.
+Norris from Mclaren is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 312.96 km/h. Engine RPM is 7937.62. Gear position is 7. Remaining fuel is 35.82 kg. DRS status is 0.
+Piastri from Mclaren is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 121.69 km/h. Engine RPM is 6150.9. Gear position is 3. Remaining fuel is 72.63 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 45.99 km/h. Engine RPM is 4397.37. Gear position is 1. Remaining fuel is 34.16 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Spa-Francorchamps. He is currently on lap 1. His speed is 30.8 km/h. Engine RPM is 3828.42. Gear position is 1. Remaining fuel is 71.07 kg. DRS status is 0.
+The current race leader is astonmartin/stroll on lap 4.
+The fastest driver is mclaren/norris with a speed of 284.59 km/h.
+
+Snapshot taken at 2026-02-25 12:09:18.
+
+Verstappen from Redbull is racing at Spa-Francorchamps. He is currently on lap 1. His speed is 45.18 km/h. Engine RPM is 4366.86. Gear position is 1. Remaining fuel is 32.77 kg. DRS status is 0.
+Perez from Redbull is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 24.31 km/h. Engine RPM is 3585.55. Gear position is 1. Remaining fuel is 37.91 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 58.3 km/h. Engine RPM is 4495.0. Gear position is 2. Remaining fuel is 69.53 kg. DRS status is 0.
+Russell from Mercedes is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 79.1 km/h. Engine RPM is 4794.19. Gear position is 3. Remaining fuel is 38.9 kg. DRS status is 0.
+Norris from Mclaren is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 263.88 km/h. Engine RPM is 7863.07. Gear position is 6. Remaining fuel is 35.31 kg. DRS status is 0.
+Piastri from Mclaren is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 73.18 km/h. Engine RPM is 5010.6. Gear position is 2. Remaining fuel is 72.17 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 36.96 km/h. Engine RPM is 4059.3. Gear position is 1. Remaining fuel is 33.67 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 85.84 km/h. Engine RPM is 5449.39. Gear position is 2. Remaining fuel is 70.57 kg. DRS status is 0.
+The current race leader is mclaren/norris on lap 3.
+The fastest driver is mclaren/norris with a speed of 260.5 km/h.
+
+Snapshot taken at 2026-02-25 12:09:33.
+
+Verstappen from Redbull is racing at Spa-Francorchamps. He is currently on lap 1. His speed is 115.85 km/h. Engine RPM is 5964.91. Gear position is 3. Remaining fuel is 32.29 kg. DRS status is 0.
+Perez from Redbull is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 86.06 km/h. Engine RPM is 5456.83. Gear position is 2. Remaining fuel is 37.43 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 72.78 km/h. Engine RPM is 4996.69. Gear position is 2. Remaining fuel is 69.08 kg. DRS status is 0.
+Russell from Mercedes is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 178.19 km/h. Engine RPM is 7251.49. Gear position is 4. Remaining fuel is 38.47 kg. DRS status is 0.
+Norris from Mclaren is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 222.88 km/h. Engine RPM is 7579.22. Gear position is 5. Remaining fuel is 34.79 kg. DRS status is 1.
+Piastri from Mclaren is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 82.85 km/h. Engine RPM is 5777.88. Gear position is 1. Remaining fuel is 71.71 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 58.06 km/h. Engine RPM is 4849.29. Gear position is 1. Remaining fuel is 33.27 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 208.54 km/h. Engine RPM is 7349.28. Gear position is 5. Remaining fuel is 70.14 kg. DRS status is 0.
+The current race leader is mclaren/norris on lap 3.
+The fastest driver is mclaren/norris with a speed of 217.03 km/h.
+
+Snapshot taken at 2026-02-25 12:09:48.
+
+Verstappen from Redbull is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 57.54 km/h. Engine RPM is 4468.86. Gear position is 2. Remaining fuel is 31.9 kg. DRS status is 0.
+Perez from Redbull is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 77.28 km/h. Engine RPM is 5152.83. Gear position is 2. Remaining fuel is 37.02 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 70.02 km/h. Engine RPM is 4901.36. Gear position is 2. Remaining fuel is 68.64 kg. DRS status is 0.
+Russell from Mercedes is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 108.21 km/h. Engine RPM is 6224.64. Gear position is 2. Remaining fuel is 38.02 kg. DRS status is 0.
+Norris from Mclaren is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 135.97 km/h. Engine RPM is 6605.68. Gear position is 3. Remaining fuel is 34.38 kg. DRS status is 0.
+Piastri from Mclaren is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 87.12 km/h. Engine RPM is 5493.88. Gear position is 2. Remaining fuel is 71.29 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 51.33 km/h. Engine RPM is 4597.35. Gear position is 1. Remaining fuel is 32.83 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 277.6 km/h. Engine RPM is 8053.72. Gear position is 6. Remaining fuel is 69.68 kg. DRS status is 1.
+The current race leader is mclaren/norris on lap 3.
+The fastest driver is astonmartin/stroll with a speed of 257.44 km/h.
+
+Snapshot taken at 2026-02-25 12:10:03.
+
+Verstappen from Redbull is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 81.63 km/h. Engine RPM is 5303.34. Gear position is 2. Remaining fuel is 31.39 kg. DRS status is 0.
+Perez from Redbull is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 32.95 km/h. Engine RPM is 3908.99. Gear position is 1. Remaining fuel is 36.59 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 86.31 km/h. Engine RPM is 5024.0. Gear position is 3. Remaining fuel is 68.24 kg. DRS status is 0.
+Russell from Mercedes is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 156.88 km/h. Engine RPM is 6632.35. Gear position is 4. Remaining fuel is 37.59 kg. DRS status is 0.
+Norris from Mclaren is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 181.9 km/h. Engine RPM is 6649.88. Gear position is 5. Remaining fuel is 33.91 kg. DRS status is 0.
+Piastri from Mclaren is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 135.96 km/h. Engine RPM is 6024.74. Gear position is 4. Remaining fuel is 70.89 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 49.32 km/h. Engine RPM is 4522.05. Gear position is 1. Remaining fuel is 32.37 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 287.43 km/h. Engine RPM is 7410.36. Gear position is 7. Remaining fuel is 69.33 kg. DRS status is 0.
+The current race leader is mclaren/norris on lap 3.
+The fastest driver is astonmartin/stroll with a speed of 288.09 km/h.
+
+Snapshot taken at 2026-02-25 12:10:18.
+
+Verstappen from Redbull is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 57.15 km/h. Engine RPM is 4815.38. Gear position is 1. Remaining fuel is 30.87 kg. DRS status is 0.
+Perez from Redbull is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 35.76 km/h. Engine RPM is 4014.22. Gear position is 1. Remaining fuel is 36.15 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 98.88 km/h. Engine RPM is 5901.36. Gear position is 2. Remaining fuel is 67.85 kg. DRS status is 0.
+Russell from Mercedes is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 194.17 km/h. Engine RPM is 7715.68. Gear position is 4. Remaining fuel is 37.14 kg. DRS status is 0.
+Norris from Mclaren is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 238.72 km/h. Engine RPM is 7272.99. Gear position is 6. Remaining fuel is 33.43 kg. DRS status is 0.
+Piastri from Mclaren is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 148.0 km/h. Engine RPM is 6988.65. Gear position is 3. Remaining fuel is 70.41 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 41.03 km/h. Engine RPM is 4211.74. Gear position is 1. Remaining fuel is 31.9 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 239.09 km/h. Engine RPM is 8151.11. Gear position is 5. Remaining fuel is 68.95 kg. DRS status is 0.
+The current race leader is mercedes/russell on lap 3.
+The fastest driver is astonmartin/stroll with a speed of 248.29 km/h.
+
+Snapshot taken at 2026-02-25 12:10:33.
+
+Verstappen from Redbull is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 117.02 km/h. Engine RPM is 6002.04. Gear position is 3. Remaining fuel is 30.43 kg. DRS status is 0.
+Perez from Redbull is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 61.11 km/h. Engine RPM is 4592.3. Gear position is 2. Remaining fuel is 35.65 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 83.81 km/h. Engine RPM is 5378.88. Gear position is 2. Remaining fuel is 67.39 kg. DRS status is 0.
+Russell from Mercedes is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 142.3 km/h. Engine RPM is 6807.15. Gear position is 3. Remaining fuel is 36.67 kg. DRS status is 0.
+Norris from Mclaren is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 239.15 km/h. Engine RPM is 8152.66. Gear position is 5. Remaining fuel is 33.07 kg. DRS status is 0.
+Piastri from Mclaren is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 252.32 km/h. Engine RPM is 7591.91. Gear position is 6. Remaining fuel is 69.97 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 83.47 km/h. Engine RPM is 5800.82. Gear position is 1. Remaining fuel is 31.47 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 249.98 km/h. Engine RPM is 7536.98. Gear position is 6. Remaining fuel is 68.42 kg. DRS status is 0.
+The current race leader is mercedes/russell on lap 3.
+The fastest driver is mclaren/norris with a speed of 267.67 km/h.
+
+Snapshot taken at 2026-02-25 12:10:48.
+
+Verstappen from Redbull is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 118.92 km/h. Engine RPM is 6062.61. Gear position is 3. Remaining fuel is 29.98 kg. DRS status is 0.
+Perez from Redbull is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 154.8 km/h. Engine RPM is 6572.07. Gear position is 4. Remaining fuel is 35.18 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 62.5 km/h. Engine RPM is 5015.67. Gear position is 1. Remaining fuel is 66.9 kg. DRS status is 0.
+Russell from Mercedes is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 68.14 km/h. Engine RPM is 4836.1. Gear position is 2. Remaining fuel is 36.23 kg. DRS status is 0.
+Norris from Mclaren is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 171.3 km/h. Engine RPM is 7051.31. Gear position is 4. Remaining fuel is 32.58 kg. DRS status is 0.
+Piastri from Mclaren is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 219.99 km/h. Engine RPM is 7565.42. Gear position is 5. Remaining fuel is 69.55 kg. DRS status is 1.
+Alonso from Astonmartin is racing at Spa-Francorchamps. He is currently on lap 3. His speed is 45.5 km/h. Engine RPM is 4378.92. Gear position is 1. Remaining fuel is 31.02 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Spa-Francorchamps. He is currently on lap 2. His speed is 324.39 km/h. Engine RPM is 7065.33. Gear position is 8. Remaining fuel is 67.92 kg. DRS status is 0.
+The current race leader is mercedes/russell on lap 3.
+The fastest driver is astonmartin/stroll with a speed of 313.62 km/h.
+
+Snapshot taken at 2026-02-25 12:11:03.
+
+Verstappen from Redbull is racing at Bahrain. He is currently on lap 2. His speed is 157.45 km/h. Engine RPM is 6648.92. Gear position is 4. Remaining fuel is 29.51 kg. DRS status is 0.
+Perez from Redbull is racing at Bahrain. He is currently on lap 3. His speed is 121.93 km/h. Engine RPM is 6158.55. Gear position is 3. Remaining fuel is 34.65 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Bahrain. He is currently on lap 1. His speed is 79.55 km/h. Engine RPM is 5231.52. Gear position is 2. Remaining fuel is 66.41 kg. DRS status is 0.
+Russell from Mercedes is racing at Bahrain. He is currently on lap 2. His speed is 92.79 km/h. Engine RPM is 5690.07. Gear position is 2. Remaining fuel is 35.79 kg. DRS status is 0.
+Norris from Mclaren is racing at Bahrain. He is currently on lap 3. His speed is 229.3 km/h. Engine RPM is 7894.0. Gear position is 5. Remaining fuel is 32.15 kg. DRS status is 0.
+Piastri from Mclaren is racing at Bahrain. He is currently on lap 2. His speed is 215.11 km/h. Engine RPM is 7521.69. Gear position is 5. Remaining fuel is 69.18 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Bahrain. He is currently on lap 4. His speed is 119.06 km/h. Engine RPM is 5533.71. Gear position is 4. Remaining fuel is 30.6 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Bahrain. He is currently on lap 2. His speed is 327.61 km/h. Engine RPM is 7122.8. Gear position is 8. Remaining fuel is 67.48 kg. DRS status is 0.
+The current race leader is mercedes/russell on lap 3.
+The fastest driver is astonmartin/stroll with a speed of 332.16 km/h.
+
+Snapshot taken at 2026-02-25 12:11:18.
+
+Verstappen from Redbull is racing at Bahrain. He is currently on lap 3. His speed is 230.63 km/h. Engine RPM is 7083.36. Gear position is 6. Remaining fuel is 29.11 kg. DRS status is 0.
+Perez from Redbull is racing at Bahrain. He is currently on lap 3. His speed is 157.06 km/h. Engine RPM is 6637.56. Gear position is 4. Remaining fuel is 34.16 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Bahrain. He is currently on lap 1. His speed is 43.92 km/h. Engine RPM is 4319.97. Gear position is 1. Remaining fuel is 65.95 kg. DRS status is 0.
+Russell from Mercedes is racing at Bahrain. He is currently on lap 3. His speed is 87.88 km/h. Engine RPM is 5073.83. Gear position is 3. Remaining fuel is 35.35 kg. DRS status is 0.
+Norris from Mclaren is racing at Bahrain. He is currently on lap 3. His speed is 241.31 km/h. Engine RPM is 8209.44. Gear position is 5. Remaining fuel is 31.67 kg. DRS status is 0.
+Piastri from Mclaren is racing at Bahrain. He is currently on lap 3. His speed is 203.27 km/h. Engine RPM is 7210.84. Gear position is 5. Remaining fuel is 68.69 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Bahrain. He is currently on lap 4. His speed is 221.55 km/h. Engine RPM is 7690.76. Gear position is 5. Remaining fuel is 30.11 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Bahrain. He is currently on lap 2. His speed is 282.74 km/h. Engine RPM is 8305.18. Gear position is 6. Remaining fuel is 67.05 kg. DRS status is 0.
+The current race leader is astonmartin/alonso on lap 4.
+The fastest driver is astonmartin/stroll with a speed of 272.43 km/h.
+
+Snapshot taken at 2026-02-25 12:11:33.
+
+Verstappen from Redbull is racing at Bahrain. He is currently on lap 3. His speed is 324.71 km/h. Engine RPM is 7071.03. Gear position is 8. Remaining fuel is 28.69 kg. DRS status is 0.
+Perez from Redbull is racing at Bahrain. He is currently on lap 3. His speed is 188.44 km/h. Engine RPM is 6821.57. Gear position is 5. Remaining fuel is 33.76 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Bahrain. He is currently on lap 1. His speed is 109.92 km/h. Engine RPM is 5776.03. Gear position is 3. Remaining fuel is 65.44 kg. DRS status is 0.
+Russell from Mercedes is racing at Bahrain. He is currently on lap 3. His speed is 82.83 km/h. Engine RPM is 5345.11. Gear position is 2. Remaining fuel is 34.83 kg. DRS status is 0.
+Norris from Mclaren is racing at Bahrain. He is currently on lap 3. His speed is 204.15 km/h. Engine RPM is 7791.37. Gear position is 4. Remaining fuel is 31.18 kg. DRS status is 1.
+Piastri from Mclaren is racing at Bahrain. He is currently on lap 3. His speed is 203.17 km/h. Engine RPM is 7977.16. Gear position is 4. Remaining fuel is 68.21 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Bahrain. He is currently on lap 4. His speed is 227.3 km/h. Engine RPM is 7841.62. Gear position is 5. Remaining fuel is 29.64 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Bahrain. He is currently on lap 3. His speed is 282.52 km/h. Engine RPM is 7197.69. Gear position is 7. Remaining fuel is 66.59 kg. DRS status is 1.
+The current race leader is astonmartin/alonso on lap 4.
+The fastest driver is redbull/verstappen with a speed of 319.75 km/h.
+
+Snapshot taken at 2026-02-25 12:11:48.
+
+Verstappen from Redbull is racing at Bahrain. He is currently on lap 3. His speed is 322.36 km/h. Engine RPM is 7029.11. Gear position is 8. Remaining fuel is 28.3 kg. DRS status is 0.
+Perez from Redbull is racing at Bahrain. He is currently on lap 3. His speed is 146.73 km/h. Engine RPM is 6948.3. Gear position is 3. Remaining fuel is 33.38 kg. DRS status is 0.
+Hamilton from Mercedes is racing at Bahrain. He is currently on lap 1. His speed is 168.95 km/h. Engine RPM is 6309.83. Gear position is 5. Remaining fuel is 65.1 kg. DRS status is 0.
+Russell from Mercedes is racing at Bahrain. He is currently on lap 3. His speed is 105.48 km/h. Engine RPM is 5634.49. Gear position is 3. Remaining fuel is 34.42 kg. DRS status is 0.
+Norris from Mclaren is racing at Bahrain. He is currently on lap 3. His speed is 148.1 km/h. Engine RPM is 6377.44. Gear position is 4. Remaining fuel is 30.78 kg. DRS status is 0.
+Piastri from Mclaren is racing at Bahrain. He is currently on lap 3. His speed is 177.58 km/h. Engine RPM is 7233.84. Gear position is 4. Remaining fuel is 67.82 kg. DRS status is 0.
+Alonso from Astonmartin is racing at Bahrain. He is currently on lap 5. His speed is 281.02 km/h. Engine RPM is 8264.81. Gear position is 6. Remaining fuel is 29.29 kg. DRS status is 0.
+Stroll from Astonmartin is racing at Bahrain. He is currently on lap 3. His speed is 236.15 km/h. Engine RPM is 8073.85. Gear position is 5. Remaining fuel is 66.21 kg. DRS status is 0.
+The current race leader is astonmartin/alonso on lap 5.
+The fastest driver is redbull/verstappen with a speed of 325.6 km/h.
