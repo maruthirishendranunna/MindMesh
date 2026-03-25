@@ -1,0 +1,10 @@
+Fastest driver changed. At 2026-02-25 13:13:36, fastest driver is mercedes/hamilton with speed 243.92 km/h.
+Race leader changed. At 2026-02-25 13:13:51, leader is astonmartin/alonso on lap 10.
+Fastest driver changed. At 2026-02-25 13:13:51, fastest driver is mercedes/hamilton with speed 328.67 km/h.
+Accident detected. Driver mclaren/norris had accident at circuit Spa-Francorchamps lap 9 sector 2.
+Lap changed. Driver astonmartin/alonso moved from lap 9 to lap 10 at circuit Spa-Francorchamps.
+Lap changed. Driver astonmartin/stroll moved from lap 8 to lap 9 at circuit Spa-Francorchamps.
+Fastest driver changed. At 2026-02-25 13:14:06, fastest driver is mercedes/hamilton with speed 287.85 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 8 to lap 9 at circuit Spa-Francorchamps.
+Lap changed. Driver redbull/perez moved from lap 8 to lap 9 at circuit Spa-Francorchamps.
+Accident detected. Driver mercedes/russell had accident at circuit Spa-Francorchamps lap 8 sector 3.

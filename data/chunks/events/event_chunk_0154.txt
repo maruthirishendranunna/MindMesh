@@ -1,0 +1,10 @@
+Lap changed. Driver mercedes/russell moved from lap 16 to lap 15 at circuit Silverstone.
+Lap changed. Driver mclaren/norris moved from lap 19 to lap 16 at circuit Silverstone.
+Lap changed. Driver mclaren/piastri moved from lap 20 to lap 18 at circuit Silverstone.
+Lap changed. Driver astonmartin/alonso moved from lap 18 to lap 16 at circuit Silverstone.
+Fastest driver changed. At 2026-02-25 14:08:08, fastest driver is mclaren/piastri with speed 303.2 km/h.
+Fastest driver changed. At 2026-02-25 14:08:23, fastest driver is mclaren/piastri with speed 286.45 km/h.
+Race leader changed. At 2026-02-25 14:08:38, leader is mclaren/piastri on lap 19.
+Fastest driver changed. At 2026-02-25 14:08:38, fastest driver is mclaren/piastri with speed 303.09 km/h.
+Lap changed. Driver mclaren/piastri moved from lap 18 to lap 19 at circuit Silverstone.
+Fastest driver changed. At 2026-02-25 14:08:53, fastest driver is mclaren/piastri with speed 325.44 km/h.

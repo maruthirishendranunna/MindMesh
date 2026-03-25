@@ -1,0 +1,57 @@
+Snapshot time: 2026-02-25 20:09:29.
+Driver verstappen from team redbull is racing at circuit Silverstone. Current lap is 46. Speed is 47.05 km/h. RPM is 4437.02. Gear is 1. Fuel level is 0. DRS is 0.
+Driver perez from team redbull is racing at circuit Silverstone. Current lap is 47. Speed is 296.27 km/h. RPM is 7449.09. Gear is 7. Fuel level is 0. DRS is 1.
+Driver hamilton from team mercedes is racing at circuit Silverstone. Current lap is 52. Speed is 328.06 km/h. RPM is 7130.8. Gear is 8. Fuel level is 0. DRS is 0.
+Driver russell from team mercedes is racing at circuit Silverstone. Current lap is 47. Speed is 37.39 km/h. RPM is 4075.11. Gear is 1. Fuel level is 0. DRS is 0.
+Driver norris from team mclaren is racing at circuit Silverstone. Current lap is 47. Speed is 254.77 km/h. RPM is 7537.19. Gear is 6. Fuel level is 0. DRS is 1.
+Driver piastri from team mclaren is racing at circuit Silverstone. Current lap is 50. Speed is 55.44 km/h. RPM is 4396.09. Gear is 2. Fuel level is 0. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Silverstone. Current lap is 50. Speed is 193.39 km/h. RPM is 7693.08. Gear is 4. Fuel level is 0. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Silverstone. Current lap is 52. Speed is 125.97 km/h. RPM is 6287.18. Gear is 3. Fuel level is 0. DRS is 0.
+Race leader is mercedes/hamilton on lap 52.
+Fastest driver is mercedes/hamilton with speed 328.06 km/h.
+
+Snapshot time: 2026-02-25 20:09:45.
+Driver verstappen from team redbull is racing at circuit Silverstone. Current lap is 46. Speed is 47.05 km/h. RPM is 4437.02. Gear is 1. Fuel level is 0. DRS is 0.
+Driver perez from team redbull is racing at circuit Silverstone. Current lap is 47. Speed is 296.27 km/h. RPM is 7449.09. Gear is 7. Fuel level is 0. DRS is 1.
+Driver hamilton from team mercedes is racing at circuit Silverstone. Current lap is 52. Speed is 328.06 km/h. RPM is 7130.8. Gear is 8. Fuel level is 0. DRS is 0.
+Driver russell from team mercedes is racing at circuit Silverstone. Current lap is 47. Speed is 37.39 km/h. RPM is 4075.11. Gear is 1. Fuel level is 0. DRS is 0.
+Driver norris from team mclaren is racing at circuit Silverstone. Current lap is 47. Speed is 254.77 km/h. RPM is 7537.19. Gear is 6. Fuel level is 0. DRS is 1.
+Driver piastri from team mclaren is racing at circuit Silverstone. Current lap is 50. Speed is 55.44 km/h. RPM is 4396.09. Gear is 2. Fuel level is 0. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Silverstone. Current lap is 50. Speed is 193.39 km/h. RPM is 7693.08. Gear is 4. Fuel level is 0. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Silverstone. Current lap is 52. Speed is 125.97 km/h. RPM is 6287.18. Gear is 3. Fuel level is 0. DRS is 0.
+Race leader is mercedes/hamilton on lap 52.
+Fastest driver is mercedes/hamilton with speed 328.06 km/h.
+
+Snapshot time: 2026-02-25 20:10:00.
+Driver verstappen from team redbull is racing at circuit Silverstone. Current lap is 46. Speed is 47.05 km/h. RPM is 4437.02. Gear is 1. Fuel level is 0. DRS is 0.
+Driver perez from team redbull is racing at circuit Silverstone. Current lap is 47. Speed is 296.27 km/h. RPM is 7449.09. Gear is 7. Fuel level is 0. DRS is 1.
+Driver hamilton from team mercedes is racing at circuit Silverstone. Current lap is 52. Speed is 328.06 km/h. RPM is 7130.8. Gear is 8. Fuel level is 0. DRS is 0.
+Driver russell from team mercedes is racing at circuit Silverstone. Current lap is 47. Speed is 37.39 km/h. RPM is 4075.11. Gear is 1. Fuel level is 0. DRS is 0.
+Driver norris from team mclaren is racing at circuit Silverstone. Current lap is 47. Speed is 254.77 km/h. RPM is 7537.19. Gear is 6. Fuel level is 0. DRS is 1.
+Driver piastri from team mclaren is racing at circuit Silverstone. Current lap is 50. Speed is 55.44 km/h. RPM is 4396.09. Gear is 2. Fuel level is 0. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Silverstone. Current lap is 50. Speed is 193.39 km/h. RPM is 7693.08. Gear is 4. Fuel level is 0. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Silverstone. Current lap is 52. Speed is 125.97 km/h. RPM is 6287.18. Gear is 3. Fuel level is 0. DRS is 0.
+Race leader is mercedes/hamilton on lap 52.
+Fastest driver is mercedes/hamilton with speed 328.06 km/h.
+
+Snapshot time: 2026-03-04 17:26:57.
+Driver verstappen from team redbull is racing at circuit Bahrain. Current lap is 1. Speed is 215.29 km/h. RPM is 7526.45. Gear is 5. Fuel level is 53.0. DRS is 0.
+Driver perez from team redbull is racing at circuit Bahrain. Current lap is 1. Speed is 259.95 km/h. RPM is 7770.91. Gear is 6. Fuel level is 93.34. DRS is 0.
+Driver hamilton from team mercedes is racing at circuit Bahrain. Current lap is 1. Speed is 283.92 km/h. RPM is 7337.87. Gear is 7. Fuel level is 63.5. DRS is 0.
+Driver russell from team mercedes is racing at circuit Bahrain. Current lap is 1. Speed is 61.2 km/h. RPM is 4595.75. Gear is 2. Fuel level is 53.11. DRS is 0.
+Driver norris from team mclaren is racing at circuit Bahrain. Current lap is 1. Speed is 253.7 km/h. RPM is 7624.21. Gear is 6. Fuel level is 52.19. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Bahrain. Current lap is 1. Speed is 34.66 km/h. RPM is 3973.19. Gear is 1. Fuel level is 70.34. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Bahrain. Current lap is 2. Speed is 311.19 km/h. RPM is 7900.99. Gear is 7. Fuel level is 90.57. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Bahrain. Current lap is 1. Speed is 68.45 km/h. RPM is 4846.69. Gear is 2. Fuel level is 68.9. DRS is 0.
+
+Snapshot time: 2026-03-04 17:27:12.
+Driver verstappen from team redbull is racing at circuit Bahrain. Current lap is 1. Speed is 242.35 km/h. RPM is 7358.05. Gear is 6. Fuel level is 52.54. DRS is 0.
+Driver perez from team redbull is racing at circuit Bahrain. Current lap is 1. Speed is 166.73 km/h. RPM is 6918.39. Gear is 4. Fuel level is 92.91. DRS is 0.
+Driver hamilton from team mercedes is racing at circuit Bahrain. Current lap is 2. Speed is 299.39 km/h. RPM is 7657.45. Gear is 7. Fuel level is 63.01. DRS is 0.
+Driver russell from team mercedes is racing at circuit Bahrain. Current lap is 1. Speed is 95.54 km/h. RPM is 5785.55. Gear is 2. Fuel level is 52.7. DRS is 0.
+Driver norris from team mclaren is racing at circuit Bahrain. Current lap is 2. Speed is 216.79 km/h. RPM is 8372.88. Gear is 4. Fuel level is 51.81. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Bahrain. Current lap is 1. Speed is 64.0 km/h. RPM is 4692.69. Gear is 2. Fuel level is 69.85. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Bahrain. Current lap is 2. Speed is 231.76 km/h. RPM is 7958.81. Gear is 5. Fuel level is 90.12. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Bahrain. Current lap is 1. Speed is 44.22 km/h. RPM is 4330.93. Gear is 1. Fuel level is 68.41. DRS is 0.
+Race leader is astonmartin/alonso on lap 2.
+Fastest driver is mercedes/hamilton with speed 280.35 km/h.

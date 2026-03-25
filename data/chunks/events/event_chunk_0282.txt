@@ -1,0 +1,10 @@
+Fastest driver changed. At 2026-02-25 15:50:27, fastest driver is astonmartin/stroll with speed 325.28 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 27 to lap 28 at circuit Monza.
+Lap changed. Driver mercedes/russell moved from lap 28 to lap 29 at circuit Monza.
+Accident detected. Driver mclaren/norris had accident at circuit Monza lap 32 sector 2.
+Fastest driver changed. At 2026-02-25 15:50:42, fastest driver is astonmartin/stroll with speed 335.09 km/h.
+Lap changed. Driver astonmartin/alonso moved from lap 28 to lap 29 at circuit Monza.
+Fastest driver changed. At 2026-02-25 15:50:57, fastest driver is astonmartin/stroll with speed 318.14 km/h.
+Accident detected. Driver mercedes/hamilton had accident at circuit Monza lap 29 sector 3.
+Lap changed. Driver astonmartin/stroll moved from lap 28 to lap 29 at circuit Monza.
+Fastest driver changed. At 2026-02-25 15:51:12, fastest driver is astonmartin/alonso with speed 338.59 km/h.

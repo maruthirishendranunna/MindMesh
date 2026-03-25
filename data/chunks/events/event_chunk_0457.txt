@@ -1,0 +1,10 @@
+Accident detected. Driver redbull/perez had accident at circuit Spa-Francorchamps lap 36 sector 1.
+Lap changed. Driver mercedes/hamilton moved from lap 49 to lap 35 at circuit Spa-Francorchamps.
+Lap changed. Driver mercedes/russell moved from lap 44 to lap 34 at circuit Spa-Francorchamps.
+Lap changed. Driver mclaren/norris moved from lap 42 to lap 34 at circuit Spa-Francorchamps.
+Lap changed. Driver mclaren/piastri moved from lap 47 to lap 39 at circuit Spa-Francorchamps.
+Lap changed. Driver astonmartin/alonso moved from lap 46 to lap 38 at circuit Spa-Francorchamps.
+Lap changed. Driver astonmartin/stroll moved from lap 49 to lap 41 at circuit Spa-Francorchamps.
+Fastest driver changed. At 2026-02-25 18:11:17, fastest driver is astonmartin/alonso with speed 276.59 km/h.
+Fastest driver changed. At 2026-02-25 18:11:32, fastest driver is astonmartin/alonso with speed 245.65 km/h.
+Lap changed. Driver mercedes/hamilton moved from lap 35 to lap 36 at circuit Spa-Francorchamps.

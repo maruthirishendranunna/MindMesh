@@ -1,0 +1,10 @@
+Lap changed. Driver astonmartin/alonso moved from lap 26 to lap 24 at circuit Silverstone.
+Lap changed. Driver astonmartin/stroll moved from lap 26 to lap 28 at circuit Silverstone.
+Fastest driver changed. At 2026-02-25 15:20:26, fastest driver is redbull/perez with speed 303.3 km/h.
+Fastest driver changed. At 2026-02-25 15:20:41, fastest driver is redbull/perez with speed 318.68 km/h.
+Fastest driver changed. At 2026-02-25 15:20:56, fastest driver is redbull/verstappen with speed 328.33 km/h.
+Fastest driver changed. At 2026-02-25 15:21:11, fastest driver is astonmartin/alonso with speed 301.81 km/h.
+Lap changed. Driver redbull/perez moved from lap 24 to lap 25 at circuit Silverstone.
+Lap changed. Driver astonmartin/alonso moved from lap 24 to lap 25 at circuit Silverstone.
+Race leader changed. At 2026-02-25 15:21:26, leader is mercedes/hamilton on lap 28.
+Fastest driver changed. At 2026-02-25 15:21:26, fastest driver is redbull/verstappen with speed 321.17 km/h.

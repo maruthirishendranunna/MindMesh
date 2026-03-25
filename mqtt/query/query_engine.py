@@ -1,97 +1,94 @@
-import time
-import paho.mqtt.client as mqtt
-from datetime import datetime
+import os
 
-BROKER = "localhost"
-PORT = 1883
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_chroma import Chroma
 
-# Cache: latest value per topic + timestamp
-topic_cache = {}
+from mqtt.config import DATASET_ADAPTER, EMBED_MODEL
 
-def on_connect(client, userdata, flags, rc):
-    print("Query Engine connected to MQTT")
-    # Pull both raw telemetry + analytics topics
-    client.subscribe("f1/#")
-    client.subscribe("race/#")
+# =========================================
+# CONFIG
+# =========================================
 
-def on_message(client, userdata, msg):
-    topic = msg.topic
-    value = msg.payload.decode()
+COLLECTION_NAME = f"{DATASET_ADAPTER}_telemetry_chunks"
+DB_PATH = os.path.join("data", f"chroma_db_{DATASET_ADAPTER}")
+TOP_K = 3
+PREVIEW_CHARS = 800
 
-    topic_cache[topic] = {
-        "value": value,
-        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    }
 
-# ---------- Core lookup helpers ----------
-def get_latest(topic: str, default=None):
-    """Return latest cached record for a topic."""
-    return topic_cache.get(topic, default)
+# =========================================
+# LOAD EMBEDDINGS
+# =========================================
 
-def get_latest_value(topic: str, default=None):
-    """Return latest value only."""
-    rec = topic_cache.get(topic)
-    return rec["value"] if rec else default
+def load_embeddings():
+    return HuggingFaceEmbeddings(
+        model_name=EMBED_MODEL,
+        model_kwargs={"device": "cpu"}
+    )
 
-# ---------- Convenience APIs (what LLM/RAG will call later) ----------
-def driver_topic(team: str, driver: str, metric: str):
-    return f"f1/{team}/{driver}/{metric}"
 
-def get_driver_metric(team: str, driver: str, metric: str):
-    topic = driver_topic(team, driver, metric)
-    return {
-        "topic": topic,
-        "value": get_latest_value(topic),
-        "timestamp": get_latest(topic, {}).get("timestamp")
-    }
+# =========================================
+# LOAD VECTOR STORE
+# =========================================
 
-def get_fastest_driver():
-    """Uses Pranith's telemetry_processor published topics."""
-    return {
-        "topic": "race/fastest_driver",
-        "value": get_latest_value("race/fastest_driver"),
-        "timestamp": get_latest("race/fastest_driver", {}).get("timestamp")
-    }
+def load_store():
+    embeddings = load_embeddings()
 
-def get_race_leader():
-    return {
-        "leader_topic": "race/leader_driver",
-        "leader": get_latest_value("race/leader_driver"),
-        "lap_topic": "race/leader_lap",
-        "lap": get_latest_value("race/leader_lap")
-    }
+    store = Chroma(
+        collection_name=COLLECTION_NAME,
+        embedding_function=embeddings,
+        persist_directory=DB_PATH
+    )
 
-def get_team_avg_speed(team: str):
-    topic = f"race/team_avg_speed/{team}"
-    return {
-        "topic": topic,
-        "value": get_latest_value(topic),
-        "timestamp": get_latest(topic, {}).get("timestamp")
-    }
+    return store
 
-# ---------- Run loop ----------
-def start_cache_listener():
-    client = mqtt.Client()
-    client.reconnect_delay_set(min_delay=1, max_delay=5)
-    client.on_connect = on_connect
-    client.on_message = on_message
 
-    client.connect(BROKER, PORT, 60)
-    client.loop_start()
-    return client
+# =========================================
+# RUN QUERY
+# =========================================
+
+def run_query(question: str):
+    store = load_store()
+
+    retriever = store.as_retriever(search_kwargs={"k": TOP_K})
+    docs = retriever.invoke(question)
+
+    print("\n" + "=" * 80)
+    print(f"QUERY: {question}")
+    print("=" * 80)
+
+    if not docs:
+        print("No matching chunks found.")
+        return
+
+    for i, doc in enumerate(docs, 1):
+        print(f"\n📄 MATCH {i}")
+        print("-" * 80)
+
+        print("METADATA:")
+        print(doc.metadata)
+
+        print("\nCONTENT PREVIEW:")
+        print(doc.page_content[:PREVIEW_CHARS])
+
+        if len(doc.page_content) > PREVIEW_CHARS:
+            print("\n... [truncated]")
+
+        print("-" * 80)
+
+
+# =========================================
+# MAIN
+# =========================================
 
 if __name__ == "__main__":
-    # Demo: start listener + print a few lookups repeatedly
-    start_cache_listener()
-
-    # Wait a moment for cache to populate
-    time.sleep(2)
+    print(f"Dataset adapter: {DATASET_ADAPTER}")
+    print(f"Collection: {COLLECTION_NAME}")
+    print(f"DB path: {DB_PATH}")
 
     while True:
-        print("\n--- Query Engine Demo ---")
-        print("Hamilton speed:", get_driver_metric("mercedes", "hamilton", "speed"))
-        print("Verstappen lap:", get_driver_metric("redbull", "verstappen", "lap"))
-        print("Fastest driver:", get_fastest_driver())
-        print("Race leader:", get_race_leader())
-        print("RedBull avg speed:", get_team_avg_speed("redbull"))
-        time.sleep(5)
+        q = input("\nEnter query (press Enter to exit): ").strip()
+
+        if not q:
+            break
+
+        run_query(q)

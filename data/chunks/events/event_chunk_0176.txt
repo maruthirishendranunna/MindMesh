@@ -1,0 +1,10 @@
+Fastest driver changed. At 2026-02-25 14:25:39, fastest driver is redbull/perez with speed 320.74 km/h.
+Race leader changed. At 2026-02-25 14:25:54, leader is mclaren/piastri on lap 17.
+Fastest driver changed. At 2026-02-25 14:25:54, fastest driver is astonmartin/stroll with speed 324.29 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 19 to lap 16 at circuit Spa-Francorchamps.
+Lap changed. Driver redbull/perez moved from lap 18 to lap 14 at circuit Spa-Francorchamps.
+Lap changed. Driver mercedes/hamilton moved from lap 20 to lap 13 at circuit Spa-Francorchamps.
+Lap changed. Driver mercedes/russell moved from lap 18 to lap 15 at circuit Spa-Francorchamps.
+Lap changed. Driver mclaren/norris moved from lap 18 to lap 14 at circuit Spa-Francorchamps.
+Lap changed. Driver mclaren/piastri moved from lap 22 to lap 17 at circuit Spa-Francorchamps.
+Lap changed. Driver astonmartin/alonso moved from lap 18 to lap 15 at circuit Spa-Francorchamps.

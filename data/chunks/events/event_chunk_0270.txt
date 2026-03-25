@@ -1,0 +1,10 @@
+Lap changed. Driver mercedes/russell moved from lap 24 to lap 25 at circuit Bahrain.
+Lap changed. Driver mclaren/norris moved from lap 28 to lap 29 at circuit Bahrain.
+Race leader changed. At 2026-02-25 15:42:11, leader is mclaren/norris on lap 31.
+Fastest driver changed. At 2026-02-25 15:42:11, fastest driver is mercedes/russell with speed 321.4 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 33 to lap 26 at circuit Monza.
+Lap changed. Driver redbull/perez moved from lap 31 to lap 30 at circuit Monza.
+Lap changed. Driver mercedes/hamilton moved from lap 29 to lap 28 at circuit Monza.
+Lap changed. Driver mercedes/russell moved from lap 25 to lap 27 at circuit Monza.
+Lap changed. Driver mclaren/norris moved from lap 29 to lap 31 at circuit Monza.
+Lap changed. Driver mclaren/piastri moved from lap 31 to lap 29 at circuit Monza.

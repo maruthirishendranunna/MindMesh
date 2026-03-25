@@ -1,0 +1,10 @@
+Lap changed. Driver redbull/perez moved from lap 9 to lap 10 at circuit Spa-Francorchamps.
+Fastest driver changed. At 2026-02-25 13:22:36, fastest driver is mclaren/piastri with speed 264.31 km/h.
+Lap changed. Driver mclaren/norris moved from lap 9 to lap 10 at circuit Spa-Francorchamps.
+Fastest driver changed. At 2026-02-25 13:22:51, fastest driver is mclaren/piastri with speed 319.85 km/h.
+Lap changed. Driver mercedes/hamilton moved from lap 8 to lap 9 at circuit Spa-Francorchamps.
+Fastest driver changed. At 2026-02-25 13:23:06, fastest driver is mclaren/piastri with speed 330.4 km/h.
+Lap changed. Driver astonmartin/stroll moved from lap 9 to lap 10 at circuit Spa-Francorchamps.
+Fastest driver changed. At 2026-02-25 13:23:21, fastest driver is mclaren/piastri with speed 327.43 km/h.
+Accident detected. Driver mercedes/russell had accident at circuit Spa-Francorchamps lap 9 sector 3.
+Race leader changed. At 2026-02-25 13:23:36, leader is redbull/verstappen on lap 13.

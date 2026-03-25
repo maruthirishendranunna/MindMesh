@@ -1,0 +1,10 @@
+Fastest driver changed. At 2026-02-25 17:34:46, fastest driver is mercedes/hamilton with speed 330.51 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 48 to lap 39 at circuit Monza.
+Lap changed. Driver mercedes/hamilton moved from lap 41 to lap 43 at circuit Monza.
+Lap changed. Driver mercedes/russell moved from lap 38 to lap 42 at circuit Monza.
+Lap changed. Driver mclaren/norris moved from lap 44 to lap 43 at circuit Monza.
+Lap changed. Driver mclaren/piastri moved from lap 44 to lap 40 at circuit Monza.
+Lap changed. Driver astonmartin/alonso moved from lap 40 to lap 42 at circuit Monza.
+Lap changed. Driver astonmartin/stroll moved from lap 46 to lap 40 at circuit Monza.
+Race leader changed. At 2026-02-25 17:35:01, leader is redbull/perez on lap 45.
+Fastest driver changed. At 2026-02-25 17:35:01, fastest driver is mercedes/hamilton with speed 310.91 km/h.

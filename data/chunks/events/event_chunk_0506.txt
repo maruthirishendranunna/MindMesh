@@ -1,0 +1,10 @@
+Fastest driver changed. At 2026-03-04 17:27:12, fastest driver is mercedes/hamilton with speed 280.35 km/h.
+Lap changed. Driver mercedes/hamilton moved from lap 1 to lap 2 at circuit Bahrain.
+Lap changed. Driver mclaren/norris moved from lap 1 to lap 2 at circuit Bahrain.
+Race leader changed. At 2026-03-04 17:27:27, leader is redbull/verstappen on lap 2.
+Fastest driver changed. At 2026-03-04 17:27:27, fastest driver is mercedes/hamilton with speed 326.57 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 1 to lap 2 at circuit Bahrain.
+Race leader changed. At 2026-03-04 17:27:42, leader is mercedes/hamilton on lap 2.
+Fastest driver changed. At 2026-03-04 17:27:42, fastest driver is mercedes/hamilton with speed 326.34 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 2 to lap 1 at circuit Monza.
+Race leader changed. At 2026-03-04 17:27:57, leader is redbull/verstappen on lap 2.

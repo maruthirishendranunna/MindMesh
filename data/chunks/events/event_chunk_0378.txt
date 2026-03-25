@@ -1,0 +1,10 @@
+Lap changed. Driver mclaren/piastri moved from lap 41 to lap 33 at circuit Spa-Francorchamps.
+Lap changed. Driver astonmartin/alonso moved from lap 40 to lap 32 at circuit Spa-Francorchamps.
+Lap changed. Driver astonmartin/stroll moved from lap 39 to lap 34 at circuit Spa-Francorchamps.
+Fastest driver changed. At 2026-02-25 17:07:00, fastest driver is mercedes/hamilton with speed 192.89 km/h.
+Accident detected. Driver astonmartin/stroll had accident at circuit Spa-Francorchamps lap 34 sector 1.
+Fastest driver changed. At 2026-02-25 17:07:15, fastest driver is mercedes/hamilton with speed 237.32 km/h.
+Lap changed. Driver mclaren/norris moved from lap 28 to lap 29 at circuit Spa-Francorchamps.
+Fastest driver changed. At 2026-02-25 17:07:30, fastest driver is mercedes/hamilton with speed 218.61 km/h.
+Fastest driver changed. At 2026-02-25 17:07:45, fastest driver is redbull/perez with speed 222.64 km/h.
+Lap changed. Driver mercedes/russell moved from lap 28 to lap 29 at circuit Spa-Francorchamps.

@@ -1,0 +1,10 @@
+Lap changed. Driver redbull/perez moved from lap 49 to lap 50 at circuit Monza.
+Lap changed. Driver mercedes/hamilton moved from lap 46 to lap 48 at circuit Monza.
+Lap changed. Driver mercedes/russell moved from lap 43 to lap 46 at circuit Monza.
+Lap changed. Driver mclaren/norris moved from lap 49 to lap 48 at circuit Monza.
+Lap changed. Driver mclaren/piastri moved from lap 51 to lap 44 at circuit Monza.
+Lap changed. Driver astonmartin/alonso moved from lap 46 to lap 48 at circuit Monza.
+Lap changed. Driver astonmartin/stroll moved from lap 50 to lap 44 at circuit Monza.
+Fastest driver changed. At 2026-02-25 18:15:17, fastest driver is mclaren/piastri with speed 296.24 km/h.
+Lap changed. Driver mclaren/piastri moved from lap 44 to lap 45 at circuit Monza.
+Accident detected. Driver mclaren/piastri had accident at circuit Monza lap 45 sector 1.

@@ -1,0 +1,10 @@
+Lap changed. Driver redbull/perez moved from lap 46 to lap 47 at circuit Silverstone.
+Lap changed. Driver mercedes/hamilton moved from lap 51 to lap 52 at circuit Silverstone.
+Race finished. Winner is mercedes/hamilton at circuit Silverstone after 52 race laps.
+Lap changed. Driver astonmartin/stroll moved from lap 51 to lap 52 at circuit Silverstone.
+Race finished. Winner is astonmartin/stroll at circuit Silverstone after 52 race laps.
+Fastest driver changed. At 2026-02-25 18:49:48, fastest driver is redbull/perez with speed 322.12 km/h.
+Fastest driver changed. At 2026-02-25 18:50:03, fastest driver is mercedes/hamilton with speed 324.72 km/h.
+Lap changed. Driver mclaren/norris moved from lap 46 to lap 47 at circuit Silverstone.
+Fastest driver changed. At 2026-02-25 19:08:32, fastest driver is mercedes/hamilton with speed 328.06 km/h.
+Race leader changed. At 2026-03-04 17:27:12, leader is astonmartin/alonso on lap 2.

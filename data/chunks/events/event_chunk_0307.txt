@@ -1,0 +1,10 @@
+Lap changed. Driver astonmartin/stroll moved from lap 32 to lap 33 at circuit Silverstone.
+Race leader changed. At 2026-02-25 16:09:42, leader is mclaren/piastri on lap 35.
+Fastest driver changed. At 2026-02-25 16:09:42, fastest driver is mercedes/hamilton with speed 299.56 km/h.
+Accident detected. Driver mercedes/russell had accident at circuit Silverstone lap 30 sector 3.
+Lap changed. Driver mclaren/piastri moved from lap 34 to lap 35 at circuit Silverstone.
+Fastest driver changed. At 2026-02-25 16:09:57, fastest driver is mercedes/hamilton with speed 282.17 km/h.
+Fastest driver changed. At 2026-02-25 16:10:12, fastest driver is mclaren/norris with speed 270.84 km/h.
+Accident detected. Driver astonmartin/alonso had accident at circuit Silverstone lap 32 sector 3.
+Race leader changed. At 2026-02-25 16:10:27, leader is redbull/verstappen on lap 28.
+Fastest driver changed. At 2026-02-25 16:10:27, fastest driver is mclaren/norris with speed 317.0 km/h.

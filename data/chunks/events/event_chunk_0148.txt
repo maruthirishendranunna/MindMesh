@@ -1,0 +1,10 @@
+Race leader changed. At 2026-02-25 14:03:08, leader is redbull/verstappen on lap 15.
+Fastest driver changed. At 2026-02-25 14:03:08, fastest driver is redbull/verstappen with speed 328.49 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 14 to lap 15 at circuit Spa-Francorchamps.
+Lap changed. Driver mclaren/piastri moved from lap 14 to lap 15 at circuit Spa-Francorchamps.
+Fastest driver changed. At 2026-02-25 14:03:23, fastest driver is mercedes/hamilton with speed 314.72 km/h.
+Lap changed. Driver astonmartin/alonso moved from lap 13 to lap 14 at circuit Spa-Francorchamps.
+Race leader changed. At 2026-02-25 14:03:38, leader is redbull/perez on lap 19.
+Fastest driver changed. At 2026-02-25 14:03:38, fastest driver is mercedes/hamilton with speed 324.61 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 15 to lap 18 at circuit Bahrain.
+Lap changed. Driver redbull/perez moved from lap 13 to lap 19 at circuit Bahrain.

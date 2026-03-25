@@ -1,0 +1,10 @@
+Lap changed. Driver redbull/verstappen moved from lap 4 to lap 5 at circuit Spa-Francorchamps.
+Lap changed. Driver astonmartin/alonso moved from lap 6 to lap 7 at circuit Spa-Francorchamps.
+Lap changed. Driver astonmartin/stroll moved from lap 5 to lap 6 at circuit Spa-Francorchamps.
+Race leader changed. At 2026-02-25 12:42:05, leader is astonmartin/alonso on lap 7.
+Fastest driver changed. At 2026-02-25 12:42:05, fastest driver is astonmartin/stroll with speed 277.93 km/h.
+Lap changed. Driver redbull/perez moved from lap 5 to lap 6 at circuit Spa-Francorchamps.
+Fastest driver changed. At 2026-02-25 12:42:20, fastest driver is astonmartin/stroll with speed 296.73 km/h.
+Accident detected. Driver mercedes/hamilton had accident at circuit Spa-Francorchamps lap 4 sector 3.
+Fastest driver changed. At 2026-02-25 12:42:35, fastest driver is redbull/verstappen with speed 266.47 km/h.
+Race leader changed. At 2026-02-25 12:42:50, leader is mclaren/norris on lap 7.

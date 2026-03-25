@@ -1,0 +1,10 @@
+Lap changed. Driver mclaren/norris moved from lap 22 to lap 23 at circuit Monza.
+Fastest driver changed. At 2026-02-25 14:30:24, fastest driver is astonmartin/alonso with speed 280.94 km/h.
+Accident detected. Driver mclaren/norris had accident at circuit Monza lap 23 sector 1.
+Fastest driver changed. At 2026-02-25 14:30:39, fastest driver is astonmartin/alonso with speed 258.17 km/h.
+Lap changed. Driver mclaren/piastri moved from lap 21 to lap 22 at circuit Monza.
+Lap changed. Driver astonmartin/stroll moved from lap 20 to lap 21 at circuit Monza.
+Fastest driver changed. At 2026-02-25 14:30:54, fastest driver is astonmartin/alonso with speed 259.05 km/h.
+Fastest driver changed. At 2026-02-25 14:31:09, fastest driver is astonmartin/alonso with speed 248.55 km/h.
+Lap changed. Driver astonmartin/alonso moved from lap 21 to lap 22 at circuit Monza.
+Fastest driver changed. At 2026-02-25 14:31:24, fastest driver is mclaren/piastri with speed 320.61 km/h.

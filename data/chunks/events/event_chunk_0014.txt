@@ -1,0 +1,10 @@
+Race leader changed. At 2026-02-25 12:14:18, leader is astonmartin/stroll on lap 5.
+Fastest driver changed. At 2026-02-25 12:14:18, fastest driver is astonmartin/alonso with speed 326.03 km/h.
+Lap changed. Driver astonmartin/stroll moved from lap 4 to lap 5 at circuit Monza.
+Race leader changed. At 2026-02-25 12:14:33, leader is astonmartin/alonso on lap 5.
+Fastest driver changed. At 2026-02-25 12:14:33, fastest driver is astonmartin/stroll with speed 307.22 km/h.
+Lap changed. Driver astonmartin/alonso moved from lap 4 to lap 5 at circuit Monza.
+Fastest driver changed. At 2026-02-25 12:14:48, fastest driver is astonmartin/alonso with speed 286.41 km/h.
+Lap changed. Driver mercedes/hamilton moved from lap 3 to lap 4 at circuit Monza.
+Fastest driver changed. At 2026-02-25 12:15:03, fastest driver is mercedes/hamilton with speed 300.97 km/h.
+Lap changed. Driver mercedes/hamilton moved from lap 4 to lap 3 at circuit Silverstone.

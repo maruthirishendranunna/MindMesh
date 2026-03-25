@@ -1,0 +1,10 @@
+Accident detected. Driver mercedes/hamilton had accident at circuit Silverstone lap 9 sector 3.
+Accident detected. Driver mercedes/russell had accident at circuit Silverstone lap 7 sector 3.
+Accident detected. Driver astonmartin/alonso had accident at circuit Silverstone lap 9 sector 3.
+Fastest driver changed. At 2026-02-25 12:55:50, fastest driver is redbull/perez with speed 319.5 km/h.
+Fastest driver changed. At 2026-02-25 12:56:05, fastest driver is redbull/perez with speed 284.3 km/h.
+Accident detected. Driver astonmartin/alonso had accident at circuit Silverstone lap 9 sector 3.
+Fastest driver changed. At 2026-02-25 12:56:20, fastest driver is redbull/perez with speed 200.41 km/h.
+Lap changed. Driver astonmartin/stroll moved from lap 8 to lap 9 at circuit Silverstone.
+Race leader changed. At 2026-02-25 12:56:36, leader is mercedes/hamilton on lap 10.
+Fastest driver changed. At 2026-02-25 12:56:36, fastest driver is redbull/perez with speed 202.36 km/h.

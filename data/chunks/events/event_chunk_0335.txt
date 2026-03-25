@@ -1,0 +1,10 @@
+Lap changed. Driver mercedes/hamilton moved from lap 35 to lap 36 at circuit Monza.
+Accident detected. Driver mclaren/piastri had accident at circuit Monza lap 35 sector 3.
+Lap changed. Driver astonmartin/alonso moved from lap 34 to lap 35 at circuit Monza.
+Accident detected. Driver astonmartin/stroll had accident at circuit Monza lap 34 sector 3.
+Race leader changed. At 2026-02-25 16:32:28, leader is mclaren/piastri on lap 36.
+Fastest driver changed. At 2026-02-25 16:32:28, fastest driver is astonmartin/alonso with speed 297.85 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 32 to lap 34 at circuit Silverstone.
+Lap changed. Driver redbull/perez moved from lap 38 to lap 30 at circuit Silverstone.
+Lap changed. Driver mercedes/hamilton moved from lap 36 to lap 35 at circuit Silverstone.
+Lap changed. Driver mercedes/russell moved from lap 35 to lap 32 at circuit Silverstone.

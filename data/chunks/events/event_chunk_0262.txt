@@ -1,0 +1,10 @@
+Lap changed. Driver mclaren/norris moved from lap 30 to lap 31 at circuit Monza.
+Race leader changed. At 2026-02-25 15:35:56, leader is mclaren/norris on lap 31.
+Fastest driver changed. At 2026-02-25 15:35:56, fastest driver is mclaren/norris with speed 313.82 km/h.
+Lap changed. Driver mercedes/hamilton moved from lap 27 to lap 28 at circuit Monza.
+Race leader changed. At 2026-02-25 15:36:11, leader is mercedes/hamilton on lap 29.
+Fastest driver changed. At 2026-02-25 15:36:11, fastest driver is redbull/verstappen with speed 330.45 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 26 to lap 27 at circuit Silverstone.
+Lap changed. Driver redbull/perez moved from lap 30 to lap 26 at circuit Silverstone.
+Lap changed. Driver mercedes/hamilton moved from lap 28 to lap 29 at circuit Silverstone.
+Lap changed. Driver mercedes/russell moved from lap 27 to lap 25 at circuit Silverstone.

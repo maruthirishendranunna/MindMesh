@@ -1,0 +1,10 @@
+Lap changed. Driver mercedes/hamilton moved from lap 9 to lap 10 at circuit Silverstone.
+Fastest driver changed. At 2026-02-25 12:56:51, fastest driver is redbull/perez with speed 250.48 km/h.
+Race leader changed. At 2026-02-25 12:57:06, leader is redbull/perez on lap 10.
+Fastest driver changed. At 2026-02-25 12:57:06, fastest driver is redbull/perez with speed 204.09 km/h.
+Lap changed. Driver redbull/perez moved from lap 9 to lap 10 at circuit Silverstone.
+Lap changed. Driver mercedes/russell moved from lap 7 to lap 8 at circuit Silverstone.
+Lap changed. Driver mclaren/norris moved from lap 9 to lap 10 at circuit Silverstone.
+Race leader changed. At 2026-02-25 12:57:21, leader is redbull/perez on lap 7.
+Fastest driver changed. At 2026-02-25 12:57:21, fastest driver is redbull/verstappen with speed 211.82 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 7 to lap 6 at circuit Spa-Francorchamps.

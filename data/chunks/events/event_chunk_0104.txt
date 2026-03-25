@@ -1,0 +1,10 @@
+Lap changed. Driver mercedes/russell moved from lap 10 to lap 11 at circuit Silverstone.
+Lap changed. Driver mclaren/norris moved from lap 11 to lap 12 at circuit Silverstone.
+Fastest driver changed. At 2026-02-25 13:28:37, fastest driver is mercedes/russell with speed 293.51 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 11 to lap 12 at circuit Silverstone.
+Race leader changed. At 2026-02-25 13:28:52, leader is redbull/perez on lap 13.
+Fastest driver changed. At 2026-02-25 13:28:52, fastest driver is redbull/perez with speed 302.05 km/h.
+Lap changed. Driver redbull/perez moved from lap 12 to lap 13 at circuit Silverstone.
+Fastest driver changed. At 2026-02-25 13:29:07, fastest driver is redbull/perez with speed 256.62 km/h.
+Fastest driver changed. At 2026-02-25 13:29:22, fastest driver is redbull/perez with speed 310.41 km/h.
+Accident detected. Driver redbull/verstappen had accident at circuit Silverstone lap 12 sector 1.

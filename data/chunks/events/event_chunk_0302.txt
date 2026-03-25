@@ -1,0 +1,10 @@
+Race leader changed. At 2026-02-25 16:05:42, leader is redbull/verstappen on lap 36.
+Fastest driver changed. At 2026-02-25 16:05:42, fastest driver is redbull/verstappen with speed 318.45 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 35 to lap 36 at circuit Bahrain.
+Fastest driver changed. At 2026-02-25 16:05:57, fastest driver is redbull/verstappen with speed 325.62 km/h.
+Lap changed. Driver mclaren/piastri moved from lap 34 to lap 35 at circuit Bahrain.
+Lap changed. Driver astonmartin/alonso moved from lap 31 to lap 32 at circuit Bahrain.
+Fastest driver changed. At 2026-02-25 16:06:12, fastest driver is redbull/verstappen with speed 329.18 km/h.
+Lap changed. Driver mercedes/russell moved from lap 28 to lap 29 at circuit Bahrain.
+Race leader changed. At 2026-02-25 16:06:27, leader is redbull/perez on lap 34.
+Fastest driver changed. At 2026-02-25 16:06:27, fastest driver is redbull/verstappen with speed 282.73 km/h.

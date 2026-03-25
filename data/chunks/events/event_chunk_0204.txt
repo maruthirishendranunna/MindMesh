@@ -1,0 +1,10 @@
+Race leader changed. At 2026-02-25 14:49:09, leader is mclaren/piastri on lap 25.
+Fastest driver changed. At 2026-02-25 14:49:09, fastest driver is mercedes/hamilton with speed 320.94 km/h.
+Lap changed. Driver mclaren/piastri moved from lap 24 to lap 25 at circuit Silverstone.
+Fastest driver changed. At 2026-02-25 14:49:24, fastest driver is mercedes/hamilton with speed 331.28 km/h.
+Lap changed. Driver astonmartin/stroll moved from lap 23 to lap 24 at circuit Silverstone.
+Fastest driver changed. At 2026-02-25 14:49:39, fastest driver is mercedes/hamilton with speed 304.58 km/h.
+Race leader changed. At 2026-02-25 14:49:54, leader is mclaren/piastri on lap 19.
+Fastest driver changed. At 2026-02-25 14:49:54, fastest driver is astonmartin/alonso with speed 253.84 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 21 to lap 18 at circuit Spa-Francorchamps.
+Lap changed. Driver redbull/perez moved from lap 20 to lap 17 at circuit Spa-Francorchamps.

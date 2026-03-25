@@ -1,0 +1,10 @@
+Accident detected. Driver astonmartin/stroll had accident at circuit Monza lap 18 sector 2.
+Fastest driver changed. At 2026-02-25 14:06:38, fastest driver is astonmartin/alonso with speed 301.39 km/h.
+Fastest driver changed. At 2026-02-25 14:06:53, fastest driver is astonmartin/alonso with speed 222.68 km/h.
+Fastest driver changed. At 2026-02-25 14:07:08, fastest driver is redbull/perez with speed 259.32 km/h.
+Fastest driver changed. At 2026-02-25 14:07:23, fastest driver is astonmartin/alonso with speed 203.57 km/h.
+Fastest driver changed. At 2026-02-25 14:07:38, fastest driver is mclaren/piastri with speed 156.4 km/h.
+Race leader changed. At 2026-02-25 14:07:53, leader is mclaren/piastri on lap 18.
+Fastest driver changed. At 2026-02-25 14:07:53, fastest driver is mclaren/piastri with speed 272.88 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 15 to lap 17 at circuit Silverstone.
+Lap changed. Driver redbull/perez moved from lap 18 to lap 16 at circuit Silverstone.

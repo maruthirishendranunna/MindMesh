@@ -1,0 +1,59 @@
+Snapshot time: 2026-02-25 18:14:17.
+Driver verstappen from team redbull is racing at circuit Bahrain. Current lap is 53. Speed is 264.23 km/h. RPM is 6931.25. Gear is 7. Fuel level is 0. DRS is 0.
+Driver perez from team redbull is racing at circuit Bahrain. Current lap is 48. Speed is 0.0 km/h. RPM is 2000.0. Gear is 1. Fuel level is 0. DRS is 0. Accident detected.
+Driver hamilton from team mercedes is racing at circuit Bahrain. Current lap is 45. Speed is 71.91 km/h. RPM is 4966.58. Gear is 2. Fuel level is 0. DRS is 0.
+Driver russell from team mercedes is racing at circuit Bahrain. Current lap is 43. Speed is 34.27 km/h. RPM is 3958.57. Gear is 1. Fuel level is 0. DRS is 0.
+Driver norris from team mclaren is racing at circuit Bahrain. Current lap is 49. Speed is 44.1 km/h. RPM is 4326.4. Gear is 1. Fuel level is 0. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Bahrain. Current lap is 51. Speed is 296.84 km/h. RPM is 7604.73. Gear is 7. Fuel level is 0. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Bahrain. Current lap is 46. Speed is 21.6 km/h. RPM is 3483.97. Gear is 1. Fuel level is 0. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Bahrain. Current lap is 50. Speed is 56.15 km/h. RPM is 4777.7. Gear is 1. Fuel level is 0. DRS is 0.
+Race leader is redbull/verstappen on lap 53.
+Fastest driver is mclaren/piastri with speed 286.15 km/h.
+
+Snapshot time: 2026-02-25 18:14:32.
+Driver verstappen from team redbull is racing at circuit Bahrain. Current lap is 53. Speed is 300.72 km/h. RPM is 6642.84. Gear is 8. Fuel level is 0. DRS is 0.
+Driver perez from team redbull is racing at circuit Bahrain. Current lap is 48. Speed is 40.7 km/h. RPM is 4199.07. Gear is 1. Fuel level is 0. DRS is 0.
+Driver hamilton from team mercedes is racing at circuit Bahrain. Current lap is 46. Speed is 87.28 km/h. RPM is 5499.2. Gear is 2. Fuel level is 0. DRS is 0.
+Driver russell from team mercedes is racing at circuit Bahrain. Current lap is 43. Speed is 68.9 km/h. RPM is 4862.27. Gear is 2. Fuel level is 0. DRS is 0.
+Driver norris from team mclaren is racing at circuit Bahrain. Current lap is 49. Speed is 28.75 km/h. RPM is 3751.63. Gear is 1. Fuel level is 0. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Bahrain. Current lap is 51. Speed is 326.86 km/h. RPM is 7109.43. Gear is 8. Fuel level is 0. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Bahrain. Current lap is 46. Speed is 65.07 km/h. RPM is 5111.86. Gear is 1. Fuel level is 0. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Bahrain. Current lap is 50. Speed is 41.72 km/h. RPM is 4237.45. Gear is 1. Fuel level is 0. DRS is 0.
+Race leader is redbull/verstappen on lap 53.
+Fastest driver is mclaren/piastri with speed 313.02 km/h.
+
+Snapshot time: 2026-02-25 18:14:47.
+Driver verstappen from team redbull is racing at circuit Bahrain. Current lap is 53. Speed is 301.61 km/h. RPM is 7542.25. Gear is 7. Fuel level is 0. DRS is 1.
+Driver perez from team redbull is racing at circuit Bahrain. Current lap is 49. Speed is 108.03 km/h. RPM is 5715.62. Gear is 3. Fuel level is 0. DRS is 0.
+Driver hamilton from team mercedes is racing at circuit Bahrain. Current lap is 46. Speed is 142.85 km/h. RPM is 6824.65. Gear is 3. Fuel level is 0. DRS is 0.
+Driver russell from team mercedes is racing at circuit Bahrain. Current lap is 43. Speed is 34.54 km/h. RPM is 3968.39. Gear is 1. Fuel level is 0. DRS is 0.
+Driver norris from team mclaren is racing at circuit Bahrain. Current lap is 49. Speed is 62.39 km/h. RPM is 5011.64. Gear is 1. Fuel level is 0. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Bahrain. Current lap is 51. Speed is 255.46 km/h. RPM is 7665.64. Gear is 6. Fuel level is 0. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Bahrain. Current lap is 46. Speed is 95.52 km/h. RPM is 5784.81. Gear is 2. Fuel level is 0. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Bahrain. Current lap is 50. Speed is 43.51 km/h. RPM is 4304.57. Gear is 1. Fuel level is 0. DRS is 0.
+Race leader is redbull/verstappen on lap 53.
+Fastest driver is mclaren/piastri with speed 307.9 km/h.
+
+Snapshot time: 2026-02-25 18:15:02.
+Driver verstappen from team redbull is racing at circuit Monza. Current lap is 46. Speed is 221.24 km/h. RPM is 7682.65. Gear is 5. Fuel level is 0. DRS is 0.
+Driver perez from team redbull is racing at circuit Monza. Current lap is 50. Speed is 150.62 km/h. RPM is 6450.46. Gear is 4. Fuel level is 0. DRS is 0.
+Driver hamilton from team mercedes is racing at circuit Monza. Current lap is 48. Speed is 225.04 km/h. RPM is 7782.26. Gear is 5. Fuel level is 0. DRS is 0.
+Driver russell from team mercedes is racing at circuit Monza. Current lap is 46. Speed is 81.58 km/h. RPM is 5301.75. Gear is 2. Fuel level is 0. DRS is 0.
+Driver norris from team mclaren is racing at circuit Monza. Current lap is 48. Speed is 50.12 km/h. RPM is 4552.17. Gear is 1. Fuel level is 0. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Monza. Current lap is 44. Speed is 293.32 km/h. RPM is 6510.73. Gear is 8. Fuel level is 0. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Monza. Current lap is 48. Speed is 65.04 km/h. RPM is 5110.82. Gear is 1. Fuel level is 0. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Monza. Current lap is 44. Speed is 48.39 km/h. RPM is 4487.29. Gear is 1. Fuel level is 0. DRS is 0.
+Race leader is redbull/perez on lap 50.
+Fastest driver is mclaren/piastri with speed 242.16 km/h.
+
+Snapshot time: 2026-02-25 18:15:17.
+Driver verstappen from team redbull is racing at circuit Monza. Current lap is 46. Speed is 325.58 km/h. RPM is 7086.69. Gear is 8. Fuel level is 0. DRS is 0.
+Driver perez from team redbull is racing at circuit Monza. Current lap is 50. Speed is 179.41 km/h. RPM is 6584.63. Gear is 5. Fuel level is 0. DRS is 0.
+Driver hamilton from team mercedes is racing at circuit Monza. Current lap is 48. Speed is 175.58 km/h. RPM is 6483.99. Gear is 5. Fuel level is 0. DRS is 0.
+Driver russell from team mercedes is racing at circuit Monza. Current lap is 46. Speed is 97.56 km/h. RPM is 5855.4. Gear is 2. Fuel level is 0. DRS is 0.
+Driver norris from team mclaren is racing at circuit Monza. Current lap is 48. Speed is 58.31 km/h. RPM is 4495.5. Gear is 2. Fuel level is 0. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Monza. Current lap is 45. Speed is 197.31 km/h. RPM is 6000. Gear is 2. Fuel level is 0. DRS is 0. Accident detected.
+Driver alonso from team astonmartin is racing at circuit Monza. Current lap is 48. Speed is 44.15 km/h. RPM is 4328.46. Gear is 1. Fuel level is 0. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Monza. Current lap is 44. Speed is 49.94 km/h. RPM is 4205.39. Gear is 2. Fuel level is 0. DRS is 0.
+Race leader is redbull/perez on lap 50.
+Fastest driver is mclaren/piastri with speed 296.24 km/h.

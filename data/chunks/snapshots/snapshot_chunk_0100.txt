@@ -1,0 +1,59 @@
+Snapshot time: 2026-03-11 21:07:33.
+Driver verstappen from team redbull is racing at circuit Bahrain. Current lap is 1. Speed is 83.65 km/h. RPM is 5373.6. Gear is 2. Fuel level is 87.49. DRS is 0.
+Driver perez from team redbull is racing at circuit Bahrain. Current lap is 1. Speed is 46.13 km/h. RPM is 4402.55. Gear is 1. Fuel level is 89.7. DRS is 0.
+Driver hamilton from team mercedes is racing at circuit Bahrain. Current lap is 1. Speed is 286.47 km/h. RPM is 7390.54. Gear is 7. Fuel level is 78.08. DRS is 0.
+Driver russell from team mercedes is racing at circuit Bahrain. Current lap is 1. Speed is 271.42 km/h. RPM is 7079.83. Gear is 7. Fuel level is 92.46. DRS is 0.
+Driver norris from team mclaren is racing at circuit Bahrain. Current lap is 1. Speed is 202.76 km/h. RPM is 7197.34. Gear is 5. Fuel level is 53.31. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Bahrain. Current lap is 1. Speed is 257.44 km/h. RPM is 7712.02. Gear is 6. Fuel level is 69.26. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Bahrain. Current lap is 1. Speed is 241.7 km/h. RPM is 7342.81. Gear is 6. Fuel level is 69.19. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Bahrain. Current lap is 1. Speed is 280.29 km/h. RPM is 7263.01. Gear is 7. Fuel level is 81.58. DRS is 0.
+Race leader is redbull/verstappen on lap 1.
+Fastest driver is mercedes/hamilton with speed 298.78 km/h.
+
+Snapshot time: 2026-03-11 21:07:48.
+Driver verstappen from team redbull is racing at circuit Bahrain. Current lap is 1. Speed is 162.85 km/h. RPM is 6805.92. Gear is 4. Fuel level is 87.01. DRS is 0.
+Driver perez from team redbull is racing at circuit Bahrain. Current lap is 1. Speed is 66.03 km/h. RPM is 5147.67. Gear is 1. Fuel level is 89.29. DRS is 0.
+Driver hamilton from team mercedes is racing at circuit Bahrain. Current lap is 1. Speed is 284.54 km/h. RPM is 7350.73. Gear is 7. Fuel level is 77.55. DRS is 0.
+Driver russell from team mercedes is racing at circuit Bahrain. Current lap is 1. Speed is 252.88 km/h. RPM is 8407.88. Gear is 5. Fuel level is 92.03. DRS is 1.
+Driver norris from team mclaren is racing at circuit Bahrain. Current lap is 1. Speed is 138.68 km/h. RPM is 6692.04. Gear is 3. Fuel level is 52.89. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Bahrain. Current lap is 1. Speed is 324.6 km/h. RPM is 7069.12. Gear is 8. Fuel level is 68.78. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Bahrain. Current lap is 1. Speed is 266.64 km/h. RPM is 7927.73. Gear is 6. Fuel level is 68.7. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Bahrain. Current lap is 1. Speed is 273.76 km/h. RPM is 8094.7. Gear is 6. Fuel level is 81.14. DRS is 0.
+Race leader is redbull/verstappen on lap 1.
+Fastest driver is mclaren/piastri with speed 306.62 km/h.
+
+Snapshot time: 2026-03-11 21:08:03.
+Driver verstappen from team redbull is racing at circuit Bahrain. Current lap is 1. Speed is 176.23 km/h. RPM is 7194.45. Gear is 4. Fuel level is 86.51. DRS is 0.
+Driver perez from team redbull is racing at circuit Bahrain. Current lap is 1. Speed is 23.49 km/h. RPM is 3554.76. Gear is 1. Fuel level is 88.78. DRS is 0.
+Driver hamilton from team mercedes is racing at circuit Bahrain. Current lap is 1. Speed is 258.33 km/h. RPM is 7655.79. Gear is 6. Fuel level is 77.11. DRS is 1.
+Driver russell from team mercedes is racing at circuit Bahrain. Current lap is 1. Speed is 188.23 km/h. RPM is 7543.04. Gear is 4. Fuel level is 91.58. DRS is 0.
+Driver norris from team mclaren is racing at circuit Bahrain. Current lap is 1. Speed is 207.21 km/h. RPM is 7314.27. Gear is 5. Fuel level is 52.36. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Bahrain. Current lap is 1. Speed is 328.96 km/h. RPM is 7146.91. Gear is 8. Fuel level is 68.29. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Bahrain. Current lap is 1. Speed is 262.4 km/h. RPM is 7828.35. Gear is 6. Fuel level is 68.3. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Bahrain. Current lap is 1. Speed is 84.36 km/h. RPM is 6000. Gear is 2. Fuel level is 80.85. DRS is 0. Accident detected.
+Race leader is redbull/verstappen on lap 1.
+Fastest driver is mclaren/piastri with speed 329.42 km/h.
+
+Snapshot time: 2026-03-11 21:08:18.
+Driver verstappen from team redbull is racing at circuit Bahrain. Current lap is 1. Speed is 286.36 km/h. RPM is 7388.32. Gear is 7. Fuel level is 86.09. DRS is 0.
+Driver perez from team redbull is racing at circuit Bahrain. Current lap is 1. Speed is 74.93 km/h. RPM is 5071.5. Gear is 2. Fuel level is 88.32. DRS is 0.
+Driver hamilton from team mercedes is racing at circuit Bahrain. Current lap is 1. Speed is 309.06 km/h. RPM is 6791.65. Gear is 8. Fuel level is 76.68. DRS is 0.
+Driver russell from team mercedes is racing at circuit Bahrain. Current lap is 1. Speed is 159.97 km/h. RPM is 6722.18. Gear is 4. Fuel level is 91.19. DRS is 0.
+Driver norris from team mclaren is racing at circuit Bahrain. Current lap is 1. Speed is 266.23 km/h. RPM is 7918.1. Gear is 6. Fuel level is 51.87. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Bahrain. Current lap is 1. Speed is 330.67 km/h. RPM is 7177.38. Gear is 8. Fuel level is 67.93. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Bahrain. Current lap is 1. Speed is 227.6 km/h. RPM is 7849.43. Gear is 5. Fuel level is 67.85. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Bahrain. Current lap is 1. Speed is 29.1 km/h. RPM is 3764.83. Gear is 1. Fuel level is 80.56. DRS is 0.
+Race leader is redbull/verstappen on lap 1.
+Fastest driver is mclaren/piastri with speed 330.18 km/h.
+
+Snapshot time: 2026-03-11 21:08:33.
+Driver verstappen from team redbull is racing at circuit Bahrain. Current lap is 1. Speed is 254.13 km/h. RPM is 6722.83. Gear is 7. Fuel level is 85.64. DRS is 0.
+Driver perez from team redbull is racing at circuit Bahrain. Current lap is 1. Speed is 120.32 km/h. RPM is 6107.08. Gear is 3. Fuel level is 87.77. DRS is 0.
+Driver hamilton from team mercedes is racing at circuit Bahrain. Current lap is 2. Speed is 313.61 km/h. RPM is 6873.01. Gear is 8. Fuel level is 76.3. DRS is 0.
+Driver russell from team mercedes is racing at circuit Bahrain. Current lap is 1. Speed is 83.8 km/h. RPM is 5378.54. Gear is 2. Fuel level is 90.76. DRS is 0.
+Driver norris from team mclaren is racing at circuit Bahrain. Current lap is 1. Speed is 307.75 km/h. RPM is 7830.06. Gear is 7. Fuel level is 51.45. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Bahrain. Current lap is 2. Speed is 294.75 km/h. RPM is 7561.61. Gear is 7. Fuel level is 67.45. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Bahrain. Current lap is 1. Speed is 198.26 km/h. RPM is 7079.39. Gear is 5. Fuel level is 67.45. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Bahrain. Current lap is 1. Speed is 63.74 km/h. RPM is 5061.97. Gear is 1. Fuel level is 80.11. DRS is 0.
+Race leader is mercedes/hamilton on lap 2.
+Fastest driver is mercedes/hamilton with speed 314.72 km/h.

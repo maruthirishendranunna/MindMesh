@@ -1,0 +1,10 @@
+Accident detected. Driver mclaren/piastri had accident at circuit Spa-Francorchamps lap 27 sector 2.
+Fastest driver changed. At 2026-02-25 16:12:12, fastest driver is astonmartin/stroll with speed 278.85 km/h.
+Race leader changed. At 2026-02-25 16:12:27, leader is redbull/verstappen on lap 36.
+Fastest driver changed. At 2026-02-25 16:12:27, fastest driver is astonmartin/alonso with speed 321.19 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 29 to lap 36 at circuit Bahrain.
+Lap changed. Driver redbull/perez moved from lap 25 to lap 35 at circuit Bahrain.
+Lap changed. Driver mercedes/hamilton moved from lap 24 to lap 32 at circuit Bahrain.
+Lap changed. Driver mercedes/russell moved from lap 24 to lap 29 at circuit Bahrain.
+Lap changed. Driver mclaren/norris moved from lap 24 to lap 33 at circuit Bahrain.
+Lap changed. Driver mclaren/piastri moved from lap 27 to lap 35 at circuit Bahrain.

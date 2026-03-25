@@ -1,0 +1,10 @@
+Lap changed. Driver astonmartin/alonso moved from lap 22 to lap 23 at circuit Monza.
+Fastest driver changed. At 2026-02-25 14:46:39, fastest driver is redbull/verstappen with speed 233.11 km/h.
+Race leader changed. At 2026-02-25 14:46:54, leader is mclaren/norris on lap 25.
+Fastest driver changed. At 2026-02-25 14:46:54, fastest driver is redbull/verstappen with speed 255.89 km/h.
+Lap changed. Driver mclaren/norris moved from lap 24 to lap 25 at circuit Monza.
+Fastest driver changed. At 2026-02-25 14:47:09, fastest driver is mclaren/norris with speed 296.23 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 19 to lap 20 at circuit Monza.
+Lap changed. Driver mercedes/hamilton moved from lap 21 to lap 22 at circuit Monza.
+Fastest driver changed. At 2026-02-25 14:47:24, fastest driver is mercedes/hamilton with speed 300.95 km/h.
+Lap changed. Driver redbull/perez moved from lap 22 to lap 23 at circuit Monza.

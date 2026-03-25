@@ -1,0 +1,10 @@
+Fastest driver changed. At 2026-02-25 12:15:33, fastest driver is mercedes/hamilton with speed 333.13 km/h.
+Lap changed. Driver mercedes/hamilton moved from lap 3 to lap 4 at circuit Silverstone.
+Lap changed. Driver mclaren/piastri moved from lap 3 to lap 4 at circuit Silverstone.
+Lap changed. Driver astonmartin/alonso moved from lap 3 to lap 4 at circuit Silverstone.
+Fastest driver changed. At 2026-02-25 12:15:48, fastest driver is mercedes/hamilton with speed 323.48 km/h.
+Lap changed. Driver mclaren/norris moved from lap 3 to lap 4 at circuit Silverstone.
+Fastest driver changed. At 2026-02-25 12:16:03, fastest driver is astonmartin/alonso with speed 306.11 km/h.
+Accident detected. Driver mercedes/hamilton had accident at circuit Silverstone lap 4 sector 2.
+Accident detected. Driver mclaren/piastri had accident at circuit Silverstone lap 4 sector 1.
+Fastest driver changed. At 2026-02-25 12:16:18, fastest driver is astonmartin/alonso with speed 318.16 km/h.

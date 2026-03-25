@@ -1,0 +1,59 @@
+Snapshot time: 2026-02-25 18:28:02.
+Driver verstappen from team redbull is racing at circuit Spa-Francorchamps. Current lap is 39. Speed is 126.11 km/h. RPM is 6291.46. Gear is 3. Fuel level is 0. DRS is 0.
+Driver perez from team redbull is racing at circuit Spa-Francorchamps. Current lap is 37. Speed is 106.1 km/h. RPM is 6151.24. Gear is 2. Fuel level is 0. DRS is 0.
+Driver hamilton from team mercedes is racing at circuit Spa-Francorchamps. Current lap is 37. Speed is 167.82 km/h. RPM is 7619.91. Gear is 3. Fuel level is 0. DRS is 0.
+Driver russell from team mercedes is racing at circuit Spa-Francorchamps. Current lap is 36. Speed is 309.33 km/h. RPM is 7862.65. Gear is 7. Fuel level is 0. DRS is 0.
+Driver norris from team mclaren is racing at circuit Spa-Francorchamps. Current lap is 36. Speed is 220.63 km/h. RPM is 7666.66. Gear is 5. Fuel level is 0. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Spa-Francorchamps. Current lap is 41. Speed is 154.01 km/h. RPM is 7180.13. Gear is 3. Fuel level is 0. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Spa-Francorchamps. Current lap is 41. Speed is 217.88 km/h. RPM is 7594.36. Gear is 5. Fuel level is 0. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Spa-Francorchamps. Current lap is 42. Speed is 173.1 km/h. RPM is 7103.6. Gear is 4. Fuel level is 0. DRS is 0.
+Race leader is astonmartin/stroll on lap 42.
+Fastest driver is mercedes/russell with speed 304.83 km/h.
+
+Snapshot time: 2026-02-25 18:28:17.
+Driver verstappen from team redbull is racing at circuit Spa-Francorchamps. Current lap is 39. Speed is 159.48 km/h. RPM is 6707.81. Gear is 4. Fuel level is 0. DRS is 0.
+Driver perez from team redbull is racing at circuit Spa-Francorchamps. Current lap is 37. Speed is 81.96 km/h. RPM is 5314.86. Gear is 2. Fuel level is 0. DRS is 0.
+Driver hamilton from team mercedes is racing at circuit Spa-Francorchamps. Current lap is 37. Speed is 93.18 km/h. RPM is 5703.78. Gear is 2. Fuel level is 0. DRS is 0.
+Driver russell from team mercedes is racing at circuit Spa-Francorchamps. Current lap is 36. Speed is 295.96 km/h. RPM is 7586.63. Gear is 7. Fuel level is 0. DRS is 0.
+Driver norris from team mclaren is racing at circuit Spa-Francorchamps. Current lap is 36. Speed is 203.49 km/h. RPM is 7216.68. Gear is 5. Fuel level is 0. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Spa-Francorchamps. Current lap is 41. Speed is 125.36 km/h. RPM is 5716.68. Gear is 4. Fuel level is 0. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Spa-Francorchamps. Current lap is 41. Speed is 14.66 km/h. RPM is 3224.04. Gear is 1. Fuel level is 0. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Spa-Francorchamps. Current lap is 42. Speed is 247.62 km/h. RPM is 7481.58. Gear is 6. Fuel level is 0. DRS is 0.
+Race leader is astonmartin/stroll on lap 42.
+Fastest driver is mercedes/russell with speed 307.14 km/h.
+
+Snapshot time: 2026-02-25 18:28:32.
+Driver verstappen from team redbull is racing at circuit Spa-Francorchamps. Current lap is 39. Speed is 118.24 km/h. RPM is 6040.94. Gear is 3. Fuel level is 0. DRS is 0.
+Driver perez from team redbull is racing at circuit Spa-Francorchamps. Current lap is 37. Speed is 43.35 km/h. RPM is 4298.38. Gear is 1. Fuel level is 0. DRS is 0.
+Driver hamilton from team mercedes is racing at circuit Spa-Francorchamps. Current lap is 37. Speed is 101.81 km/h. RPM is 5517.71. Gear is 3. Fuel level is 0. DRS is 0.
+Driver russell from team mercedes is racing at circuit Spa-Francorchamps. Current lap is 36. Speed is 320.67 km/h. RPM is 6998.91. Gear is 8. Fuel level is 0. DRS is 0.
+Driver norris from team mclaren is racing at circuit Spa-Francorchamps. Current lap is 37. Speed is 245.31 km/h. RPM is 8314.35. Gear is 5. Fuel level is 0. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Spa-Francorchamps. Current lap is 41. Speed is 127.81 km/h. RPM is 6345.71. Gear is 3. Fuel level is 0. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Spa-Francorchamps. Current lap is 41. Speed is 118.51 km/h. RPM is 6049.6. Gear is 3. Fuel level is 0. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Spa-Francorchamps. Current lap is 42. Speed is 281.28 km/h. RPM is 7283.49. Gear is 7. Fuel level is 0. DRS is 0.
+Race leader is astonmartin/stroll on lap 42.
+Fastest driver is mercedes/russell with speed 304.9 km/h.
+
+Snapshot time: 2026-02-25 18:28:47.
+Driver verstappen from team redbull is racing at circuit Spa-Francorchamps. Current lap is 39. Speed is 125.68 km/h. RPM is 6277.82. Gear is 3. Fuel level is 0. DRS is 0.
+Driver perez from team redbull is racing at circuit Spa-Francorchamps. Current lap is 37. Speed is 42.28 km/h. RPM is 4258.27. Gear is 1. Fuel level is 0. DRS is 0.
+Driver hamilton from team mercedes is racing at circuit Spa-Francorchamps. Current lap is 37. Speed is 167.19 km/h. RPM is 6932.0. Gear is 4. Fuel level is 0. DRS is 0.
+Driver russell from team mercedes is racing at circuit Spa-Francorchamps. Current lap is 36. Speed is 288.98 km/h. RPM is 7442.37. Gear is 7. Fuel level is 0. DRS is 0.
+Driver norris from team mclaren is racing at circuit Spa-Francorchamps. Current lap is 37. Speed is 294.05 km/h. RPM is 7547.15. Gear is 7. Fuel level is 0. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Spa-Francorchamps. Current lap is 41. Speed is 192.74 km/h. RPM is 7673.99. Gear is 4. Fuel level is 0. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Spa-Francorchamps. Current lap is 41. Speed is 225.11 km/h. RPM is 7784.02. Gear is 5. Fuel level is 0. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Spa-Francorchamps. Current lap is 43. Speed is 321.61 km/h. RPM is 7015.82. Gear is 8. Fuel level is 0. DRS is 0.
+Race leader is astonmartin/stroll on lap 43.
+Fastest driver is astonmartin/stroll with speed 322.24 km/h.
+
+Snapshot time: 2026-02-25 18:29:02.
+Driver verstappen from team redbull is racing at circuit Bahrain. Current lap is 54. Speed is 125.82 km/h. RPM is 6282.39. Gear is 3. Fuel level is 0. DRS is 0.
+Driver perez from team redbull is racing at circuit Bahrain. Current lap is 50. Speed is 52.79 km/h. RPM is 4651.97. Gear is 1. Fuel level is 0. DRS is 0.
+Driver hamilton from team mercedes is racing at circuit Bahrain. Current lap is 47. Speed is 261.32 km/h. RPM is 7677.53. Gear is 6. Fuel level is 0. DRS is 1.
+Driver russell from team mercedes is racing at circuit Bahrain. Current lap is 43. Speed is 330.25 km/h. RPM is 7170.04. Gear is 8. Fuel level is 0. DRS is 0.
+Driver norris from team mclaren is racing at circuit Bahrain. Current lap is 51. Speed is 316.3 km/h. RPM is 6920.97. Gear is 8. Fuel level is 0. DRS is 0.
+Driver piastri from team mclaren is racing at circuit Bahrain. Current lap is 52. Speed is 122.91 km/h. RPM is 6733.9. Gear is 2. Fuel level is 0. DRS is 0.
+Driver alonso from team astonmartin is racing at circuit Bahrain. Current lap is 47. Speed is 141.76 km/h. RPM is 7387.05. Gear is 2. Fuel level is 0. DRS is 0.
+Driver stroll from team astonmartin is racing at circuit Bahrain. Current lap is 51. Speed is 325.27 km/h. RPM is 7081.0. Gear is 8. Fuel level is 0. DRS is 0.
+Race leader is astonmartin/stroll on lap 43.
+Fastest driver is mclaren/norris with speed 321.09 km/h.

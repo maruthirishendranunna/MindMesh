@@ -1,0 +1,10 @@
+Lap changed. Driver redbull/perez moved from lap 16 to lap 17 at circuit Silverstone.
+Race leader changed. At 2026-02-25 14:17:53, leader is mclaren/piastri on lap 16.
+Fastest driver changed. At 2026-02-25 14:17:53, fastest driver is mercedes/russell with speed 294.81 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 18 to lap 15 at circuit Spa-Francorchamps.
+Lap changed. Driver redbull/perez moved from lap 17 to lap 13 at circuit Spa-Francorchamps.
+Lap changed. Driver mercedes/hamilton moved from lap 19 to lap 12 at circuit Spa-Francorchamps.
+Accident detected. Driver mercedes/hamilton had accident at circuit Spa-Francorchamps lap 12 sector 3.
+Lap changed. Driver mercedes/russell moved from lap 17 to lap 14 at circuit Spa-Francorchamps.
+Lap changed. Driver mclaren/norris moved from lap 17 to lap 13 at circuit Spa-Francorchamps.
+Lap changed. Driver mclaren/piastri moved from lap 21 to lap 16 at circuit Spa-Francorchamps.

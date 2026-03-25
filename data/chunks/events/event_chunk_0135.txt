@@ -1,0 +1,10 @@
+Lap changed. Driver astonmartin/stroll moved from lap 15 to lap 16 at circuit Silverstone.
+Fastest driver changed. At 2026-02-25 13:52:22, fastest driver is mclaren/piastri with speed 320.39 km/h.
+Fastest driver changed. At 2026-02-25 13:52:37, fastest driver is mclaren/piastri with speed 337.22 km/h.
+Fastest driver changed. At 2026-02-25 13:52:52, fastest driver is astonmartin/stroll with speed 322.64 km/h.
+Race leader changed. At 2026-02-25 13:53:07, leader is mclaren/piastri on lap 17.
+Fastest driver changed. At 2026-02-25 13:53:07, fastest driver is astonmartin/stroll with speed 319.75 km/h.
+Lap changed. Driver mclaren/piastri moved from lap 16 to lap 17 at circuit Silverstone.
+Accident detected. Driver astonmartin/alonso had accident at circuit Silverstone lap 14 sector 3.
+Fastest driver changed. At 2026-02-25 13:53:22, fastest driver is redbull/verstappen with speed 321.98 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 15 to lap 16 at circuit Silverstone.

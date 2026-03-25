@@ -1,0 +1,4 @@
+Race leader changed. At 2026-03-11 21:08:33, leader is mercedes/hamilton on lap 2.
+Fastest driver changed. At 2026-03-11 21:08:33, fastest driver is mercedes/hamilton with speed 314.72 km/h.
+Lap changed. Driver mercedes/hamilton moved from lap 1 to lap 2 at circuit Bahrain.
+Lap changed. Driver mclaren/piastri moved from lap 1 to lap 2 at circuit Bahrain.

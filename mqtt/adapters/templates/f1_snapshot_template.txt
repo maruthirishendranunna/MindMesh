@@ -1,0 +1,1 @@
+{driver_cap} from {team_cap} is racing at {circuit}. He is currently on lap {lap}. His speed is {speed} km/h. Engine RPM is {rpm}. Gear position is {gear}. Remaining fuel is {fuel} kg. DRS status is {drs}.{accident_sentence}

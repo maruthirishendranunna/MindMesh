@@ -1,0 +1,10 @@
+Lap changed. Driver mercedes/hamilton moved from lap 25 to lap 33 at circuit Bahrain.
+Accident detected. Driver mercedes/hamilton had accident at circuit Bahrain lap 33 sector 2.
+Lap changed. Driver mercedes/russell moved from lap 24 to lap 29 at circuit Bahrain.
+Lap changed. Driver mclaren/norris moved from lap 24 to lap 33 at circuit Bahrain.
+Lap changed. Driver mclaren/piastri moved from lap 28 to lap 35 at circuit Bahrain.
+Lap changed. Driver astonmartin/alonso moved from lap 27 to lap 33 at circuit Bahrain.
+Lap changed. Driver astonmartin/stroll moved from lap 29 to lap 35 at circuit Bahrain.
+Fastest driver changed. At 2026-02-25 16:20:43, fastest driver is astonmartin/stroll with speed 325.46 km/h.
+Fastest driver changed. At 2026-02-25 16:20:58, fastest driver is redbull/verstappen with speed 268.71 km/h.
+Race leader changed. At 2026-02-25 16:21:13, leader is redbull/verstappen on lap 38.

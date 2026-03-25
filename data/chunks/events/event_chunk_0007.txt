@@ -1,0 +1,10 @@
+Fastest driver changed. At 2026-02-25 12:07:48, fastest driver is astonmartin/stroll with speed 316.09 km/h.
+Fastest driver changed. At 2026-02-25 12:08:03, fastest driver is astonmartin/stroll with speed 232.45 km/h.
+Accident detected. Driver mclaren/piastri had accident at circuit Silverstone lap 3 sector 2.
+Fastest driver changed. At 2026-02-25 12:08:18, fastest driver is redbull/perez with speed 268.04 km/h.
+Fastest driver changed. At 2026-02-25 12:08:33, fastest driver is redbull/perez with speed 274.12 km/h.
+Fastest driver changed. At 2026-02-25 12:08:48, fastest driver is redbull/perez with speed 286.21 km/h.
+Race leader changed. At 2026-02-25 12:09:03, leader is astonmartin/stroll on lap 4.
+Fastest driver changed. At 2026-02-25 12:09:03, fastest driver is mclaren/norris with speed 284.59 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 2 to lap 1 at circuit Spa-Francorchamps.
+Accident detected. Driver redbull/perez had accident at circuit Spa-Francorchamps lap 2 sector 1.

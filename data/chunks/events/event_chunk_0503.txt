@@ -1,0 +1,10 @@
+Lap changed. Driver mclaren/norris moved from lap 52 to lap 53 at circuit Monza.
+Race finished. Winner is mclaren/norris at circuit Monza after 53 race laps.
+Fastest driver changed. At 2026-02-25 18:48:48, fastest driver is mercedes/hamilton with speed 306.84 km/h.
+Lap changed. Driver astonmartin/stroll moved from lap 48 to lap 49 at circuit Monza.
+Fastest driver changed. At 2026-02-25 18:49:03, fastest driver is astonmartin/stroll with speed 325.63 km/h.
+Lap changed. Driver mclaren/piastri moved from lap 48 to lap 49 at circuit Monza.
+Race leader changed. At 2026-02-25 18:49:18, leader is mercedes/hamilton on lap 51.
+Fastest driver changed. At 2026-02-25 18:49:18, fastest driver is astonmartin/stroll with speed 277.33 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 50 to lap 46 at circuit Silverstone.
+Lap changed. Driver redbull/perez moved from lap 53 to lap 46 at circuit Silverstone.

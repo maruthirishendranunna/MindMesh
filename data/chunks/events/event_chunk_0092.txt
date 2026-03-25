@@ -1,0 +1,10 @@
+Lap changed. Driver mclaren/piastri moved from lap 13 to lap 14 at circuit Monza.
+Fastest driver changed. At 2026-02-25 13:18:51, fastest driver is redbull/verstappen with speed 327.4 km/h.
+Lap changed. Driver mercedes/russell moved from lap 9 to lap 10 at circuit Monza.
+Fastest driver changed. At 2026-02-25 13:19:06, fastest driver is mclaren/piastri with speed 311.2 km/h.
+Accident detected. Driver mercedes/hamilton had accident at circuit Monza lap 10 sector 2.
+Fastest driver changed. At 2026-02-25 13:19:21, fastest driver is mercedes/russell with speed 315.73 km/h.
+Lap changed. Driver redbull/verstappen moved from lap 10 to lap 11 at circuit Monza.
+Lap changed. Driver redbull/perez moved from lap 12 to lap 13 at circuit Monza.
+Race leader changed. At 2026-02-25 13:19:36, leader is redbull/perez on lap 12.
+Fastest driver changed. At 2026-02-25 13:19:36, fastest driver is mclaren/piastri with speed 320.85 km/h.
