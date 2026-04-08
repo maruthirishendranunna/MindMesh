@@ -1,5 +1,6 @@
 import os
 import json
+import re
 from collections import defaultdict
 
 # =========================
@@ -10,7 +11,6 @@ INPUT_TOPICS_PROCESSOR = ["f1/#"]
 INPUT_TOPICS_SNAPSHOTTER = ["f1/#", "race/#"]
 ANALYTICS_PREFIX = "race"
 
-# Final chunking strategy for this dataset
 SNAPSHOTS_PER_CHUNK = 5
 EVENTS_PER_CHUNK = 10
 
@@ -46,6 +46,35 @@ def safe_int(x):
 
 
 # =========================
+# QUERY NORMALIZATION
+# =========================
+
+def normalize_question_text(question: str) -> str:
+    q = question.lower().strip()
+
+    replacements = {
+        "spped": "speed",
+        "sliverstone": "silverstone",
+        "happend": "happened",
+        "accidents happend": "accidents happened",
+        "accident happend": "accident happened",
+        "who as": "who has",
+        "top speed": "highest speed",
+        "best speed": "highest speed",
+        "fastest speed": "highest speed",
+        "top rpm": "highest rpm",
+        "best rpm": "highest rpm",
+        "lowest fuel level": "lowest fuel",
+        "best lap speed": "highest speed",
+    }
+
+    for wrong, correct in replacements.items():
+        q = q.replace(wrong, correct)
+
+    return q
+
+
+# =========================
 # TOPIC PARSING
 # =========================
 
@@ -60,6 +89,527 @@ def parse_topic(topic: str):
     if parts[0] != "f1":
         return None
     return parts[1], parts[2], parts[3]
+
+
+def build_search_query_from_topic(topic: str, original_question: str) -> str:
+    """
+    Convert adapter-specific topic format into a retrieval-friendly search query.
+    """
+    if not topic:
+        return normalize_question_text(original_question)
+
+    parts = topic.split("/")
+
+    if len(parts) >= 4 and parts[0] == "f1":
+        return " ".join(parts[1:])
+
+    return normalize_question_text(original_question)
+
+
+def build_telemetry_query_from_topics(original_question: str, topic_docs) -> str:
+    """
+    Choose the best topic match for the question and convert it into
+    a retrieval-friendly telemetry query.
+    """
+    normalized_question = normalize_question_text(original_question)
+
+    if not topic_docs:
+        return normalized_question
+
+    q = normalized_question
+
+    preferred_metric = None
+    metric_keywords = [
+        "speed", "rpm", "gear", "fuel",
+        "drs", "lap", "circuit", "sector"
+    ]
+
+    for metric in metric_keywords:
+        if metric in q:
+            preferred_metric = metric
+            break
+
+    best_topic = None
+
+    if preferred_metric:
+        for doc in topic_docs:
+            topic = doc.metadata.get("topic", "").lower()
+            if preferred_metric in topic:
+                best_topic = doc.metadata.get("topic", "")
+                break
+
+    if not best_topic:
+        best_topic = topic_docs[0].metadata.get("topic", "")
+
+    if not best_topic:
+        return normalized_question
+
+    base_query = build_search_query_from_topic(best_topic, normalized_question)
+    entities = extract_entities(normalized_question)
+
+    if entities.get("circuit"):
+        return f"{base_query} {entities['circuit']}"
+
+    return base_query
+
+
+# =========================
+# ENTITY EXTRACTION (Pranith Week-7)
+# =========================
+
+def extract_entities(question: str) -> dict:
+    q = normalize_question_text(question)
+
+    drivers = [
+        "verstappen", "perez",
+        "hamilton", "russell",
+        "norris", "piastri",
+        "alonso", "stroll"
+    ]
+
+    teams = [
+        "redbull",
+        "mercedes",
+        "mclaren",
+        "astonmartin"
+    ]
+
+    circuits = [
+        "monza",
+        "silverstone",
+        "spa-francorchamps",
+        "spa",
+        "bahrain"
+    ]
+
+    found_driver = next((d for d in drivers if d in q), None)
+    found_team = next((t for t in teams if t in q), None)
+    found_circuit = next((c for c in circuits if c in q), None)
+
+    return {
+        "driver": found_driver,
+        "team": found_team,
+        "circuit": found_circuit
+    }
+
+
+# =========================
+# QUERY UNDERSTANDING
+# =========================
+
+def classify_query(question: str) -> str:
+    q = normalize_question_text(question)
+
+    event_words = [
+        "accident", "crash", "winner", "won",
+        "leader changed", "fastest changed",
+        "lap changed", "event", "leader"
+    ]
+
+    comparison_words = [
+        "highest", "lowest", "maximum", "minimum",
+        "max", "min", "top", "best", "fastest"
+    ]
+
+    metric_words = [
+        "rpm", "speed", "fuel", "gear",
+        "lap", "drs", "circuit", "sector"
+    ]
+
+    if any(w in q for w in comparison_words):
+        return "comparison"
+
+    if any(w in q for w in event_words):
+        return "event"
+
+    if any(w in q for w in metric_words):
+        return "metric"
+
+    return "general"
+
+
+def detect_metric_name(question: str) -> str | None:
+    q = normalize_question_text(question)
+
+    metric_map = [
+        ("speed", "speed"),
+        ("rpm", "rpm"),
+        ("gear", "gear"),
+        ("fuel", "fuel"),
+        ("drs", "drs"),
+        ("lap", "lap"),
+        ("sector", "sector"),
+        ("circuit", "circuit"),
+    ]
+
+    for key, value in metric_map:
+        if key in q:
+            return value
+
+    return None
+
+
+def filter_telemetry_lines(original_question: str, refined_question: str, text: str):
+    """
+    Dataset-specific filtering for telemetry lines before sending context to LLM.
+    Supports multi-condition filtering using extracted entities.
+    """
+    if not text:
+        return []
+
+    normalized_question = normalize_question_text(original_question)
+    query_type = classify_query(normalized_question)
+    entities = extract_entities(normalized_question)
+
+    driver = entities.get("driver")
+    team = entities.get("team")
+    circuit = entities.get("circuit")
+
+    question_tokens = set(normalized_question.split())
+    lines_split = text.split("\n")
+    filtered_lines = []
+
+    for line in lines_split:
+        line_lower = line.lower()
+
+        driver_match = True if not driver else driver in line_lower
+        team_match = True if not team else team in line_lower
+        circuit_match = True if not circuit else circuit in line_lower
+
+        if query_type == "event":
+            event_match = False
+
+            if "accident" in question_tokens or "crash" in question_tokens:
+                if "accident" in line_lower or "crash" in line_lower:
+                    event_match = True
+
+            elif "winner" in question_tokens or "won" in question_tokens:
+                if "winner" in line_lower or "race finished" in line_lower:
+                    event_match = True
+
+            elif "leader" in question_tokens:
+                if "leader" in line_lower:
+                    event_match = True
+
+            elif "lap" in question_tokens and "changed" in question_tokens:
+                if "lap changed" in line_lower:
+                    event_match = True
+
+            else:
+                event_match = True
+
+            if event_match and driver_match and team_match and circuit_match:
+                filtered_lines.append(line)
+
+        elif query_type in ("metric", "comparison"):
+            metric_match = False
+
+            if "speed" in question_tokens and "speed" in line_lower:
+                metric_match = True
+            elif "rpm" in question_tokens and "rpm" in line_lower:
+                metric_match = True
+            elif "gear" in question_tokens and "gear" in line_lower:
+                metric_match = True
+            elif "fuel" in question_tokens and "fuel" in line_lower:
+                metric_match = True
+            elif "drs" in question_tokens and "drs" in line_lower:
+                metric_match = True
+            elif "lap" in question_tokens and "lap" in line_lower:
+                metric_match = True
+            elif "circuit" in question_tokens and "circuit" in line_lower:
+                metric_match = True
+            elif "sector" in question_tokens and "sector" in line_lower:
+                metric_match = True
+
+            if metric_match and driver_match and team_match and circuit_match:
+                filtered_lines.append(line)
+
+        else:
+            if driver_match and team_match and circuit_match:
+                filtered_lines.append(line)
+
+    return filtered_lines
+
+
+# =========================
+# DIRECT ANSWER HANDLING
+# =========================
+
+def can_handle_directly(question: str) -> bool:
+    q = normalize_question_text(question)
+
+    deterministic_keywords = [
+        "accident", "accidents", "crash", "crashes",
+        "highest", "maximum", "lowest", "minimum",
+        "max", "min", "top", "best", "fastest",
+        "speed", "rpm", "fuel", "gear", "drs", "lap", "sector", "circuit"
+    ]
+
+    return any(k in q for k in deterministic_keywords)
+
+
+def get_direct_answer(question: str, context: str) -> str | None:
+    q = normalize_question_text(question)
+    query_type = classify_query(q)
+
+    if "accident" in q or "accidents" in q or "crash" in q or "crashes" in q:
+        return format_accident_answer(q, context)
+
+    if query_type == "comparison":
+        result = compute_best_metric_answer(q, context)
+        if result:
+            return result
+
+    if query_type == "metric":
+        result = format_metric_answer(q, context)
+        if result:
+            return result
+
+    return None
+
+
+# =========================
+# EVENT ANSWERS
+# =========================
+
+def extract_circuit_from_question(question: str) -> str | None:
+    return extract_entities(question).get("circuit")
+
+
+def normalize_driver_name(driver_key: str) -> str:
+    parts = [p.strip() for p in driver_key.split("/") if p.strip()]
+    parts = [p.capitalize() for p in parts]
+    return "/".join(parts)
+
+
+def extract_accident_events(context: str):
+    pattern = (
+        r"Accident detected\.\s*Driver\s+([a-zA-Z0-9_/-]+)\s+had accident "
+        r"at circuit\s+([a-zA-Z0-9_.\- ]+)\s+lap\s+([0-9]+)\s+sector\s+([0-9]+)\."
+    )
+
+    matches = re.findall(pattern, context, flags=re.IGNORECASE)
+
+    events = []
+    for driver, circuit, lap, sector in matches:
+        events.append({
+            "driver": driver.strip(),
+            "circuit": circuit.strip(),
+            "lap": lap.strip(),
+            "sector": sector.strip()
+        })
+
+    return events
+
+
+def format_accident_answer(question: str, context: str) -> str | None:
+    events = extract_accident_events(context)
+
+    if not events:
+        return "No, no accident data was found."
+
+    requested_circuit = extract_circuit_from_question(question)
+
+    if requested_circuit:
+        filtered = [e for e in events if requested_circuit in e["circuit"].lower()]
+    else:
+        filtered = events
+
+    if not filtered:
+        if requested_circuit:
+            return f"No, no accidents were found in {requested_circuit.capitalize()}."
+        return "No, no accidents were found."
+
+    parts = []
+    for e in filtered:
+        driver = normalize_driver_name(e["driver"])
+        circuit = e["circuit"]
+        lap = e["lap"]
+        sector = e["sector"]
+        parts.append(f"{driver} had an accident at {circuit} on lap {lap} in sector {sector}")
+
+    if requested_circuit:
+        intro = f"Yes, accidents occurred in {filtered[0]['circuit']}."
+    else:
+        intro = "Yes, accidents occurred."
+
+    return intro + " " + "; ".join(parts) + "."
+
+
+# =========================
+# METRIC EXTRACTION
+# =========================
+
+def extract_metric_records(context: str):
+    pattern = (
+        r"Driver\s+(\w+)\s+from team\s+(\w+)\s+is racing at circuit\s+([a-zA-Z0-9_.\- ]+)\.\s*"
+        r"Current lap is\s+([0-9]+)\.\s*"
+        r"Speed is\s+([0-9.]+)\s+km/h\.\s*"
+        r"RPM is\s+([0-9.]+)\.\s*"
+        r"Gear is\s+([0-9]+)\.\s*"
+        r"Fuel level is\s+([0-9.]+)\.\s*"
+        r"DRS is\s+([0-9]+)\."
+    )
+
+    matches = re.findall(pattern, context, flags=re.IGNORECASE)
+
+    records = []
+    for driver, team, circuit, lap, speed, rpm, gear, fuel, drs in matches:
+        try:
+            records.append({
+                "driver": driver.strip(),
+                "team": team.strip(),
+                "circuit": circuit.strip(),
+                "lap": int(lap),
+                "speed": float(speed),
+                "rpm": float(rpm),
+                "gear": int(gear),
+                "fuel": float(fuel),
+                "drs": int(drs)
+            })
+        except ValueError:
+            continue
+
+    return records
+
+
+def format_metric_value(metric_name: str, record: dict):
+    if metric_name == "speed":
+        return f"{record['speed']} km/h"
+    if metric_name == "rpm":
+        return f"{record['rpm']}"
+    if metric_name == "gear":
+        return f"{record['gear']}"
+    if metric_name == "fuel":
+        return f"{record['fuel']}"
+    if metric_name == "drs":
+        return f"{record['drs']}"
+    if metric_name == "lap":
+        return f"{record['lap']}"
+    if metric_name == "circuit":
+        return f"{record['circuit']}"
+    return None
+
+
+# =========================
+# COMPARISON ANSWERS
+# =========================
+
+def compute_best_metric_answer(question: str, context: str) -> str | None:
+    records = extract_metric_records(context)
+    if not records:
+        return None
+
+    q = normalize_question_text(question)
+    metric_name = detect_metric_name(q)
+    if not metric_name:
+        return None
+
+    entities = extract_entities(q)
+    driver = entities.get("driver")
+    team = entities.get("team")
+    circuit = entities.get("circuit")
+
+    filtered = []
+    for r in records:
+        driver_match = True if not driver else driver == r["driver"].lower()
+        team_match = True if not team else team == r["team"].lower()
+        circuit_match = True if not circuit else circuit in r["circuit"].lower()
+
+        if driver_match and team_match and circuit_match:
+            filtered.append(r)
+
+    if not filtered:
+        return None
+
+    if metric_name not in {"speed", "rpm", "gear", "fuel", "drs", "lap"}:
+        return None
+
+    is_lowest = any(word in q for word in ["lowest", "minimum", "least", "min"])
+
+    if is_lowest:
+        best = min(filtered, key=lambda x: x[metric_name])
+        mode_text = "lowest"
+    else:
+        best = max(filtered, key=lambda x: x[metric_name])
+        mode_text = "highest"
+
+    value = format_metric_value(metric_name, best)
+    driver_name = best["driver"].capitalize()
+    circuit_name = best["circuit"]
+
+    if metric_name == "speed":
+        return f"{driver_name} has the {mode_text} recorded speed in {circuit_name}: {value} on lap {best['lap']}."
+    if metric_name == "rpm":
+        return f"{driver_name} has the {mode_text} recorded RPM in {circuit_name}: {value} on lap {best['lap']}."
+    if metric_name == "gear":
+        return f"{driver_name} has the {mode_text} recorded gear in {circuit_name}: {value} on lap {best['lap']}."
+    if metric_name == "fuel":
+        return f"{driver_name} has the {mode_text} recorded fuel level in {circuit_name}: {value} on lap {best['lap']}."
+    if metric_name == "drs":
+        return f"{driver_name} has the {mode_text} recorded DRS value in {circuit_name}: {value} on lap {best['lap']}."
+    if metric_name == "lap":
+        return f"{driver_name} has the {mode_text} recorded lap value in {circuit_name}: {value}."
+
+    return None
+
+
+# =========================
+# DIRECT METRIC ANSWERS
+# =========================
+
+def format_metric_answer(question: str, context: str) -> str | None:
+    records = extract_metric_records(context)
+    if not records:
+        return None
+
+    q = normalize_question_text(question)
+    entities = extract_entities(q)
+    driver = entities.get("driver")
+    team = entities.get("team")
+    circuit = entities.get("circuit")
+    metric_name = detect_metric_name(q)
+
+    if not metric_name:
+        return None
+
+    filtered = []
+    for r in records:
+        driver_match = True if not driver else driver == r["driver"].lower()
+        team_match = True if not team else team == r["team"].lower()
+        circuit_match = True if not circuit else circuit in r["circuit"].lower()
+
+        if driver_match and team_match and circuit_match:
+            filtered.append(r)
+
+    if not filtered:
+        return None
+
+    latest = max(filtered, key=lambda x: x["lap"])
+    value = format_metric_value(metric_name, latest)
+
+    if value is None:
+        return None
+
+    driver_name = latest["driver"].capitalize()
+    circuit_name = latest["circuit"]
+
+    if metric_name == "speed":
+        return f"{driver_name}'s speed in {circuit_name} is {value}."
+    if metric_name == "rpm":
+        return f"{driver_name}'s RPM in {circuit_name} is {value}."
+    if metric_name == "gear":
+        return f"{driver_name}'s gear in {circuit_name} is {value}."
+    if metric_name == "fuel":
+        return f"{driver_name}'s fuel level in {circuit_name} is {value}."
+    if metric_name == "drs":
+        return f"{driver_name}'s DRS status in {circuit_name} is {value}."
+    if metric_name == "lap":
+        return f"{driver_name} is on lap {value} in {circuit_name}."
+    if metric_name == "circuit":
+        return f"{driver_name} is racing at {value}."
+
+    return None
 
 
 # =========================
@@ -236,7 +786,6 @@ def detect_events(snapshot: dict, last_seen: dict, log_event_callback):
     analytics = snapshot.get("analytics", {})
     telemetry = snapshot.get("telemetry", {})
 
-    # Race leader changed
     leader_driver = analytics.get("leader_driver", {}).get("value")
     leader_lap = analytics.get("leader_lap", {}).get("value")
     leader_tuple = (leader_driver, leader_lap)
@@ -248,7 +797,6 @@ def detect_events(snapshot: dict, last_seen: dict, log_event_callback):
         })
         last_seen["race_leader"] = leader_tuple
 
-    # Fastest driver changed
     fastest_driver = analytics.get("fastest_driver", {}).get("value")
     fastest_speed = analytics.get("fastest_speed", {}).get("value")
     fastest_tuple = (fastest_driver, fastest_speed)
@@ -260,7 +808,6 @@ def detect_events(snapshot: dict, last_seen: dict, log_event_callback):
         })
         last_seen["fastest"] = fastest_tuple
 
-    # Per-driver events
     for team, drivers in telemetry.items():
         for driver, metrics in drivers.items():
             key = f"{team}/{driver}"
@@ -270,7 +817,6 @@ def detect_events(snapshot: dict, last_seen: dict, log_event_callback):
             race_laps = safe_int(metrics.get("race_laps", {}).get("value"))
             sector = metrics.get("sector", {}).get("value")
 
-            # Lap change
             if lap_val is not None:
                 prev_lap = last_seen["driver_laps"].get(key)
                 if prev_lap is None:
@@ -284,7 +830,6 @@ def detect_events(snapshot: dict, last_seen: dict, log_event_callback):
                     })
                     last_seen["driver_laps"][key] = lap_val
 
-            # Accident detected
             acc_val = safe_int(metrics.get("accident", {}).get("value"))
             if acc_val is not None:
                 prev_acc = last_seen["driver_accident"].get(key, 0)
@@ -297,7 +842,6 @@ def detect_events(snapshot: dict, last_seen: dict, log_event_callback):
                     })
                 last_seen["driver_accident"][key] = acc_val
 
-            # Winner decided
             if circuit and lap_val is not None and race_laps is not None:
                 if lap_val >= race_laps:
                     winner_key = (circuit, key)
@@ -315,10 +859,6 @@ def detect_events(snapshot: dict, last_seen: dict, log_event_callback):
 # =========================
 
 def format_snapshot_to_text(snapshot: dict) -> str:
-    """
-    Improved semantic formatting for better retrieval.
-    Bhavana Week-4 task.
-    """
     lines = []
 
     snap_time = snapshot.get("snapshot_time", "unknown")
@@ -329,7 +869,6 @@ def format_snapshot_to_text(snapshot: dict) -> str:
 
     for team, drivers in telemetry.items():
         for driver, metrics in drivers.items():
-
             circuit = metrics.get("circuit", {}).get("value", "unknown")
             lap = metrics.get("lap", {}).get("value", "unknown")
             speed = metrics.get("speed", {}).get("value", "unknown")
@@ -369,10 +908,6 @@ def format_snapshot_to_text(snapshot: dict) -> str:
 
 
 def format_event_line(event_line: str) -> str:
-    """
-    Improved semantic formatting for event retrieval.
-    Bhavana Week-4 task.
-    """
     try:
         event = json.loads(event_line)
 

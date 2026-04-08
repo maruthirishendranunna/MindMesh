@@ -10,7 +10,16 @@ REQUIRED_ADAPTER_ATTRIBUTES = [
     "detect_events",
     "format_snapshot_to_text",
     "format_event_line",
+    "normalize_question_text",
+    "build_search_query_from_topic",
+    "build_telemetry_query_from_topics",
+    "extract_entities",
+    "classify_query",
+    "filter_telemetry_lines",
+    "can_handle_directly",
+    "get_direct_answer",
 ]
+
 
 def get_adapter():
     module_name = f"mqtt.adapters.{DATASET_ADAPTER}"

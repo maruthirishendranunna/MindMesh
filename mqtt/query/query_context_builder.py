@@ -4,6 +4,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
 from mqtt.config import DATASET_ADAPTER, EMBED_MODEL
+from mqtt.adapters.loader import get_adapter
 
 
 # =========================================
@@ -19,6 +20,8 @@ TOPIC_DB = os.path.join("data", f"chroma_topics_{DATASET_ADAPTER}")
 TOP_K_TOPIC = 2
 TOP_K_TELEMETRY = 3
 TOP_K_FALLBACK = 6
+
+adapter = get_adapter()
 
 
 # =========================================
@@ -59,26 +62,7 @@ def load_telemetry_store():
 # =========================================
 
 def classify_query(question: str):
-    q = question.lower()
-
-    event_words = [
-        "accident", "crash", "winner", "won",
-        "leader changed", "fastest changed",
-        "lap changed", "event"
-    ]
-
-    metric_words = [
-        "rpm", "speed", "fuel", "gear",
-        "lap", "drs", "circuit", "sector"
-    ]
-
-    if any(w in q for w in event_words):
-        return "event"
-
-    if any(w in q for w in metric_words):
-        return "metric"
-
-    return "general"
+    return adapter.classify_query(question)
 
 
 # =========================================
@@ -86,9 +70,10 @@ def classify_query(question: str):
 # =========================================
 
 def search_topics(question: str):
+    normalized_question = adapter.normalize_question_text(question)
     store = load_topic_store()
     retriever = store.as_retriever(search_kwargs={"k": TOP_K_TOPIC})
-    return retriever.invoke(question)
+    return retriever.invoke(normalized_question)
 
 
 # =========================================
@@ -96,21 +81,7 @@ def search_topics(question: str):
 # =========================================
 
 def build_telemetry_query(original_question: str, topic_docs):
-    if not topic_docs:
-        return original_question
-
-    best_topic = topic_docs[0].metadata.get("topic", "")
-    if not best_topic:
-        return original_question
-
-    parts = best_topic.split("/")
-
-    # Example:
-    # f1/redbull/perez/rpm -> "redbull perez rpm"
-    if len(parts) >= 4:
-        return " ".join(parts[1:])
-
-    return original_question
+    return adapter.build_telemetry_query_from_topics(original_question, topic_docs)
 
 
 # =========================================
@@ -133,25 +104,18 @@ def search_telemetry_with_filter(refined_question: str, source_type: str, k: int
 def search_telemetry(question: str, refined_question: str):
     query_type = classify_query(question)
 
-    # Metric queries should prefer snapshot chunks
-    if query_type == "metric":
+    if query_type in ("metric", "comparison"):
         docs = search_telemetry_with_filter(refined_question, "snapshots", TOP_K_TELEMETRY)
         if docs:
             return docs
-
-        # fallback
         return search_telemetry_with_filter(refined_question, "events", TOP_K_FALLBACK)
 
-    # Event queries should prefer event chunks
     if query_type == "event":
         docs = search_telemetry_with_filter(refined_question, "events", TOP_K_TELEMETRY)
         if docs:
             return docs
-
-        # fallback
         return search_telemetry_with_filter(refined_question, "snapshots", TOP_K_FALLBACK)
 
-    # General queries: try snapshots first, then fallback to events
     docs = search_telemetry_with_filter(refined_question, "snapshots", TOP_K_TELEMETRY)
     if docs:
         return docs
@@ -160,34 +124,102 @@ def search_telemetry(question: str, refined_question: str):
 
 
 # =========================================
-# BUILD CONTEXT
+# CLEAN HELPERS
 # =========================================
 
-def build_context(original_question: str, refined_question: str, topic_docs, telemetry_docs):
-    lines = []
+def clean_text(text: str) -> str:
+    if not text:
+        return ""
 
-    lines.append(f"USER QUERY: {original_question}")
-    lines.append(f"REFINED TELEMETRY QUERY: {refined_question}")
-    lines.append("")
-
-    lines.append("=== TOPIC MATCHES ===")
-    for i, doc in enumerate(topic_docs, start=1):
-        lines.append(f"[Topic Match {i}]")
-        lines.append(doc.page_content)
-        lines.append("")
-
-    lines.append("=== TELEMETRY MATCHES ===")
-    for i, doc in enumerate(telemetry_docs, start=1):
-        lines.append(f"[Telemetry Match {i}]")
-        lines.append(f"Source Type: {doc.metadata.get('source_type')}")
-        lines.append(doc.page_content[:1200])
-        lines.append("")
-
+    lines = [line.strip() for line in text.splitlines()]
+    lines = [line for line in lines if line]
     return "\n".join(lines)
 
 
+def unique_preserve_order(items):
+    seen = set()
+    result = []
+
+    for item in items:
+        if item not in seen:
+            seen.add(item)
+            result.append(item)
+
+    return result
+
+
 # =========================================
-# RUN QUERY
+# BUILD CLEAN RAG CONTEXT
+# =========================================
+
+def build_context(original_question: str, refined_question: str, topic_docs, telemetry_docs):
+    topic_texts = []
+    telemetry_texts = []
+
+    for doc in topic_docs:
+        text = clean_text(doc.page_content)
+        if text:
+            topic_texts.append(text)
+
+    for doc in telemetry_docs:
+        text = clean_text(doc.page_content[:1200])
+
+        if not text:
+            continue
+
+        filtered_lines = adapter.filter_telemetry_lines(
+            original_question=original_question,
+            refined_question=refined_question,
+            text=text
+        )
+
+        if filtered_lines:
+            telemetry_texts.append("\n".join(filtered_lines))
+
+    topic_texts = unique_preserve_order(topic_texts)
+    telemetry_texts = unique_preserve_order(telemetry_texts)
+
+    lines = []
+    lines.append(f"User question: {original_question}")
+    lines.append("")
+
+    if refined_question and refined_question != original_question:
+        lines.append(f"Telemetry search focus: {refined_question}")
+        lines.append("")
+
+    if topic_texts:
+        lines.append("Relevant topic information:")
+        for text in topic_texts:
+            lines.append(text)
+            lines.append("")
+
+    if telemetry_texts:
+        lines.append("Relevant telemetry information:")
+        for text in telemetry_texts:
+            lines.append(text)
+            lines.append("")
+
+    if not topic_texts and not telemetry_texts:
+        lines.append("No relevant topic or telemetry information was retrieved.")
+
+    return "\n".join(lines).strip()
+
+
+# =========================================
+# MAIN FUNCTION FOR RAG
+# =========================================
+
+def build_query_context(question: str) -> str:
+    topic_docs = search_topics(question)
+    refined_question = build_telemetry_query(question, topic_docs)
+    telemetry_docs = search_telemetry(question, refined_question)
+
+    context = build_context(question, refined_question, topic_docs, telemetry_docs)
+    return context
+
+
+# =========================================
+# OPTIONAL DEBUG RUN
 # =========================================
 
 def run_query(question: str):
@@ -199,9 +231,15 @@ def run_query(question: str):
     refined_question = build_telemetry_query(question, topic_docs)
     telemetry_docs = search_telemetry(question, refined_question)
 
+    print(f"\nQUERY TYPE: {classify_query(question)}")
+    print(f"EXTRACTED ENTITIES: {adapter.extract_entities(question)}")
+    print(f"REFINED TELEMETRY QUERY: {refined_question}")
+    print(f"TOPIC MATCH COUNT: {len(topic_docs)}")
+    print(f"TELEMETRY MATCH COUNT: {len(telemetry_docs)}")
+
     context = build_context(question, refined_question, topic_docs, telemetry_docs)
 
-    print("\nCONTEXT BUILT:\n")
+    print("\nCLEAN CONTEXT BUILT:\n")
     print(context)
 
     return context
