@@ -338,6 +338,10 @@ def filter_telemetry_lines(original_question: str, refined_question: str, text: 
 def can_handle_directly(question: str) -> bool:
     q = normalize_question_text(question)
 
+    # Handle follow-up queries
+    if "what about" in q or "other drivers" in q:
+        return True
+
     deterministic_keywords = [
         "accident", "accidents", "crash", "crashes",
         "highest", "maximum", "lowest", "minimum",
@@ -350,16 +354,24 @@ def can_handle_directly(question: str) -> bool:
 
 def get_direct_answer(question: str, context: str) -> str | None:
     q = normalize_question_text(question)
+
+    # Follow-up queries
+    if "what about" in q or "other drivers" in q:
+        return get_next_best_entities(context)
+
     query_type = classify_query(q)
 
+    # Event queries
     if "accident" in q or "accidents" in q or "crash" in q or "crashes" in q:
         return format_accident_answer(q, context)
 
+    # Comparison queries
     if query_type == "comparison":
         result = compute_best_metric_answer(q, context)
         if result:
             return result
 
+    # Metric queries
     if query_type == "metric":
         result = format_metric_answer(q, context)
         if result:
@@ -367,6 +379,39 @@ def get_direct_answer(question: str, context: str) -> str | None:
 
     return None
 
+def get_next_best_entities(context: str):
+    import re
+
+    matches = re.findall(r"Driver (\w+).*?Speed is ([0-9.]+)", context)
+
+    if not matches:
+        return None
+
+    # Keep only highest speed per driver
+    driver_speeds = {}
+
+    for driver, speed in matches:
+        speed = float(speed)
+
+        if driver not in driver_speeds:
+            driver_speeds[driver] = speed
+        else:
+            driver_speeds[driver] = max(driver_speeds[driver], speed)
+
+    # Sort descending
+    ranked = sorted(driver_speeds.items(), key=lambda x: x[1], reverse=True)
+
+    if len(ranked) <= 1:
+        return "No other relevant data found."
+
+    # Remove top one
+    remaining = ranked[1:]
+
+    lines = ["Other top speeds:"]
+    for driver, speed in remaining[:5]:
+        lines.append(f"- {driver.capitalize()}: {speed} km/h")
+
+    return "\n".join(lines)
 
 # =========================
 # EVENT ANSWERS

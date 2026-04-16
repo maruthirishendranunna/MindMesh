@@ -18,8 +18,8 @@ TOPIC_COLLECTION = f"{DATASET_ADAPTER}_topic_descriptions"
 TOPIC_DB = os.path.join("data", f"chroma_topics_{DATASET_ADAPTER}")
 
 TOP_K_TOPIC = 2
-TOP_K_TELEMETRY = 3
-TOP_K_FALLBACK = 6
+TOP_K_TELEMETRY = 8
+TOP_K_FALLBACK = 10
 
 adapter = get_adapter()
 

@@ -1,6 +1,6 @@
+import os
 import ollama
 
-from mqtt.config import LLM_MODEL
 from mqtt.adapters.loader import get_adapter
 from mqtt.query.query_context_builder import build_query_context
 from mqtt.query.prompt_builder import build_prompt
@@ -8,83 +8,166 @@ from mqtt.query.prompt_builder import build_prompt
 adapter = get_adapter()
 
 
+def get_current_model() -> str:
+    return os.getenv("LLM_MODEL", "llama3")
+
+
+def extract_current_question(question: str) -> str:
+    marker = "Current user question:"
+    if marker in question:
+        return question.split(marker, 1)[1].strip()
+    return question.strip()
+
+
+def extract_previous_user_question(question: str) -> str | None:
+    marker = "Previous user question:"
+    if marker not in question:
+        return None
+
+    text = question.split(marker, 1)[1]
+
+    # stop at either previous assistant or current question marker
+    stop_markers = ["Previous assistant answer:", "Current user question:"]
+    stop_positions = []
+
+    for stop in stop_markers:
+        if stop in text:
+            stop_positions.append(text.index(stop))
+
+    if stop_positions:
+        end_idx = min(stop_positions)
+        return text[:end_idx].strip()
+
+    return text.strip()
+
+
+def is_followup_other_query(question: str) -> bool:
+    q = question.lower().strip()
+    patterns = [
+        "what about other",
+        "what about drivers",
+        "other drivers",
+        "what about others",
+        "and the rest",
+        "show other drivers",
+    ]
+    return any(p in q for p in patterns)
+
+
 # =========================================
 # LLM CALL
 # =========================================
 
 def ask_llm(prompt: str) -> str:
-    response = ollama.chat(
-        model=LLM_MODEL,
-        messages=[
-            {
-                "role": "system",
-                "content": (
-                    "You are a helpful data assistant. "
-                    "Answer directly and clearly. "
-                    "For metric questions, do not start with 'Yes' or 'No'. "
-                    "For yes/no event questions, start with 'Yes' or 'No' when appropriate. "
-                    "Do not invent information."
-                )
-            },
-            {
-                "role": "user",
-                "content": prompt
-            }
-        ]
-    )
-    return response["message"]["content"].strip()
+    current_model = get_current_model()
+
+    try:
+        response = ollama.chat(
+            model=current_model,
+            messages=[
+                {
+                    "role": "system",
+                    "content": (
+                        "You are a helpful data assistant. "
+                        "Answer directly and clearly. "
+                        "For metric questions, do not start with 'Yes' or 'No'. "
+                        "For yes/no event questions, start with 'Yes' or 'No' when appropriate. "
+                        "Do not invent information."
+                    )
+                },
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ]
+        )
+        return response["message"]["content"].strip()
+
+    except Exception as e:
+        return f"LLM error: {e}"
 
 
 # =========================================
 # MAIN RAG PIPELINE
 # =========================================
 
-def run_rag_query(question: str):
-    print("\n" + "=" * 80)
-    print(f"USER QUERY: {question}")
-    print("=" * 80)
+def run_rag_query(question: str, debug: bool = True):
+    current_model = get_current_model()
 
-    # Step 1: Build context
-    context = build_query_context(question)
+    effective_question = extract_current_question(question)
+    previous_user_question = extract_previous_user_question(question)
 
-    print("\n" + "=" * 80)
-    print("RETRIEVED CONTEXT")
-    print("=" * 80)
-    print(context)
+    # IMPORTANT:
+    # For follow-up "other drivers" style questions,
+    # use the PREVIOUS USER QUESTION for retrieval,
+    # not the full memory block and not the previous assistant answer.
+    if is_followup_other_query(effective_question) and previous_user_question:
+        retrieval_question = previous_user_question
+    else:
+        retrieval_question = question
 
-    # Step 2: Direct deterministic handling from adapter
-    if adapter.can_handle_directly(question):
-        print("\n⚡ Using adapter-based deterministic handling...\n")
-        result = adapter.get_direct_answer(question, context)
+    if debug:
+        print("\n" + "=" * 80)
+        print(f"RETRIEVAL QUESTION: {retrieval_question}")
+        print("=" * 80)
+        print(f"EFFECTIVE QUESTION: {effective_question}")
+        print(f"PREVIOUS USER QUESTION: {previous_user_question}")
+
+    context = build_query_context(retrieval_question)
+
+    if debug:
+        print("\n" + "=" * 80)
+        print("RETRIEVED CONTEXT")
+        print("=" * 80)
+        print(context)
+
+    # Adapter logic should use clean current question only
+    if adapter.can_handle_directly(effective_question):
+        if debug:
+            print("\n⚡ Using adapter-based deterministic handling...\n")
+
+        result = adapter.get_direct_answer(effective_question, context)
 
         if result:
-            print("\n" + "=" * 80)
-            print("FINAL ANSWER")
-            print("=" * 80)
-            print(result)
-            return result
+            if debug:
+                print("\n" + "=" * 80)
+                print("FINAL ANSWER")
+                print("=" * 80)
+                print(result)
 
-    # Step 3: Query type for prompt guidance
-    query_type = adapter.classify_query(question)
+            return {
+                "answer": result,
+                "source": "adapter",
+                "model": current_model
+            }
 
-    # Step 4: Build prompt
-    prompt = build_prompt(question, context, query_type)
+    # LLM fallback
+    query_type = adapter.classify_query(effective_question)
+    prompt = build_prompt(effective_question, context, query_type)
 
-    print("\n" + "=" * 80)
-    print("FINAL PROMPT")
-    print("=" * 80)
-    print(prompt)
+    if debug:
+        print("\n" + "=" * 80)
+        print("FINAL PROMPT")
+        print("=" * 80)
+        print(prompt)
 
-    # Step 5: LLM fallback
-    print("\n🤖 Generating answer using LLM...\n")
+        print("\n" + "=" * 80)
+        print(f"GENERATING ANSWER USING OLLAMA MODEL: {current_model}")
+        print("=" * 80)
+
     answer = ask_llm(prompt)
 
-    print("\n" + "=" * 80)
-    print("FINAL ANSWER")
-    print("=" * 80)
-    print(answer)
+    if debug:
+        print("\n" + "=" * 80)
+        print("FINAL ANSWER")
+        print("=" * 80)
+        print(answer)
 
-    return answer
+    return {
+        "answer": answer,
+        "source": "llm",
+        "model": current_model
+    }
 
 
 # =========================================
@@ -93,7 +176,7 @@ def run_rag_query(question: str):
 
 if __name__ == "__main__":
     print("MindMesh RAG Query Engine")
-    print(f"Using Ollama model: {LLM_MODEL}")
+    print(f"Using Ollama model: {get_current_model()}")
     print("Press Enter without typing anything to exit.")
 
     while True:
@@ -103,4 +186,7 @@ if __name__ == "__main__":
             print("Exiting MindMesh RAG Query Engine.")
             break
 
-        run_rag_query(question)
+        result = run_rag_query(question, debug=True)
+
+        print("\nReturned Result Object:")
+        print(result)
