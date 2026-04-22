@@ -4,6 +4,7 @@ import time
 import paho.mqtt.client as mqtt
 from datetime import datetime
 from mqtt.adapters.loader import get_adapter
+from mqtt.config import DATASET_ADAPTER
 
 adapter = get_adapter()
 
@@ -15,17 +16,12 @@ MAX_SNAPSHOTS = 500
 
 topic_cache = {}
 
-OUTPUT_DIR = os.path.join("mqtt", "processor", "data", "snapshots")
-EVENTS_DIR = os.path.join("mqtt", "processor", "data", "events")
+BASE_OUTPUT_DIR = os.path.join("mqtt", "processor", "data", DATASET_ADAPTER)
+OUTPUT_DIR = os.path.join(BASE_OUTPUT_DIR, "snapshots")
+EVENTS_DIR = os.path.join(BASE_OUTPUT_DIR, "events")
 EVENTS_FILE = os.path.join(EVENTS_DIR, "events.jsonl")
 
-last_seen = {
-    "race_leader": None,
-    "fastest": None,
-    "driver_laps": {},
-    "driver_accident": {},
-    "winners": set()
-}
+last_seen = adapter.init_last_seen()
 
 
 def now_human():
@@ -50,17 +46,19 @@ def enforce_snapshot_limit():
 
 def log_event(event_type: str, payload: dict):
     os.makedirs(EVENTS_DIR, exist_ok=True)
+
     record = {
         "timestamp": now_human(),
         "type": event_type,
         "data": payload
     }
+
     with open(EVENTS_FILE, "a", encoding="utf-8") as f:
         f.write(json.dumps(record) + "\n")
 
 
 def on_connect(client, userdata, flags, rc):
-    print("Snapshotter connected to MQTT")
+    print(f"Snapshotter connected to MQTT | Dataset: {DATASET_ADAPTER}")
     for topic in adapter.INPUT_TOPICS_SNAPSHOTTER:
         client.subscribe(topic)
 
@@ -81,7 +79,7 @@ def save_snapshot(snapshot):
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(snapshot, f, indent=2)
 
-    print(f"✅ Snapshot saved: {filename}")
+    print(f"✅ Snapshot saved: {filepath}")
     enforce_snapshot_limit()
 
 

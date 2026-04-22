@@ -1,0 +1,10 @@
+Event STATUS_CHANGED at 2026-04-21 23:19:27: {'site': 'site1', 'equipment': 'pump2', 'old_status': 'running', 'new_status': 'fault'}
+Event HIGH_TEMPERATURE at 2026-04-21 23:19:27: {'site': 'site1', 'equipment': 'compressor1', 'temperature': 95.55}
+Event HIGH_VIBRATION at 2026-04-21 23:19:27: {'site': 'site1', 'equipment': 'valve1', 'vibration': 8.94}
+Event STATUS_CHANGED at 2026-04-21 23:19:27: {'site': 'site1', 'equipment': 'valve1', 'old_status': 'idle', 'new_status': 'running'}
+Event HIGH_VIBRATION at 2026-04-21 23:19:27: {'site': 'site2', 'equipment': 'pump1', 'vibration': 9.94}
+Event STATUS_CHANGED at 2026-04-21 23:19:27: {'site': 'site2', 'equipment': 'pump1', 'old_status': 'running', 'new_status': 'fault'}
+Event HIGH_TEMPERATURE at 2026-04-21 23:19:27: {'site': 'site2', 'equipment': 'pump2', 'temperature': 102.09}
+Event HIGH_PRESSURE at 2026-04-21 23:19:27: {'site': 'site2', 'equipment': 'compressor1', 'pressure': 130.5}
+Event HIGH_TEMPERATURE at 2026-04-21 23:19:27: {'site': 'site2', 'equipment': 'valve1', 'temperature': 100.06}
+Event STATUS_CHANGED at 2026-04-21 23:19:42: {'site': 'site1', 'equipment': 'pump1', 'old_status': 'idle', 'new_status': 'fault'}

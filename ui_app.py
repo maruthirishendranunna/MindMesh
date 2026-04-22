@@ -1,7 +1,6 @@
 import os
+import sys
 import streamlit as st
-
-from mqtt.query.rag_query_engine import run_rag_query
 
 
 # =========================================
@@ -27,25 +26,78 @@ AVAILABLE_MODELS = [
 ]
 
 
+# =========================================
+# DATASET + MODEL HELPERS
+# =========================================
+
+def get_available_adapters():
+    adapter_dir = os.path.join("mqtt", "adapters")
+
+    if not os.path.isdir(adapter_dir):
+        return ["f1_adapter"]
+
+    adapters = []
+    for fname in os.listdir(adapter_dir):
+        if not fname.endswith("_adapter.py"):
+            continue
+        if fname.startswith("__"):
+            continue
+        if fname == "loader.py":
+            continue
+
+        adapter_name = fname[:-3]  # remove .py
+        adapters.append(adapter_name)
+
+    adapters.sort()
+    return adapters if adapters else ["f1_adapter"]
+
+
+def set_runtime_dataset(dataset_adapter: str):
+    os.environ["DATASET_ADAPTER"] = dataset_adapter
+
+    # Clear imported modules so new adapter is loaded correctly
+    modules_to_clear = [
+        "mqtt.adapters.loader",
+        "mqtt.query.query_context_builder",
+        "mqtt.query.rag_query_engine",
+    ]
+
+    for mod in list(sys.modules.keys()):
+        if mod in modules_to_clear or mod.startswith("mqtt.adapters."):
+            sys.modules.pop(mod, None)
+
+
 def set_model_env(selected_model: str):
     os.environ["LLM_MODEL"] = selected_model
 
 
+# =========================================
+# SESSION STATE
+# =========================================
+
 def init_session():
+    available_datasets = get_available_adapters()
+
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
     if "selected_model" not in st.session_state:
         st.session_state.selected_model = AVAILABLE_MODELS[0]
 
+    if "selected_dataset" not in st.session_state:
+        st.session_state.selected_dataset = (
+            "f1_adapter" if "f1_adapter" in available_datasets else available_datasets[0]
+        )
+
     if "debug_mode" not in st.session_state:
         st.session_state.debug_mode = False
 
 
+# =========================================
+# MEMORY HELPERS
+# =========================================
+
 def get_last_user_message():
-    """
-    Return the most recent user message from chat history.
-    """
     for msg in reversed(st.session_state.messages):
         if msg["role"] == "user":
             return msg["content"]
@@ -53,9 +105,6 @@ def get_last_user_message():
 
 
 def get_last_assistant_message():
-    """
-    Return the most recent assistant message from chat history.
-    """
     for msg in reversed(st.session_state.messages):
         if msg["role"] == "assistant":
             return msg["content"]
@@ -63,14 +112,9 @@ def get_last_assistant_message():
 
 
 def build_augmented_question(current_question: str) -> str:
-    """
-    Build a lightweight conversational query so the backend can understand follow-ups.
-    We pass previous user question + previous assistant answer + current question.
-    """
     previous_user = get_last_user_message()
     previous_assistant = get_last_assistant_message()
 
-    # If no history exists, just return current question
     if not previous_user and not previous_assistant:
         return current_question.strip()
 
@@ -87,15 +131,25 @@ def build_augmented_question(current_question: str) -> str:
     return "\n".join(parts)
 
 
-def run_query_with_memory(question: str, debug_mode: bool):
-    """
-    Run query through RAG with lightweight multi-turn memory.
-    """
+def run_query_with_memory(question: str, debug_mode: bool, dataset_adapter: str):
+    set_runtime_dataset(dataset_adapter)
+
+    # Import only after setting dataset
+    from mqtt.query.rag_query_engine import run_rag_query
+
     augmented_question = build_augmented_question(question)
     return run_rag_query(augmented_question, debug=debug_mode)
 
 
+# =========================================
+# INIT
+# =========================================
+
 init_session()
+available_datasets = get_available_adapters()
+
+set_runtime_dataset(st.session_state.selected_dataset)
+set_model_env(st.session_state.selected_model)
 
 
 # =========================================
@@ -103,6 +157,13 @@ init_session()
 # =========================================
 
 st.sidebar.title("MindMesh Settings")
+
+selected_dataset = st.sidebar.selectbox(
+    "Select Dataset",
+    available_datasets,
+    index=available_datasets.index(st.session_state.selected_dataset)
+    if st.session_state.selected_dataset in available_datasets else 0
+)
 
 selected_model = st.sidebar.selectbox(
     "Select LLM Model",
@@ -115,45 +176,79 @@ debug_mode = st.sidebar.checkbox(
     value=st.session_state.debug_mode
 )
 
+dataset_changed = selected_dataset != st.session_state.selected_dataset
+model_changed = selected_model != st.session_state.selected_model
+
+if dataset_changed:
+    st.session_state.selected_dataset = selected_dataset
+    st.session_state.messages = []
+    st.rerun()
+
+if model_changed:
+    st.session_state.selected_model = selected_model
+    st.rerun()
+
+st.session_state.debug_mode = debug_mode
+
+set_runtime_dataset(st.session_state.selected_dataset)
+set_model_env(st.session_state.selected_model)
+
 if st.sidebar.button("Clear Chat History"):
     st.session_state.messages = []
     st.rerun()
 
-st.session_state.selected_model = selected_model
-st.session_state.debug_mode = debug_mode
-
-set_model_env(selected_model)
-
 st.sidebar.markdown("---")
-st.sidebar.write(f"**Current model:** {selected_model}")
-st.sidebar.write(f"**Debug mode:** {debug_mode}")
+st.sidebar.write(f"**Current dataset:** {st.session_state.selected_dataset}")
+st.sidebar.write(f"**Current model:** {st.session_state.selected_model}")
+st.sidebar.write(f"**Debug mode:** {st.session_state.debug_mode}")
 
 st.sidebar.markdown("---")
 st.sidebar.subheader("Example Queries")
 
-example_queries = [
-    "speed of hamilton in silverstone",
-    "rpm of perez in bahrain",
-    "is there any accidents happened in Bahrain",
-    "top speed of verstappen in silverstone",
-    "summarize telemetry for silverstone",
-]
+dataset_examples = {
+    "f1_adapter": [
+        "speed of hamilton in silverstone",
+        "rpm of perez in bahrain",
+        "who has the top speed in silverstone",
+        "what about other drivers",
+        "is there any accidents happened in Bahrain",
+    ],
+    "oilgas_adapter": [
+        "pressure of pump1",
+        "flow rate of site1",
+        "status of pump2",
+        "which equipment has highest pressure",
+        "any high temperature alerts",
+    ],
+}
+
+example_queries = dataset_examples.get(
+    st.session_state.selected_dataset,
+    ["show latest telemetry", "highest value", "what about others"]
+)
 
 for example in example_queries:
-    if st.sidebar.button(example, key=f"example_{example}"):
+    if st.sidebar.button(example, key=f"example_{st.session_state.selected_dataset}_{example}"):
         st.session_state.messages.append({
             "role": "user",
             "content": example
         })
 
-        with st.spinner(f"Generating answer using {selected_model}..."):
-            result = run_query_with_memory(example, debug_mode)
+        with st.spinner(
+            f"Generating answer using {st.session_state.selected_model} on {st.session_state.selected_dataset}..."
+        ):
+            result = run_query_with_memory(
+                example,
+                st.session_state.debug_mode,
+                st.session_state.selected_dataset
+            )
 
         st.session_state.messages.append({
             "role": "assistant",
             "content": result["answer"],
             "source": result["source"],
-            "model": result["model"]
+            "model": result["model"],
+            "dataset": st.session_state.selected_dataset
         })
 
         st.rerun()
@@ -163,7 +258,7 @@ for example in example_queries:
 # MAIN HEADER
 # =========================================
 
-st.title("🏎️ MindMesh Telemetry Query Chat")
+st.title("MindMesh Telemetry Query Chat")
 st.caption("Real-Time Telemetry Query System using MQTT + RAG")
 
 
@@ -179,11 +274,14 @@ for message in st.session_state.messages:
             st.success(message["content"])
 
             if message.get("source") == "adapter":
-                st.caption("⚡ Answer from structured telemetry (fast & accurate)")
+                st.caption("⚡ Answer from structured telemetry")
             else:
                 st.caption("🤖 Answer generated using LLM")
 
-            st.caption(f"Model used: {message.get('model', selected_model)}")
+            st.caption(
+                f"Model: {message.get('model', st.session_state.selected_model)} | "
+                f"Dataset: {message.get('dataset', st.session_state.selected_dataset)}"
+            )
 
 
 # =========================================
@@ -202,21 +300,30 @@ if user_question:
         st.markdown(user_question)
 
     with st.chat_message("assistant"):
-        with st.spinner(f"Generating answer using {selected_model}..."):
-            result = run_query_with_memory(user_question, debug_mode)
+        with st.spinner(
+            f"Generating answer using {st.session_state.selected_model} on {st.session_state.selected_dataset}..."
+        ):
+            result = run_query_with_memory(
+                user_question,
+                st.session_state.debug_mode,
+                st.session_state.selected_dataset
+            )
 
         st.success(result["answer"])
 
         if result["source"] == "adapter":
-            st.caption("⚡ Answer from structured telemetry (fast & accurate)")
+            st.caption("⚡ Answer from structured telemetry")
         else:
             st.caption("🤖 Answer generated using LLM")
 
-        st.caption(f"Model used: {result['model']}")
+        st.caption(
+            f"Model: {result['model']} | Dataset: {st.session_state.selected_dataset}"
+        )
 
     st.session_state.messages.append({
         "role": "assistant",
         "content": result["answer"],
         "source": result["source"],
-        "model": result["model"]
+        "model": result["model"],
+        "dataset": st.session_state.selected_dataset
     })

@@ -796,7 +796,16 @@ def publish_analytics(client, analytics: dict):
 # =========================
 # SNAPSHOT BUILDING
 # =========================
-
+def init_last_seen():
+    return {
+        "race_leader": None,
+        "fastest": None,
+        "driver_laps": {},
+        "driver_accident": {},
+        "winners": set()
+    }
+    
+    
 def build_snapshot_from_cache(topic_cache: dict, snapshot_time: str):
     snapshot = {
         "snapshot_time": snapshot_time,

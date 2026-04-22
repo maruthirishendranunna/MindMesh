@@ -1,6 +1,7 @@
 import time
 import paho.mqtt.client as mqtt
 from mqtt.adapters.loader import get_adapter
+from mqtt.config import DATASET_ADAPTER
 
 adapter = get_adapter()
 
@@ -14,13 +15,29 @@ topic_cache = {}
 
 
 def on_connect(client, userdata, flags, rc):
-    print("Telemetry Processor connected to MQTT")
+    print(f"Telemetry Processor connected to MQTT | Dataset: {DATASET_ADAPTER}")
     for topic in adapter.INPUT_TOPICS_PROCESSOR:
         client.subscribe(topic)
 
 
 def on_message(client, userdata, msg):
     topic_cache[msg.topic] = msg.payload.decode()
+
+
+def print_generic_analytics(analytics: dict):
+    print("\n===== LIVE ANALYTICS =====")
+
+    if not analytics:
+        print("No analytics available.")
+        return
+
+    for key, value in analytics.items():
+        if isinstance(value, dict):
+            print(f"{key}:")
+            for sub_key, sub_value in value.items():
+                print(f"  {sub_key} -> {sub_value}")
+        else:
+            print(f"{key}: {value}")
 
 
 def main():
@@ -40,20 +57,7 @@ def main():
             print("Waiting for telemetry...")
             continue
 
-        fastest_driver = analytics["fastest_driver"]
-        fastest_speed = analytics["fastest_speed"]
-        fastest_circuit = analytics["fastest_circuit"]
-        leader = analytics["leader"]
-        leader_lap = analytics["leader_lap"]
-        leader_circuit = analytics["leader_circuit"]
-        team_avg = analytics["team_avg"]
-
-        print("\n===== LIVE ANALYTICS =====")
-        print(f"Fastest Driver: {fastest_driver} | Speed: {round(fastest_speed, 2)} | Circuit: {fastest_circuit}")
-        print(f"Race Leader:    {leader} | Lap: {leader_lap} | Circuit: {leader_circuit}")
-        print("Team Avg Speeds:")
-        for team, avg in team_avg.items():
-            print(f"  {team} -> {round(avg, 2)}")
+        print_generic_analytics(analytics)
 
         if PUBLISH_ANALYTICS:
             adapter.publish_analytics(client, analytics)

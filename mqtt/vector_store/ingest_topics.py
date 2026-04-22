@@ -7,20 +7,14 @@ from langchain_core.documents import Document
 
 from mqtt.config import DATASET_ADAPTER, EMBED_MODEL
 
-# =========================================
-# CONFIG
-# =========================================
+DATASET_NAME = DATASET_ADAPTER.replace("_adapter", "")
+TOPIC_XLSX_FILE = os.path.join("data", f"{DATASET_NAME}_topic_descriptions.xlsx")
 
-TOPIC_XLSX_FILE = os.path.join("data", "f1_topic_descriptions.xlsx")
 COLLECTION_NAME = f"{DATASET_ADAPTER}_topic_descriptions"
 PERSIST_DIR = os.path.join("data", f"chroma_topics_{DATASET_ADAPTER}")
 
 RESET_DB_EACH_RUN = True
 
-
-# =========================================
-# HELPERS
-# =========================================
 
 def reset_vector_db():
     if os.path.exists(PERSIST_DIR):
@@ -29,11 +23,17 @@ def reset_vector_db():
 
 
 def normalize_colnames(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Lowercase + trim column names so small Excel variations don't break code.
-    """
     df.columns = [str(c).strip().lower() for c in df.columns]
     return df
+
+
+def clean_text_value(value) -> str:
+    if pd.isna(value):
+        return ""
+    text = str(value).strip()
+    if text.lower() == "nan":
+        return ""
+    return text
 
 
 def load_topic_documents():
@@ -54,21 +54,10 @@ def load_topic_documents():
             return documents
 
     for i, row in df.iterrows():
-        topic = str(row.get("topic", "")).strip()
-        description = str(row.get("description", "")).strip()
-
-        unit = str(row.get("unit", "")).strip() if "unit" in df.columns else ""
-        purpose = str(row.get("purpose", "")).strip() if "purpose" in df.columns else ""
-
-        # Clean NaN string cases
-        if topic.lower() == "nan":
-            topic = ""
-        if description.lower() == "nan":
-            description = ""
-        if unit.lower() == "nan":
-            unit = ""
-        if purpose.lower() == "nan":
-            purpose = ""
+        topic = clean_text_value(row.get("topic", ""))
+        description = clean_text_value(row.get("description", ""))
+        unit = clean_text_value(row.get("unit", "")) if "unit" in df.columns else ""
+        purpose = clean_text_value(row.get("purpose", "")) if "purpose" in df.columns else ""
 
         if not topic or not description:
             continue
@@ -84,6 +73,7 @@ def load_topic_documents():
             "unit": unit,
             "purpose": purpose,
             "adapter": DATASET_ADAPTER,
+            "dataset": DATASET_NAME,
             "row_id": f"topic_{i:04d}",
             "source_file": os.path.basename(TOPIC_XLSX_FILE)
         }
@@ -98,27 +88,25 @@ def load_topic_documents():
     return documents
 
 
-# =========================================
-# MAIN
-# =========================================
-
 def main():
     if RESET_DB_EACH_RUN:
         reset_vector_db()
 
     docs = load_topic_documents()
 
+    print(f"Dataset adapter: {DATASET_ADAPTER}")
+    print(f"Dataset name: {DATASET_NAME}")
+    print(f"Topic file: {TOPIC_XLSX_FILE}")
     print(f"Topic documents found: {len(docs)}")
+
     if not docs:
         return
 
-    print("Loading embedding model...")
     embeddings = HuggingFaceEmbeddings(
         model_name=EMBED_MODEL,
         model_kwargs={"device": "cpu"}
     )
 
-    print("Creating topic description vector DB...")
     _vectorstore = Chroma.from_documents(
         documents=docs,
         embedding=embeddings,

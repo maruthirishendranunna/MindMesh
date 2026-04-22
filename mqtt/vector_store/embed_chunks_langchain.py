@@ -7,7 +7,7 @@ from langchain_core.documents import Document
 
 from mqtt.config import DATASET_ADAPTER, EMBED_MODEL
 
-CHUNK_BASE_DIR = os.path.join("data", "chunks")
+CHUNK_BASE_DIR = os.path.join("data", "chunks", DATASET_ADAPTER)
 SNAPSHOT_CHUNK_DIR = os.path.join(CHUNK_BASE_DIR, "snapshots")
 EVENT_CHUNK_DIR = os.path.join(CHUNK_BASE_DIR, "events")
 
@@ -83,7 +83,6 @@ def main():
         model_kwargs={"device": "cpu"}
     )
 
-    print("Creating fresh ChromaDB collection...")
     _vectorstore = Chroma.from_documents(
         documents=all_docs,
         embedding=embeddings,

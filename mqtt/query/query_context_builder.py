@@ -17,11 +17,11 @@ TELEMETRY_DB = os.path.join("data", f"chroma_db_{DATASET_ADAPTER}")
 TOPIC_COLLECTION = f"{DATASET_ADAPTER}_topic_descriptions"
 TOPIC_DB = os.path.join("data", f"chroma_topics_{DATASET_ADAPTER}")
 
-TOP_K_TOPIC = 2
-TOP_K_TELEMETRY = 8
-TOP_K_FALLBACK = 10
-
 adapter = get_adapter()
+
+TOP_K_TOPIC = getattr(adapter, "TOP_K_TOPIC", 2)
+TOP_K_TELEMETRY = getattr(adapter, "TOP_K_TELEMETRY", 8)
+TOP_K_FALLBACK = getattr(adapter, "TOP_K_FALLBACK", 10)
 
 
 # =========================================
@@ -81,7 +81,8 @@ def search_topics(question: str):
 # =========================================
 
 def build_telemetry_query(original_question: str, topic_docs):
-    return adapter.build_telemetry_query_from_topics(original_question, topic_docs)
+    query = adapter.build_telemetry_query_from_topics(original_question, topic_docs)
+    return query if query else original_question
 
 
 # =========================================
@@ -210,11 +211,13 @@ def build_context(original_question: str, refined_question: str, topic_docs, tel
 # =========================================
 
 def build_query_context(question: str) -> str:
-    topic_docs = search_topics(question)
-    refined_question = build_telemetry_query(question, topic_docs)
-    telemetry_docs = search_telemetry(question, refined_question)
+    normalized_question = adapter.normalize_question_text(question)
 
-    context = build_context(question, refined_question, topic_docs, telemetry_docs)
+    topic_docs = search_topics(normalized_question)
+    refined_question = build_telemetry_query(normalized_question, topic_docs)
+    telemetry_docs = search_telemetry(normalized_question, refined_question)
+
+    context = build_context(normalized_question, refined_question, topic_docs, telemetry_docs)
     return context
 
 
@@ -223,21 +226,24 @@ def build_query_context(question: str) -> str:
 # =========================================
 
 def run_query(question: str):
+    normalized_question = adapter.normalize_question_text(question)
+
     print("\n" + "=" * 80)
     print(f"QUERY: {question}")
     print("=" * 80)
 
-    topic_docs = search_topics(question)
-    refined_question = build_telemetry_query(question, topic_docs)
-    telemetry_docs = search_telemetry(question, refined_question)
+    topic_docs = search_topics(normalized_question)
+    refined_question = build_telemetry_query(normalized_question, topic_docs)
+    telemetry_docs = search_telemetry(normalized_question, refined_question)
 
-    print(f"\nQUERY TYPE: {classify_query(question)}")
-    print(f"EXTRACTED ENTITIES: {adapter.extract_entities(question)}")
+    print(f"\nNORMALIZED QUESTION: {normalized_question}")
+    print(f"QUERY TYPE: {classify_query(normalized_question)}")
+    print(f"EXTRACTED ENTITIES: {adapter.extract_entities(normalized_question)}")
     print(f"REFINED TELEMETRY QUERY: {refined_question}")
     print(f"TOPIC MATCH COUNT: {len(topic_docs)}")
     print(f"TELEMETRY MATCH COUNT: {len(telemetry_docs)}")
 
-    context = build_context(question, refined_question, topic_docs, telemetry_docs)
+    context = build_context(normalized_question, refined_question, topic_docs, telemetry_docs)
 
     print("\nCLEAN CONTEXT BUILT:\n")
     print(context)

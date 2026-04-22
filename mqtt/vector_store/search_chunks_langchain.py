@@ -1,15 +1,24 @@
 import os
+
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
 from mqtt.config import DATASET_ADAPTER, EMBED_MODEL
+from mqtt.adapters.loader import get_adapter
+
+adapter = get_adapter()
 
 COLLECTION_NAME = f"{DATASET_ADAPTER}_telemetry_chunks"
 PERSIST_DIR = os.path.join("data", f"chroma_db_{DATASET_ADAPTER}")
-TOP_K = 5
-FINAL_TOP_K = 3
+
+TOP_K = getattr(adapter, "SEARCH_TOP_K", 5)
+FINAL_TOP_K = getattr(adapter, "SEARCH_FINAL_TOP_K", 3)
 PREVIEW_CHARS = 800
 
+
+# =========================================
+# LOAD VECTOR STORE
+# =========================================
 
 def load_vectorstore():
     embeddings = HuggingFaceEmbeddings(
@@ -25,31 +34,56 @@ def load_vectorstore():
     return vectorstore
 
 
+# =========================================
+# QUERY TYPE
+# =========================================
+
 def classify_query(question: str):
-    q = question.lower()
+    return adapter.classify_query(question)
 
-    if "accident" in q or "crash" in q:
-        return "accident"
-    if "leader" in q:
-        return "leader"
-    if "fastest" in q:
-        return "fastest"
-    if "winner" in q or "won" in q:
-        return "winner"
-    if "lap changed" in q or "lap change" in q:
-        return "lap_changed"
-    return "general"
 
+# =========================================
+# RERANK
+# =========================================
 
 def rerank_docs(question: str, docs):
     query_type = classify_query(question)
 
     keyword_map = {
-        "accident": ["accident detected"],
-        "leader": ["race leader changed", "race leader is", "leader is"],
-        "fastest": ["fastest driver changed", "fastest driver is"],
-        "winner": ["winner is", "race finished", "winner decided"],
-        "lap_changed": ["lap changed"],
+        "event": [
+            "accident detected",
+            "race leader changed",
+            "fastest driver changed",
+            "winner is",
+            "race finished",
+            "lap changed",
+            "event",
+            "alert",
+            "fault",
+            "abnormal"
+        ],
+        "comparison": [
+            "speed is",
+            "rpm is",
+            "gear is",
+            "fuel level is",
+            "pressure is",
+            "temperature is",
+            "flow rate is",
+            "vibration is"
+        ],
+        "metric": [
+            "speed is",
+            "rpm is",
+            "gear is",
+            "fuel level is",
+            "pressure is",
+            "temperature is",
+            "flow rate is",
+            "vibration is",
+            "status is"
+        ],
+        "general": []
     }
 
     keywords = keyword_map.get(query_type, [])
@@ -63,7 +97,6 @@ def rerank_docs(question: str, docs):
             if kw in text:
                 score += 5
 
-        # Small boost if preview also contains keyword
         preview = str(doc.metadata.get("preview", "")).lower()
         for kw in keywords:
             if kw in preview:
@@ -77,12 +110,23 @@ def rerank_docs(question: str, docs):
     return reranked_docs[:FINAL_TOP_K]
 
 
+# =========================================
+# SEARCH
+# =========================================
+
 def search_chunks(question: str, k: int = TOP_K):
+    normalized_question = adapter.normalize_question_text(question)
+
     vectorstore = load_vectorstore()
     retriever = vectorstore.as_retriever(search_kwargs={"k": k})
-    docs = retriever.invoke(question)
-    return rerank_docs(question, docs)
+    docs = retriever.invoke(normalized_question)
 
+    return rerank_docs(normalized_question, docs)
+
+
+# =========================================
+# PRINT RESULTS
+# =========================================
 
 def print_results(question: str, docs):
     print("\n" + "=" * 80)
@@ -104,8 +148,13 @@ def print_results(question: str, docs):
 
         if len(doc.page_content) > PREVIEW_CHARS:
             print("\n... [truncated]")
+
         print("-" * 80)
 
+
+# =========================================
+# MAIN
+# =========================================
 
 if __name__ == "__main__":
     print(f"Dataset adapter: {DATASET_ADAPTER}")

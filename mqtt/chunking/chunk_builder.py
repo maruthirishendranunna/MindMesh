@@ -2,13 +2,15 @@ import os
 import json
 import glob
 from mqtt.adapters.loader import get_adapter
+from mqtt.config import DATASET_ADAPTER
 
 adapter = get_adapter()
 
-SNAPSHOT_DIR = os.path.join("mqtt", "processor", "data", "snapshots")
-EVENT_LOG_FILE = os.path.join("mqtt", "processor", "data", "events", "events.jsonl")
+BASE_PROCESSOR_DIR = os.path.join("mqtt", "processor", "data", DATASET_ADAPTER)
+SNAPSHOT_DIR = os.path.join(BASE_PROCESSOR_DIR, "snapshots")
+EVENT_LOG_FILE = os.path.join(BASE_PROCESSOR_DIR, "events", "events.jsonl")
 
-CHUNKS_DIR = os.path.join("data", "chunks")
+CHUNKS_DIR = os.path.join("data", "chunks", DATASET_ADAPTER)
 SNAPSHOT_CHUNKS_DIR = os.path.join(CHUNKS_DIR, "snapshots")
 EVENT_CHUNKS_DIR = os.path.join(CHUNKS_DIR, "events")
 
@@ -35,6 +37,7 @@ def chunk_snapshots():
 
     print("\n===================================")
     print("📌 Chunking Snapshots")
+    print("Dataset:", DATASET_ADAPTER)
     print("Snapshot dir:", os.path.abspath(SNAPSHOT_DIR))
     print("Found snapshot files:", len(snapshot_files))
     print("Output folder:", os.path.abspath(SNAPSHOT_CHUNKS_DIR))
@@ -86,6 +89,7 @@ def chunk_events():
 
     print("\n===================================")
     print("📌 Chunking Event Logs")
+    print("Dataset:", DATASET_ADAPTER)
     print("Event file:", os.path.abspath(EVENT_LOG_FILE))
     print("Output folder:", os.path.abspath(EVENT_CHUNKS_DIR))
     print("===================================")

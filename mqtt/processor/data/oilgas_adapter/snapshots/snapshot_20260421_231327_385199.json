@@ -1,0 +1,199 @@
+{
+  "snapshot_time": "2026-04-21 23:13:27",
+  "telemetry": {
+    "site1": {
+      "pump1": {
+        "pressure": {
+          "value": "92.77",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "temperature": {
+          "value": "71.3",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "flow_rate": {
+          "value": "21.82",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "vibration": {
+          "value": "1.09",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "status": {
+          "value": "idle",
+          "timestamp": "2026-04-21 23:13:26"
+        }
+      },
+      "pump2": {
+        "pressure": {
+          "value": "109.69",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "temperature": {
+          "value": "101.9",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "flow_rate": {
+          "value": "88.1",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "vibration": {
+          "value": "7.38",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "status": {
+          "value": "fault",
+          "timestamp": "2026-04-21 23:13:26"
+        }
+      },
+      "compressor1": {
+        "pressure": {
+          "value": "102.89",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "temperature": {
+          "value": "95.14",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "flow_rate": {
+          "value": "56.92",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "vibration": {
+          "value": "3.41",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "status": {
+          "value": "idle",
+          "timestamp": "2026-04-21 23:13:26"
+        }
+      },
+      "valve1": {
+        "pressure": {
+          "value": "124.76",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "temperature": {
+          "value": "76.2",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "flow_rate": {
+          "value": "79.01",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "vibration": {
+          "value": "8.76",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "status": {
+          "value": "fault",
+          "timestamp": "2026-04-21 23:13:26"
+        }
+      }
+    },
+    "site2": {
+      "pump1": {
+        "pressure": {
+          "value": "93.78",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "temperature": {
+          "value": "94.07",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "flow_rate": {
+          "value": "23.54",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "vibration": {
+          "value": "1.12",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "status": {
+          "value": "idle",
+          "timestamp": "2026-04-21 23:13:26"
+        }
+      },
+      "pump2": {
+        "pressure": {
+          "value": "112.37",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "temperature": {
+          "value": "106.34",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "flow_rate": {
+          "value": "58.44",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "vibration": {
+          "value": "9.93",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "status": {
+          "value": "idle",
+          "timestamp": "2026-04-21 23:13:26"
+        }
+      },
+      "compressor1": {
+        "pressure": {
+          "value": "91.29",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "temperature": {
+          "value": "105.01",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "flow_rate": {
+          "value": "89.65",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "vibration": {
+          "value": "9.99",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "status": {
+          "value": "idle",
+          "timestamp": "2026-04-21 23:13:26"
+        }
+      },
+      "valve1": {
+        "pressure": {
+          "value": "103.63",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "temperature": {
+          "value": "54.7",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "flow_rate": {
+          "value": "46.74",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "vibration": {
+          "value": "5.86",
+          "timestamp": "2026-04-21 23:13:26"
+        },
+        "status": {
+          "value": "idle",
+          "timestamp": "2026-04-21 23:13:26"
+        }
+      }
+    }
+  },
+  "analytics": {
+    "highest_pressure": {
+      "value": "135.96",
+      "timestamp": "2026-04-21 23:13:23"
+    },
+    "highest_pressure_site": {
+      "value": "site1",
+      "timestamp": "2026-04-21 23:13:23"
+    },
+    "highest_pressure_equipment": {
+      "value": "valve1",
+      "timestamp": "2026-04-21 23:13:23"
+    }
+  }
+}

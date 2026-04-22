@@ -1,0 +1,49 @@
+Snapshot time: 2026-04-21 23:16:27.
+Equipment pump1 at site site1. Pressure is 102.75 psi. Temperature is 43.05 C. Flow rate is 55.99 lpm. Vibration is 3.78 mm/s. Status is fault.
+Equipment pump2 at site site1. Pressure is 132.53 psi. Temperature is 87.01 C. Flow rate is 56.14 lpm. Vibration is 9.83 mm/s. Status is running.
+Equipment compressor1 at site site1. Pressure is 123.53 psi. Temperature is 102.39 C. Flow rate is 76.14 lpm. Vibration is 1.62 mm/s. Status is running.
+Equipment valve1 at site site1. Pressure is 123.57 psi. Temperature is 44.87 C. Flow rate is 74.63 lpm. Vibration is 6.39 mm/s. Status is running.
+Equipment pump1 at site site2. Pressure is 86.54 psi. Temperature is 81.18 C. Flow rate is 55.94 lpm. Vibration is 4.97 mm/s. Status is running.
+Equipment pump2 at site site2. Pressure is 107.68 psi. Temperature is 61.36 C. Flow rate is 52.55 lpm. Vibration is 5.42 mm/s. Status is idle.
+Equipment compressor1 at site site2. Pressure is 81.63 psi. Temperature is 92.3 C. Flow rate is 54.14 lpm. Vibration is 8.65 mm/s. Status is running.
+Equipment valve1 at site site2. Pressure is 98.7 psi. Temperature is 109.72 C. Flow rate is 48.24 lpm. Vibration is 7.95 mm/s. Status is fault.
+
+Snapshot time: 2026-04-21 23:16:42.
+Equipment pump1 at site site1. Pressure is 119.91 psi. Temperature is 102.61 C. Flow rate is 22.18 lpm. Vibration is 8.5 mm/s. Status is idle.
+Equipment pump2 at site site1. Pressure is 98.71 psi. Temperature is 82.91 C. Flow rate is 82.29 lpm. Vibration is 6.37 mm/s. Status is running.
+Equipment compressor1 at site site1. Pressure is 137.79 psi. Temperature is 64.13 C. Flow rate is 37.23 lpm. Vibration is 4.72 mm/s. Status is running.
+Equipment valve1 at site site1. Pressure is 111.63 psi. Temperature is 41.05 C. Flow rate is 20.31 lpm. Vibration is 8.08 mm/s. Status is fault.
+Equipment pump1 at site site2. Pressure is 104.12 psi. Temperature is 49.78 C. Flow rate is 39.32 lpm. Vibration is 3.43 mm/s. Status is idle.
+Equipment pump2 at site site2. Pressure is 107.9 psi. Temperature is 42.77 C. Flow rate is 70.14 lpm. Vibration is 5.65 mm/s. Status is idle.
+Equipment compressor1 at site site2. Pressure is 133.17 psi. Temperature is 67.6 C. Flow rate is 48.91 lpm. Vibration is 2.45 mm/s. Status is fault.
+Equipment valve1 at site site2. Pressure is 130.66 psi. Temperature is 67.39 C. Flow rate is 21.61 lpm. Vibration is 3.73 mm/s. Status is fault.
+
+Snapshot time: 2026-04-21 23:16:57.
+Equipment pump1 at site site1. Pressure is 100.39 psi. Temperature is 102.46 C. Flow rate is 89.2 lpm. Vibration is 7.71 mm/s. Status is running.
+Equipment pump2 at site site1. Pressure is 113.0 psi. Temperature is 89.55 C. Flow rate is 64.81 lpm. Vibration is 2.19 mm/s. Status is running.
+Equipment compressor1 at site site1. Pressure is 118.31 psi. Temperature is 66.1 C. Flow rate is 79.52 lpm. Vibration is 2.24 mm/s. Status is running.
+Equipment valve1 at site site1. Pressure is 77.88 psi. Temperature is 48.26 C. Flow rate is 56.9 lpm. Vibration is 8.02 mm/s. Status is running.
+Equipment pump1 at site site2. Pressure is 99.51 psi. Temperature is 56.73 C. Flow rate is 49.46 lpm. Vibration is 8.77 mm/s. Status is fault.
+Equipment pump2 at site site2. Pressure is 107.47 psi. Temperature is 62.52 C. Flow rate is 40.07 lpm. Vibration is 4.45 mm/s. Status is running.
+Equipment compressor1 at site site2. Pressure is 99.51 psi. Temperature is 100.55 C. Flow rate is 78.08 lpm. Vibration is 8.35 mm/s. Status is running.
+Equipment valve1 at site site2. Pressure is 71.26 psi. Temperature is 59.98 C. Flow rate is 40.44 lpm. Vibration is 2.28 mm/s. Status is idle.
+
+Snapshot time: 2026-04-21 23:17:12.
+Equipment pump1 at site site1. Pressure is 113.34 psi. Temperature is 108.22 C. Flow rate is 78.63 lpm. Vibration is 5.82 mm/s. Status is idle.
+Equipment pump2 at site site1. Pressure is 82.36 psi. Temperature is 62.28 C. Flow rate is 64.53 lpm. Vibration is 4.03 mm/s. Status is idle.
+Equipment compressor1 at site site1. Pressure is 86.7 psi. Temperature is 41.51 C. Flow rate is 59.8 lpm. Vibration is 3.95 mm/s. Status is idle.
+Equipment valve1 at site site1. Pressure is 70.16 psi. Temperature is 47.32 C. Flow rate is 58.0 lpm. Vibration is 9.78 mm/s. Status is idle.
+Equipment pump1 at site site2. Pressure is 118.77 psi. Temperature is 57.27 C. Flow rate is 49.33 lpm. Vibration is 2.7 mm/s. Status is fault.
+Equipment pump2 at site site2. Pressure is 79.89 psi. Temperature is 87.1 C. Flow rate is 82.89 lpm. Vibration is 8.01 mm/s. Status is idle.
+Equipment compressor1 at site site2. Pressure is 109.72 psi. Temperature is 107.74 C. Flow rate is 80.67 lpm. Vibration is 5.82 mm/s. Status is running.
+Equipment valve1 at site site2. Pressure is 135.52 psi. Temperature is 79.73 C. Flow rate is 63.24 lpm. Vibration is 1.21 mm/s. Status is fault.
+
+Snapshot time: 2026-04-21 23:17:27.
+Equipment pump1 at site site1. Pressure is 112.95 psi. Temperature is 83.19 C. Flow rate is 76.85 lpm. Vibration is 4.33 mm/s. Status is idle.
+Equipment pump2 at site site1. Pressure is 136.78 psi. Temperature is 71.34 C. Flow rate is 74.09 lpm. Vibration is 1.45 mm/s. Status is idle.
+Equipment compressor1 at site site1. Pressure is 119.03 psi. Temperature is 103.39 C. Flow rate is 70.82 lpm. Vibration is 5.97 mm/s. Status is fault.
+Equipment valve1 at site site1. Pressure is 80.1 psi. Temperature is 41.6 C. Flow rate is 30.91 lpm. Vibration is 9.8 mm/s. Status is fault.
+Equipment pump1 at site site2. Pressure is 119.36 psi. Temperature is 74.35 C. Flow rate is 33.5 lpm. Vibration is 8.95 mm/s. Status is fault.
+Equipment pump2 at site site2. Pressure is 86.98 psi. Temperature is 86.76 C. Flow rate is 22.97 lpm. Vibration is 1.85 mm/s. Status is fault.
+Equipment compressor1 at site site2. Pressure is 131.81 psi. Temperature is 99.75 C. Flow rate is 22.43 lpm. Vibration is 1.55 mm/s. Status is fault.
+Equipment valve1 at site site2. Pressure is 118.46 psi. Temperature is 47.87 C. Flow rate is 68.53 lpm. Vibration is 7.04 mm/s. Status is idle.

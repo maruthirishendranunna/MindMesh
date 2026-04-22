@@ -1,0 +1,778 @@
+{"timestamp": "2026-04-21 23:08:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 93.37}}
+{"timestamp": "2026-04-21 23:08:57", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump2", "vibration": 9.71}}
+{"timestamp": "2026-04-21 23:08:57", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 9.49}}
+{"timestamp": "2026-04-21 23:08:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 97.37}}
+{"timestamp": "2026-04-21 23:08:57", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 128.67}}
+{"timestamp": "2026-04-21 23:08:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 104.09}}
+{"timestamp": "2026-04-21 23:08:57", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 133.84}}
+{"timestamp": "2026-04-21 23:08:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 100.72}}
+{"timestamp": "2026-04-21 23:09:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:09:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:09:12", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "valve1", "vibration": 8.41}}
+{"timestamp": "2026-04-21 23:09:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 126.73}}
+{"timestamp": "2026-04-21 23:09:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:09:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:09:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump1", "temperature": 108.73}}
+{"timestamp": "2026-04-21 23:09:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump1", "vibration": 9.37}}
+{"timestamp": "2026-04-21 23:09:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:09:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump2", "pressure": 133.79}}
+{"timestamp": "2026-04-21 23:09:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 93.02}}
+{"timestamp": "2026-04-21 23:09:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump2", "vibration": 9.51}}
+{"timestamp": "2026-04-21 23:09:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:09:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:09:27", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "compressor1", "vibration": 8.25}}
+{"timestamp": "2026-04-21 23:09:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:09:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 95.06}}
+{"timestamp": "2026-04-21 23:09:27", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "valve1", "vibration": 8.78}}
+{"timestamp": "2026-04-21 23:09:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:09:42", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "compressor1", "pressure": 125.53}}
+{"timestamp": "2026-04-21 23:09:42", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 8.43}}
+{"timestamp": "2026-04-21 23:09:42", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "valve1", "pressure": 133.12}}
+{"timestamp": "2026-04-21 23:09:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:09:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump1", "pressure": 125.88}}
+{"timestamp": "2026-04-21 23:09:42", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump1", "vibration": 8.65}}
+{"timestamp": "2026-04-21 23:09:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:09:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 91.96}}
+{"timestamp": "2026-04-21 23:09:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 90.34}}
+{"timestamp": "2026-04-21 23:09:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:09:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 124.48}}
+{"timestamp": "2026-04-21 23:09:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:09:57", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump1", "pressure": 123.2}}
+{"timestamp": "2026-04-21 23:09:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 91.94}}
+{"timestamp": "2026-04-21 23:09:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:09:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "compressor1", "temperature": 109.93}}
+{"timestamp": "2026-04-21 23:09:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:09:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:09:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:09:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 109.52}}
+{"timestamp": "2026-04-21 23:09:57", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "valve1", "vibration": 9.08}}
+{"timestamp": "2026-04-21 23:09:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:10:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:10:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:10:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:10:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:10:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 129.77}}
+{"timestamp": "2026-04-21 23:10:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 124.44}}
+{"timestamp": "2026-04-21 23:10:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:10:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 105.19}}
+{"timestamp": "2026-04-21 23:10:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "valve1", "vibration": 9.22}}
+{"timestamp": "2026-04-21 23:10:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump1", "temperature": 96.8}}
+{"timestamp": "2026-04-21 23:10:27", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump1", "vibration": 9.38}}
+{"timestamp": "2026-04-21 23:10:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:10:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 138.79}}
+{"timestamp": "2026-04-21 23:10:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:10:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 104.85}}
+{"timestamp": "2026-04-21 23:10:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:10:42", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump1", "vibration": 8.43}}
+{"timestamp": "2026-04-21 23:10:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:10:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:10:42", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "valve1", "pressure": 132.3}}
+{"timestamp": "2026-04-21 23:10:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 95.7}}
+{"timestamp": "2026-04-21 23:10:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:10:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 107.61}}
+{"timestamp": "2026-04-21 23:10:42", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump2", "vibration": 8.05}}
+{"timestamp": "2026-04-21 23:10:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:10:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:10:42", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "valve1", "vibration": 9.37}}
+{"timestamp": "2026-04-21 23:10:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump1", "temperature": 96.7}}
+{"timestamp": "2026-04-21 23:10:57", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump2", "vibration": 9.44}}
+{"timestamp": "2026-04-21 23:10:57", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "compressor1", "pressure": 120.06}}
+{"timestamp": "2026-04-21 23:10:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:10:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:10:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:10:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:10:57", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 123.55}}
+{"timestamp": "2026-04-21 23:10:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:11:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:11:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "compressor1", "temperature": 98.93}}
+{"timestamp": "2026-04-21 23:11:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:11:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:11:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:11:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:11:12", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "compressor1", "vibration": 8.62}}
+{"timestamp": "2026-04-21 23:11:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:11:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:11:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 90.14}}
+{"timestamp": "2026-04-21 23:11:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:11:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:11:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:11:27", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump1", "vibration": 9.94}}
+{"timestamp": "2026-04-21 23:11:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 103.24}}
+{"timestamp": "2026-04-21 23:11:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:11:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:11:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:11:42", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 8.89}}
+{"timestamp": "2026-04-21 23:11:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:11:42", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "valve1", "pressure": 126.58}}
+{"timestamp": "2026-04-21 23:11:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:11:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:11:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:11:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:11:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:11:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 97.48}}
+{"timestamp": "2026-04-21 23:11:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:11:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump1", "temperature": 99.62}}
+{"timestamp": "2026-04-21 23:11:57", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump1", "vibration": 8.42}}
+{"timestamp": "2026-04-21 23:11:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 92.69}}
+{"timestamp": "2026-04-21 23:11:57", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump2", "vibration": 8.25}}
+{"timestamp": "2026-04-21 23:11:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:11:57", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 130.15}}
+{"timestamp": "2026-04-21 23:11:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:12:12", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump1", "pressure": 123.47}}
+{"timestamp": "2026-04-21 23:12:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 99.02}}
+{"timestamp": "2026-04-21 23:12:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:12:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:12:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:12:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:12:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 123.03}}
+{"timestamp": "2026-04-21 23:12:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:12:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:12:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump1", "temperature": 109.97}}
+{"timestamp": "2026-04-21 23:12:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump1", "vibration": 8.55}}
+{"timestamp": "2026-04-21 23:12:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump2", "pressure": 135.14}}
+{"timestamp": "2026-04-21 23:12:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:12:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 9.65}}
+{"timestamp": "2026-04-21 23:12:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:12:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "valve1", "pressure": 124.44}}
+{"timestamp": "2026-04-21 23:12:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "valve1", "vibration": 9.06}}
+{"timestamp": "2026-04-21 23:12:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:12:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 122.09}}
+{"timestamp": "2026-04-21 23:12:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:12:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 92.38}}
+{"timestamp": "2026-04-21 23:12:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:12:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 134.37}}
+{"timestamp": "2026-04-21 23:12:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:12:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:12:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:12:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump1", "temperature": 100.81}}
+{"timestamp": "2026-04-21 23:12:42", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump1", "vibration": 9.64}}
+{"timestamp": "2026-04-21 23:12:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:12:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 129.53}}
+{"timestamp": "2026-04-21 23:12:42", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "compressor1", "vibration": 8.37}}
+{"timestamp": "2026-04-21 23:12:42", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "valve1", "vibration": 9.27}}
+{"timestamp": "2026-04-21 23:12:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:12:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:12:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 100.68}}
+{"timestamp": "2026-04-21 23:12:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "compressor1", "temperature": 90.76}}
+{"timestamp": "2026-04-21 23:12:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 105.01}}
+{"timestamp": "2026-04-21 23:12:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:12:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:12:57", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 121.49}}
+{"timestamp": "2026-04-21 23:12:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 93.2}}
+{"timestamp": "2026-04-21 23:12:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:13:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:13:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:13:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:13:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:13:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 134.12}}
+{"timestamp": "2026-04-21 23:13:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:13:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 120.23}}
+{"timestamp": "2026-04-21 23:13:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 108.35}}
+{"timestamp": "2026-04-21 23:13:12", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "compressor1", "vibration": 8.97}}
+{"timestamp": "2026-04-21 23:13:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:13:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:13:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:13:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:13:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:13:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "valve1", "pressure": 124.76}}
+{"timestamp": "2026-04-21 23:13:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "valve1", "vibration": 8.76}}
+{"timestamp": "2026-04-21 23:13:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:13:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump1", "temperature": 94.07}}
+{"timestamp": "2026-04-21 23:13:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:13:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 106.34}}
+{"timestamp": "2026-04-21 23:13:27", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump2", "vibration": 9.93}}
+{"timestamp": "2026-04-21 23:13:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:13:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:13:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:13:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:13:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:13:42", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 9.03}}
+{"timestamp": "2026-04-21 23:13:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:13:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:13:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:13:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 135.56}}
+{"timestamp": "2026-04-21 23:13:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:13:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:13:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 94.97}}
+{"timestamp": "2026-04-21 23:13:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:13:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:13:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 102.0}}
+{"timestamp": "2026-04-21 23:13:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:13:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:13:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:13:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 98.97}}
+{"timestamp": "2026-04-21 23:13:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:13:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:14:12", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump1", "pressure": 122.29}}
+{"timestamp": "2026-04-21 23:14:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump1", "temperature": 91.8}}
+{"timestamp": "2026-04-21 23:14:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:14:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:14:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "compressor1", "temperature": 106.28}}
+{"timestamp": "2026-04-21 23:14:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:14:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:14:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:14:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:14:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:14:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump1", "pressure": 136.87}}
+{"timestamp": "2026-04-21 23:14:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:14:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 96.25}}
+{"timestamp": "2026-04-21 23:14:27", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump2", "vibration": 8.69}}
+{"timestamp": "2026-04-21 23:14:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 101.46}}
+{"timestamp": "2026-04-21 23:14:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:14:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 99.73}}
+{"timestamp": "2026-04-21 23:14:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:14:42", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "compressor1", "pressure": 130.97}}
+{"timestamp": "2026-04-21 23:14:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:14:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 93.8}}
+{"timestamp": "2026-04-21 23:14:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:14:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:14:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 137.62}}
+{"timestamp": "2026-04-21 23:14:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:14:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:14:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 133.97}}
+{"timestamp": "2026-04-21 23:14:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:14:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:14:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:14:57", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump1", "vibration": 8.31}}
+{"timestamp": "2026-04-21 23:14:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:14:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:15:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:15:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:15:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:15:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:15:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump1", "pressure": 129.85}}
+{"timestamp": "2026-04-21 23:15:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:15:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 135.32}}
+{"timestamp": "2026-04-21 23:15:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 101.73}}
+{"timestamp": "2026-04-21 23:15:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 108.43}}
+{"timestamp": "2026-04-21 23:15:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:15:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:15:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump1", "vibration": 8.21}}
+{"timestamp": "2026-04-21 23:15:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:15:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "compressor1", "temperature": 93.41}}
+{"timestamp": "2026-04-21 23:15:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 9.9}}
+{"timestamp": "2026-04-21 23:15:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 91.8}}
+{"timestamp": "2026-04-21 23:15:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:15:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump1", "temperature": 107.64}}
+{"timestamp": "2026-04-21 23:15:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:15:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 134.19}}
+{"timestamp": "2026-04-21 23:15:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:15:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 94.57}}
+{"timestamp": "2026-04-21 23:15:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:15:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump1", "temperature": 100.53}}
+{"timestamp": "2026-04-21 23:15:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:15:42", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump2", "pressure": 123.51}}
+{"timestamp": "2026-04-21 23:15:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 94.29}}
+{"timestamp": "2026-04-21 23:15:42", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump2", "vibration": 9.24}}
+{"timestamp": "2026-04-21 23:15:42", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "compressor1", "pressure": 125.1}}
+{"timestamp": "2026-04-21 23:15:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:15:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump1", "pressure": 121.96}}
+{"timestamp": "2026-04-21 23:15:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:15:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 101.19}}
+{"timestamp": "2026-04-21 23:15:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:15:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:15:42", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "valve1", "vibration": 9.3}}
+{"timestamp": "2026-04-21 23:15:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:15:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:15:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:15:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "compressor1", "temperature": 97.28}}
+{"timestamp": "2026-04-21 23:15:57", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "valve1", "pressure": 121.76}}
+{"timestamp": "2026-04-21 23:15:57", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "valve1", "vibration": 8.06}}
+{"timestamp": "2026-04-21 23:15:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:15:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:15:57", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 123.16}}
+{"timestamp": "2026-04-21 23:15:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:15:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:15:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:16:12", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump1", "pressure": 124.52}}
+{"timestamp": "2026-04-21 23:16:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:16:12", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump2", "pressure": 132.77}}
+{"timestamp": "2026-04-21 23:16:12", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump2", "vibration": 9.01}}
+{"timestamp": "2026-04-21 23:16:12", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 9.84}}
+{"timestamp": "2026-04-21 23:16:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:16:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump1", "pressure": 127.83}}
+{"timestamp": "2026-04-21 23:16:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:16:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:16:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:16:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:16:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:16:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "compressor1", "pressure": 123.53}}
+{"timestamp": "2026-04-21 23:16:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "valve1", "pressure": 123.57}}
+{"timestamp": "2026-04-21 23:16:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:16:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:16:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 92.3}}
+{"timestamp": "2026-04-21 23:16:27", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "compressor1", "vibration": 8.65}}
+{"timestamp": "2026-04-21 23:16:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 109.72}}
+{"timestamp": "2026-04-21 23:16:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:16:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump1", "temperature": 102.61}}
+{"timestamp": "2026-04-21 23:16:42", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump1", "vibration": 8.5}}
+{"timestamp": "2026-04-21 23:16:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:16:42", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "valve1", "vibration": 8.08}}
+{"timestamp": "2026-04-21 23:16:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:16:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:16:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 133.17}}
+{"timestamp": "2026-04-21 23:16:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:16:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 130.66}}
+{"timestamp": "2026-04-21 23:16:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:16:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:16:57", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump1", "vibration": 8.77}}
+{"timestamp": "2026-04-21 23:16:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:16:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:16:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 100.55}}
+{"timestamp": "2026-04-21 23:16:57", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "compressor1", "vibration": 8.35}}
+{"timestamp": "2026-04-21 23:16:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:16:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:17:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:17:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:17:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:17:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:17:12", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump2", "vibration": 8.01}}
+{"timestamp": "2026-04-21 23:17:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:17:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 135.52}}
+{"timestamp": "2026-04-21 23:17:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:17:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump2", "pressure": 136.78}}
+{"timestamp": "2026-04-21 23:17:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "compressor1", "temperature": 103.39}}
+{"timestamp": "2026-04-21 23:17:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:17:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:17:27", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump1", "vibration": 8.95}}
+{"timestamp": "2026-04-21 23:17:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:17:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 131.81}}
+{"timestamp": "2026-04-21 23:17:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:17:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:17:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:17:42", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 8.16}}
+{"timestamp": "2026-04-21 23:17:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:17:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 96.19}}
+{"timestamp": "2026-04-21 23:17:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:17:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:17:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 123.01}}
+{"timestamp": "2026-04-21 23:17:57", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump1", "pressure": 129.58}}
+{"timestamp": "2026-04-21 23:17:57", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump1", "vibration": 9.49}}
+{"timestamp": "2026-04-21 23:17:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:17:57", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "valve1", "pressure": 138.54}}
+{"timestamp": "2026-04-21 23:17:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:17:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump1", "temperature": 91.37}}
+{"timestamp": "2026-04-21 23:17:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 99.33}}
+{"timestamp": "2026-04-21 23:17:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 107.8}}
+{"timestamp": "2026-04-21 23:17:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:17:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 92.15}}
+{"timestamp": "2026-04-21 23:17:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:18:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:18:12", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump2", "pressure": 134.25}}
+{"timestamp": "2026-04-21 23:18:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:18:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:18:12", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "valve1", "vibration": 8.12}}
+{"timestamp": "2026-04-21 23:18:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 126.19}}
+{"timestamp": "2026-04-21 23:18:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:18:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump1", "vibration": 9.34}}
+{"timestamp": "2026-04-21 23:18:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:18:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 90.98}}
+{"timestamp": "2026-04-21 23:18:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:18:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 8.88}}
+{"timestamp": "2026-04-21 23:18:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 108.56}}
+{"timestamp": "2026-04-21 23:18:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:18:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump1", "pressure": 124.81}}
+{"timestamp": "2026-04-21 23:18:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:18:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:18:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:18:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:18:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:18:42", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump2", "pressure": 123.41}}
+{"timestamp": "2026-04-21 23:18:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:18:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:18:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:18:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 126.7}}
+{"timestamp": "2026-04-21 23:18:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 107.44}}
+{"timestamp": "2026-04-21 23:18:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:18:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:18:57", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump1", "vibration": 8.42}}
+{"timestamp": "2026-04-21 23:18:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:18:57", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump2", "vibration": 8.89}}
+{"timestamp": "2026-04-21 23:18:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:18:57", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 8.31}}
+{"timestamp": "2026-04-21 23:18:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:18:57", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "valve1", "pressure": 127.35}}
+{"timestamp": "2026-04-21 23:18:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump1", "temperature": 91.78}}
+{"timestamp": "2026-04-21 23:18:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:18:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:18:57", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "compressor1", "vibration": 8.56}}
+{"timestamp": "2026-04-21 23:18:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:18:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:19:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump1", "temperature": 103.62}}
+{"timestamp": "2026-04-21 23:19:12", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "compressor1", "pressure": 138.59}}
+{"timestamp": "2026-04-21 23:19:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:19:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:19:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump1", "pressure": 136.64}}
+{"timestamp": "2026-04-21 23:19:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:19:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 98.97}}
+{"timestamp": "2026-04-21 23:19:12", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "valve1", "vibration": 8.1}}
+{"timestamp": "2026-04-21 23:19:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:19:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 106.35}}
+{"timestamp": "2026-04-21 23:19:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:19:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "compressor1", "temperature": 95.55}}
+{"timestamp": "2026-04-21 23:19:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "valve1", "vibration": 8.94}}
+{"timestamp": "2026-04-21 23:19:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:19:27", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump1", "vibration": 9.94}}
+{"timestamp": "2026-04-21 23:19:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:19:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 102.09}}
+{"timestamp": "2026-04-21 23:19:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 130.5}}
+{"timestamp": "2026-04-21 23:19:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 100.06}}
+{"timestamp": "2026-04-21 23:19:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:19:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:19:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:19:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:19:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 139.21}}
+{"timestamp": "2026-04-21 23:19:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:19:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 104.95}}
+{"timestamp": "2026-04-21 23:19:42", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "valve1", "vibration": 8.22}}
+{"timestamp": "2026-04-21 23:19:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:19:57", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump1", "pressure": 122.73}}
+{"timestamp": "2026-04-21 23:19:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:19:57", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "compressor1", "pressure": 136.93}}
+{"timestamp": "2026-04-21 23:19:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:19:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:19:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:19:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 99.22}}
+{"timestamp": "2026-04-21 23:19:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:19:57", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 123.44}}
+{"timestamp": "2026-04-21 23:19:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:20:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:20:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:20:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:20:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump1", "pressure": 137.0}}
+{"timestamp": "2026-04-21 23:20:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:20:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:20:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:20:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 129.65}}
+{"timestamp": "2026-04-21 23:20:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:20:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:20:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:20:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "compressor1", "temperature": 106.0}}
+{"timestamp": "2026-04-21 23:20:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 9.19}}
+{"timestamp": "2026-04-21 23:20:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:20:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:20:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump1", "temperature": 108.49}}
+{"timestamp": "2026-04-21 23:20:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:20:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 135.53}}
+{"timestamp": "2026-04-21 23:20:27", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "compressor1", "vibration": 8.55}}
+{"timestamp": "2026-04-21 23:20:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:20:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:20:42", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump1", "pressure": 131.23}}
+{"timestamp": "2026-04-21 23:20:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump1", "temperature": 91.84}}
+{"timestamp": "2026-04-21 23:20:42", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump1", "vibration": 8.59}}
+{"timestamp": "2026-04-21 23:20:42", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump2", "pressure": 137.09}}
+{"timestamp": "2026-04-21 23:20:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:20:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 105.45}}
+{"timestamp": "2026-04-21 23:20:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:20:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:20:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 108.48}}
+{"timestamp": "2026-04-21 23:20:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:20:42", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "valve1", "vibration": 9.0}}
+{"timestamp": "2026-04-21 23:20:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:20:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:20:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 95.52}}
+{"timestamp": "2026-04-21 23:20:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:20:57", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "compressor1", "pressure": 129.18}}
+{"timestamp": "2026-04-21 23:20:57", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 9.01}}
+{"timestamp": "2026-04-21 23:20:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:20:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:20:57", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 139.29}}
+{"timestamp": "2026-04-21 23:20:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:20:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:21:12", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump1", "pressure": 139.4}}
+{"timestamp": "2026-04-21 23:21:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump1", "temperature": 97.57}}
+{"timestamp": "2026-04-21 23:21:12", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump1", "vibration": 8.11}}
+{"timestamp": "2026-04-21 23:21:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:21:12", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "valve1", "vibration": 8.07}}
+{"timestamp": "2026-04-21 23:21:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:21:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 106.65}}
+{"timestamp": "2026-04-21 23:21:12", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump2", "vibration": 8.83}}
+{"timestamp": "2026-04-21 23:21:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:21:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:21:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:21:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:21:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 9.11}}
+{"timestamp": "2026-04-21 23:21:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 104.97}}
+{"timestamp": "2026-04-21 23:21:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:21:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:21:42", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump1", "vibration": 8.99}}
+{"timestamp": "2026-04-21 23:21:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:21:42", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "compressor1", "pressure": 127.18}}
+{"timestamp": "2026-04-21 23:21:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "compressor1", "temperature": 97.7}}
+{"timestamp": "2026-04-21 23:21:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:21:42", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "valve1", "pressure": 128.19}}
+{"timestamp": "2026-04-21 23:21:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:21:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump1", "temperature": 92.09}}
+{"timestamp": "2026-04-21 23:21:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:21:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 92.77}}
+{"timestamp": "2026-04-21 23:21:42", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump2", "vibration": 9.43}}
+{"timestamp": "2026-04-21 23:21:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:21:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 133.27}}
+{"timestamp": "2026-04-21 23:21:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:21:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 103.68}}
+{"timestamp": "2026-04-21 23:21:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:21:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:21:57", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 9.88}}
+{"timestamp": "2026-04-21 23:21:57", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump1", "pressure": 122.02}}
+{"timestamp": "2026-04-21 23:21:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:21:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:21:57", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 130.14}}
+{"timestamp": "2026-04-21 23:21:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:22:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:22:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "compressor1", "temperature": 91.39}}
+{"timestamp": "2026-04-21 23:22:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 99.63}}
+{"timestamp": "2026-04-21 23:22:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:22:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 93.47}}
+{"timestamp": "2026-04-21 23:22:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:22:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:22:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 97.33}}
+{"timestamp": "2026-04-21 23:22:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:22:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump1", "pressure": 130.36}}
+{"timestamp": "2026-04-21 23:22:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump1", "temperature": 90.11}}
+{"timestamp": "2026-04-21 23:22:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump2", "pressure": 133.02}}
+{"timestamp": "2026-04-21 23:22:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "compressor1", "pressure": 121.78}}
+{"timestamp": "2026-04-21 23:22:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "valve1", "pressure": 138.39}}
+{"timestamp": "2026-04-21 23:22:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:22:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 138.66}}
+{"timestamp": "2026-04-21 23:22:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:22:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 130.47}}
+{"timestamp": "2026-04-21 23:22:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 91.26}}
+{"timestamp": "2026-04-21 23:22:27", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "valve1", "vibration": 8.67}}
+{"timestamp": "2026-04-21 23:22:42", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump2", "vibration": 8.54}}
+{"timestamp": "2026-04-21 23:22:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:22:42", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 9.01}}
+{"timestamp": "2026-04-21 23:22:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 96.84}}
+{"timestamp": "2026-04-21 23:22:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:22:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump1", "pressure": 136.52}}
+{"timestamp": "2026-04-21 23:22:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:22:42", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump2", "vibration": 8.43}}
+{"timestamp": "2026-04-21 23:22:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:22:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:22:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:22:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "compressor1", "temperature": 109.82}}
+{"timestamp": "2026-04-21 23:22:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:22:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:22:57", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 128.2}}
+{"timestamp": "2026-04-21 23:22:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:22:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 96.49}}
+{"timestamp": "2026-04-21 23:22:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:22:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 94.19}}
+{"timestamp": "2026-04-21 23:23:12", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump1", "pressure": 139.41}}
+{"timestamp": "2026-04-21 23:23:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump1", "temperature": 99.23}}
+{"timestamp": "2026-04-21 23:23:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:23:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 110.0}}
+{"timestamp": "2026-04-21 23:23:12", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 8.67}}
+{"timestamp": "2026-04-21 23:23:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:23:12", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "valve1", "vibration": 8.35}}
+{"timestamp": "2026-04-21 23:23:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:23:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:23:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 139.39}}
+{"timestamp": "2026-04-21 23:23:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:23:12", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "valve1", "vibration": 9.51}}
+{"timestamp": "2026-04-21 23:23:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump1", "vibration": 8.05}}
+{"timestamp": "2026-04-21 23:23:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:23:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "compressor1", "pressure": 124.1}}
+{"timestamp": "2026-04-21 23:23:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:23:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:23:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump1", "pressure": 127.48}}
+{"timestamp": "2026-04-21 23:23:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump1", "temperature": 104.98}}
+{"timestamp": "2026-04-21 23:23:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:23:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 134.54}}
+{"timestamp": "2026-04-21 23:23:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 96.29}}
+{"timestamp": "2026-04-21 23:23:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:23:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 108.82}}
+{"timestamp": "2026-04-21 23:23:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:23:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 125.86}}
+{"timestamp": "2026-04-21 23:23:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:23:42", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump1", "pressure": 128.41}}
+{"timestamp": "2026-04-21 23:23:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:23:42", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 9.95}}
+{"timestamp": "2026-04-21 23:23:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:23:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:23:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump1", "temperature": 103.9}}
+{"timestamp": "2026-04-21 23:23:57", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump2", "pressure": 127.62}}
+{"timestamp": "2026-04-21 23:23:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:23:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:23:57", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "valve1", "vibration": 8.97}}
+{"timestamp": "2026-04-21 23:23:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:23:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:23:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:23:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 105.87}}
+{"timestamp": "2026-04-21 23:23:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:24:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:24:12", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "compressor1", "pressure": 125.29}}
+{"timestamp": "2026-04-21 23:24:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:24:12", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "valve1", "pressure": 131.41}}
+{"timestamp": "2026-04-21 23:24:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:24:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 124.94}}
+{"timestamp": "2026-04-21 23:24:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:24:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 130.32}}
+{"timestamp": "2026-04-21 23:24:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:24:12", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 134.05}}
+{"timestamp": "2026-04-21 23:24:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 97.81}}
+{"timestamp": "2026-04-21 23:24:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump1", "pressure": 132.06}}
+{"timestamp": "2026-04-21 23:24:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump2", "pressure": 130.63}}
+{"timestamp": "2026-04-21 23:24:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 101.95}}
+{"timestamp": "2026-04-21 23:24:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump2", "vibration": 9.76}}
+{"timestamp": "2026-04-21 23:24:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:24:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "compressor1", "temperature": 97.64}}
+{"timestamp": "2026-04-21 23:24:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:24:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump1", "temperature": 109.78}}
+{"timestamp": "2026-04-21 23:24:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:24:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:24:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:24:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:24:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:24:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 96.28}}
+{"timestamp": "2026-04-21 23:24:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:24:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:24:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 101.52}}
+{"timestamp": "2026-04-21 23:24:42", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump2", "vibration": 8.26}}
+{"timestamp": "2026-04-21 23:24:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:24:42", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "compressor1", "vibration": 9.95}}
+{"timestamp": "2026-04-21 23:24:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:24:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:24:57", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "compressor1", "pressure": 120.8}}
+{"timestamp": "2026-04-21 23:24:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:24:57", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "valve1", "pressure": 134.68}}
+{"timestamp": "2026-04-21 23:24:57", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "valve1", "vibration": 8.17}}
+{"timestamp": "2026-04-21 23:24:57", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump1", "pressure": 137.7}}
+{"timestamp": "2026-04-21 23:24:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:24:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:24:57", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 120.7}}
+{"timestamp": "2026-04-21 23:24:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:25:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:25:12", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump2", "pressure": 121.34}}
+{"timestamp": "2026-04-21 23:25:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 93.14}}
+{"timestamp": "2026-04-21 23:25:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:25:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:25:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:25:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump1", "temperature": 108.1}}
+{"timestamp": "2026-04-21 23:25:12", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump2", "vibration": 9.6}}
+{"timestamp": "2026-04-21 23:25:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:25:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:25:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump1", "pressure": 135.46}}
+{"timestamp": "2026-04-21 23:25:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:25:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:25:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:25:27", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump1", "vibration": 8.56}}
+{"timestamp": "2026-04-21 23:25:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 106.3}}
+{"timestamp": "2026-04-21 23:25:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:25:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 135.73}}
+{"timestamp": "2026-04-21 23:25:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 95.66}}
+{"timestamp": "2026-04-21 23:25:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:25:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 99.91}}
+{"timestamp": "2026-04-21 23:25:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:25:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump1", "pressure": 134.58}}
+{"timestamp": "2026-04-21 23:25:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:25:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 133.02}}
+{"timestamp": "2026-04-21 23:25:42", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump2", "vibration": 8.86}}
+{"timestamp": "2026-04-21 23:25:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:25:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 124.95}}
+{"timestamp": "2026-04-21 23:25:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:25:57", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump1", "vibration": 9.09}}
+{"timestamp": "2026-04-21 23:25:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:25:57", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump2", "pressure": 120.38}}
+{"timestamp": "2026-04-21 23:25:57", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "compressor1", "pressure": 131.72}}
+{"timestamp": "2026-04-21 23:25:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:25:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:25:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:25:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:25:57", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 124.41}}
+{"timestamp": "2026-04-21 23:25:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 101.78}}
+{"timestamp": "2026-04-21 23:25:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 98.6}}
+{"timestamp": "2026-04-21 23:26:12", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump2", "vibration": 9.52}}
+{"timestamp": "2026-04-21 23:26:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:26:12", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "compressor1", "vibration": 9.88}}
+{"timestamp": "2026-04-21 23:26:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:26:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 104.6}}
+{"timestamp": "2026-04-21 23:26:12", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump1", "vibration": 8.1}}
+{"timestamp": "2026-04-21 23:26:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:26:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:26:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:26:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:26:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 92.21}}
+{"timestamp": "2026-04-21 23:26:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:26:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:26:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "valve1", "pressure": 137.38}}
+{"timestamp": "2026-04-21 23:26:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:26:27", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump2", "vibration": 8.99}}
+{"timestamp": "2026-04-21 23:26:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 123.63}}
+{"timestamp": "2026-04-21 23:26:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 99.86}}
+{"timestamp": "2026-04-21 23:26:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:26:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:26:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump1", "temperature": 101.25}}
+{"timestamp": "2026-04-21 23:26:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:26:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:26:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:26:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:26:42", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 124.92}}
+{"timestamp": "2026-04-21 23:26:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:26:57", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump1", "pressure": 130.85}}
+{"timestamp": "2026-04-21 23:26:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:26:57", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "pump2", "vibration": 9.91}}
+{"timestamp": "2026-04-21 23:26:57", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:26:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 104.61}}
+{"timestamp": "2026-04-21 23:26:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:26:57", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump2", "pressure": 120.98}}
+{"timestamp": "2026-04-21 23:26:57", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 90.64}}
+{"timestamp": "2026-04-21 23:26:57", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump2", "vibration": 8.66}}
+{"timestamp": "2026-04-21 23:26:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:26:57", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 131.39}}
+{"timestamp": "2026-04-21 23:26:57", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "compressor1", "vibration": 8.51}}
+{"timestamp": "2026-04-21 23:26:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:26:57", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:27:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:27:12", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "compressor1", "pressure": 130.43}}
+{"timestamp": "2026-04-21 23:27:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "compressor1", "temperature": 97.57}}
+{"timestamp": "2026-04-21 23:27:12", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:27:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:27:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:27:12", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 97.73}}
+{"timestamp": "2026-04-21 23:27:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:27:12", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "running", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:27:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump1", "temperature": 102.44}}
+{"timestamp": "2026-04-21 23:27:27", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "valve1", "pressure": 134.51}}
+{"timestamp": "2026-04-21 23:27:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 93.51}}
+{"timestamp": "2026-04-21 23:27:27", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "valve1", "vibration": 9.86}}
+{"timestamp": "2026-04-21 23:27:27", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:27:27", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump1", "pressure": 128.41}}
+{"timestamp": "2026-04-21 23:27:27", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "pump1", "vibration": 9.33}}
+{"timestamp": "2026-04-21 23:27:27", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:27:27", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 107.77}}
+{"timestamp": "2026-04-21 23:27:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:27:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "compressor1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:27:42", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:27:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:27:42", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:27:42", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "valve1", "temperature": 106.34}}
+{"timestamp": "2026-04-21 23:27:42", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "valve1", "vibration": 9.54}}
+{"timestamp": "2026-04-21 23:27:58", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:27:58", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:27:58", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:27:58", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "compressor1", "vibration": 8.53}}
+{"timestamp": "2026-04-21 23:27:58", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:27:58", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "valve1", "pressure": 130.6}}
+{"timestamp": "2026-04-21 23:27:58", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:28:13", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump2", "temperature": 100.91}}
+{"timestamp": "2026-04-21 23:28:13", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:28:13", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "valve1", "temperature": 95.5}}
+{"timestamp": "2026-04-21 23:28:13", "type": "HIGH_VIBRATION", "data": {"site": "site1", "equipment": "valve1", "vibration": 8.37}}
+{"timestamp": "2026-04-21 23:28:13", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:28:13", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "pump1", "pressure": 137.82}}
+{"timestamp": "2026-04-21 23:28:13", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:28:13", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "pump2", "temperature": 102.01}}
+{"timestamp": "2026-04-21 23:28:13", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "fault", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:28:13", "type": "HIGH_PRESSURE", "data": {"site": "site2", "equipment": "compressor1", "pressure": 121.26}}
+{"timestamp": "2026-04-21 23:28:13", "type": "HIGH_TEMPERATURE", "data": {"site": "site2", "equipment": "compressor1", "temperature": 97.74}}
+{"timestamp": "2026-04-21 23:28:13", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:28:28", "type": "HIGH_PRESSURE", "data": {"site": "site1", "equipment": "pump1", "pressure": 122.3}}
+{"timestamp": "2026-04-21 23:28:28", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "pump1", "temperature": 106.88}}
+{"timestamp": "2026-04-21 23:28:28", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump1", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:28:28", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "pump2", "old_status": "idle", "new_status": "fault"}}
+{"timestamp": "2026-04-21 23:28:28", "type": "HIGH_TEMPERATURE", "data": {"site": "site1", "equipment": "compressor1", "temperature": 108.08}}
+{"timestamp": "2026-04-21 23:28:28", "type": "STATUS_CHANGED", "data": {"site": "site1", "equipment": "valve1", "old_status": "idle", "new_status": "running"}}
+{"timestamp": "2026-04-21 23:28:28", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump1", "old_status": "fault", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:28:28", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "pump2", "old_status": "running", "new_status": "idle"}}
+{"timestamp": "2026-04-21 23:28:28", "type": "HIGH_VIBRATION", "data": {"site": "site2", "equipment": "compressor1", "vibration": 8.78}}
+{"timestamp": "2026-04-21 23:28:28", "type": "STATUS_CHANGED", "data": {"site": "site2", "equipment": "compressor1", "old_status": "running", "new_status": "fault"}}
