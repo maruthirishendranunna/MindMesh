@@ -45,65 +45,33 @@ ANTHROPIC_CONFIG = {
 # Keep test queries small and meaningful
 TEST_QUERIES = {
     "f1_adapter": [
-        {
-            "query": "speed of hamilton in silverstone",
-            "expected_keywords": ["hamilton", "speed", "silverstone"],
-        },
-        {
-            "query": "rpm of perez in bahrain",
-            "expected_keywords": ["perez", "rpm", "bahrain"],
-        },
-        {
-            "query": "who has the top speed in silverstone",
-            "expected_keywords": ["speed", "silverstone"],
-        },
-        {
-            "query": "gear of hamilton in silverstone",
-            "expected_keywords": ["hamilton", "gear", "silverstone"],
-        },
-        {
-            "query": "fuel level of perez in bahrain",
-            "expected_keywords": ["perez", "fuel", "bahrain"],
-        },
-        {
-            "query": "is there any accidents happened in Bahrain",
-            "expected_keywords": ["accident", "bahrain"],
-        },
-        {
-            "query": "summarize telemetry for silverstone",
-            "expected_keywords": ["silverstone", "telemetry"],
-        },
+        {"query": "speed of hamilton in silverstone", "expected_keywords": ["hamilton", "speed"]},
+        {"query": "rpm of perez in bahrain", "expected_keywords": ["perez", "rpm"]},
+        {"query": "who has the top speed in silverstone", "expected_keywords": ["speed"]},
+        {"query": "gear of hamilton in silverstone", "expected_keywords": ["gear"]},
+        {"query": "fuel level of perez in bahrain", "expected_keywords": ["fuel"]},
+        {"query": "drs of hamilton in silverstone", "expected_keywords": ["drs"]},
+        {"query": "lap of perez in bahrain", "expected_keywords": ["lap"]},
+        {"query": "which driver is leading", "expected_keywords": ["leader"]},
+        {"query": "is there any accidents happened in Bahrain", "expected_keywords": ["accident"]},
+        {"query": "which driver has highest rpm", "expected_keywords": ["rpm"]},
+        {"query": "which driver has lowest speed", "expected_keywords": ["speed"]},
+        {"query": "summarize telemetry for silverstone", "expected_keywords": ["silverstone"]},
     ],
 
     "oilgas_adapter": [
-        {
-            "query": "pressure of pump1",
-            "expected_keywords": ["pump1", "pressure"],
-        },
-        {
-            "query": "flow rate of site1",
-            "expected_keywords": ["flow", "site1"],
-        },
-        {
-            "query": "status of pump2",
-            "expected_keywords": ["pump2", "status"],
-        },
-        {
-            "query": "temperature of compressor1",
-            "expected_keywords": ["compressor1", "temperature"],
-        },
-        {
-            "query": "vibration of valve1",
-            "expected_keywords": ["valve1", "vibration"],
-        },
-        {
-            "query": "which equipment has highest pressure",
-            "expected_keywords": ["highest", "pressure"],
-        },
-        {
-            "query": "summarize telemetry for site1",
-            "expected_keywords": ["site1", "telemetry"],
-        },
+        {"query": "pressure of pump1", "expected_keywords": ["pump1", "pressure"]},
+        {"query": "flow rate of site1", "expected_keywords": ["flow"]},
+        {"query": "status of pump2", "expected_keywords": ["pump2", "status"]},
+        {"query": "temperature of compressor1", "expected_keywords": ["temperature"]},
+        {"query": "vibration of valve1", "expected_keywords": ["vibration"]},
+        {"query": "pressure of compressor1", "expected_keywords": ["pressure"]},
+        {"query": "flow rate of pump2", "expected_keywords": ["flow"]},
+        {"query": "status of valve1", "expected_keywords": ["status"]},
+        {"query": "which equipment has highest pressure", "expected_keywords": ["highest"]},
+        {"query": "which equipment has lowest temperature", "expected_keywords": ["lowest"]},
+        {"query": "any high temperature alerts", "expected_keywords": ["temperature"]},
+        {"query": "summarize telemetry for site1", "expected_keywords": ["site1"]},
     ],
 }
 
