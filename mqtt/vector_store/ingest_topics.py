@@ -19,7 +19,7 @@ RESET_DB_EACH_RUN = True
 def reset_vector_db():
     if os.path.exists(PERSIST_DIR):
         shutil.rmtree(PERSIST_DIR)
-        print(f"🗑️ Deleted old topic DB: {PERSIST_DIR}")
+        print(f" Deleted old topic DB: {PERSIST_DIR}")
 
 
 def normalize_colnames(df: pd.DataFrame) -> pd.DataFrame:
@@ -40,7 +40,7 @@ def load_topic_documents():
     documents = []
 
     if not os.path.exists(TOPIC_XLSX_FILE):
-        print(f"⚠️ Topic description file not found: {TOPIC_XLSX_FILE}")
+        print(f" Topic description file not found: {TOPIC_XLSX_FILE}")
         return documents
 
     df = pd.read_excel(TOPIC_XLSX_FILE)
@@ -49,7 +49,7 @@ def load_topic_documents():
     required_cols = ["topic", "description"]
     for col in required_cols:
         if col not in df.columns:
-            print(f"⚠️ Missing required column in Excel file: {col}")
+            print(f" Missing required column in Excel file: {col}")
             print(f"Available columns: {list(df.columns)}")
             return documents
 
@@ -114,7 +114,7 @@ def main():
         persist_directory=PERSIST_DIR
     )
 
-    print("\n✅ Topic ingestion complete")
+    print("\n Topic ingestion complete")
     print(f"Collection: {COLLECTION_NAME}")
     print(f"Persist directory: {PERSIST_DIR}")
     print(f"Total topics stored: {len(docs)}")

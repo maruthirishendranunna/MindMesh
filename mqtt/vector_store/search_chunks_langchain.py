@@ -138,7 +138,7 @@ def print_results(question: str, docs):
         return
 
     for i, doc in enumerate(docs, start=1):
-        print(f"\n📄 MATCH {i}")
+        print(f"\n MATCH {i}")
         print("-" * 80)
         print("METADATA:")
         print(doc.metadata)

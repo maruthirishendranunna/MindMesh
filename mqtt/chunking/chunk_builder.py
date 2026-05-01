@@ -28,7 +28,7 @@ def safe_read_json(path):
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
     except Exception as e:
-        print(f"❌ Failed to read JSON: {path} | {e}")
+        print(f" Failed to read JSON: {path} | {e}")
         return None
 
 
@@ -36,7 +36,7 @@ def chunk_snapshots():
     snapshot_files = sorted(glob.glob(os.path.join(SNAPSHOT_DIR, "snapshot_*.json")))
 
     print("\n===================================")
-    print("📌 Chunking Snapshots")
+    print(" Chunking Snapshots")
     print("Dataset:", DATASET_ADAPTER)
     print("Snapshot dir:", os.path.abspath(SNAPSHOT_DIR))
     print("Found snapshot files:", len(snapshot_files))
@@ -44,7 +44,7 @@ def chunk_snapshots():
     print("===================================")
 
     if not snapshot_files:
-        print("⚠️ No snapshot files found. Check SNAPSHOT_DIR path.")
+        print(" No snapshot files found. Check SNAPSHOT_DIR path.")
         return
 
     chunk_index = 1
@@ -61,7 +61,7 @@ def chunk_snapshots():
             out_file = os.path.join(SNAPSHOT_CHUNKS_DIR, f"snapshot_chunk_{chunk_index:04d}.txt")
             with open(out_file, "w", encoding="utf-8") as f:
                 f.write("\n\n".join(buffer_texts))
-            print(f"✅ Wrote: {out_file}")
+            print(f" Wrote: {out_file}")
             chunk_index += 1
             buffer_texts = []
 
@@ -69,7 +69,7 @@ def chunk_snapshots():
         out_file = os.path.join(SNAPSHOT_CHUNKS_DIR, f"snapshot_chunk_{chunk_index:04d}.txt")
         with open(out_file, "w", encoding="utf-8") as f:
             f.write("\n\n".join(buffer_texts))
-        print(f"✅ Wrote: {out_file}")
+        print(f" Wrote: {out_file}")
 
     print("🎉 Snapshot chunking complete.")
 
@@ -84,11 +84,11 @@ def chunk_events():
         lines = [ln.strip() for ln in f if ln.strip()]
 
     if not lines:
-        print("⚠️ Event file is empty. Skipping.")
+        print(" Event file is empty. Skipping.")
         return
 
     print("\n===================================")
-    print("📌 Chunking Event Logs")
+    print(" Chunking Event Logs")
     print("Dataset:", DATASET_ADAPTER)
     print("Event file:", os.path.abspath(EVENT_LOG_FILE))
     print("Output folder:", os.path.abspath(EVENT_CHUNKS_DIR))
@@ -105,7 +105,7 @@ def chunk_events():
         print(f"✅ Wrote: {out_file}")
         chunk_index += 1
 
-    print("🎉 Event chunking complete.")
+    print(" Event chunking complete.")
 
 
 def main():

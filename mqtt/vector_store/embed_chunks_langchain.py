@@ -20,7 +20,7 @@ RESET_DB_EACH_RUN = True
 def reset_vector_db():
     if os.path.exists(PERSIST_DIR):
         shutil.rmtree(PERSIST_DIR)
-        print(f"🗑️ Deleted old vector DB: {PERSIST_DIR}")
+        print(f" Deleted old vector DB: {PERSIST_DIR}")
 
 
 def load_chunk_files(folder_path: str):
@@ -90,7 +90,7 @@ def main():
         persist_directory=PERSIST_DIR
     )
 
-    print("\n✅ Clean ingestion complete")
+    print("\n Clean ingestion complete")
     print(f"Collection: {COLLECTION_NAME}")
     print(f"Persist directory: {PERSIST_DIR}")
     print(f"Total documents stored: {len(all_docs)}")

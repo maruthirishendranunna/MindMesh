@@ -297,7 +297,7 @@ for message in st.session_state.messages:
             st.success(message["content"])
 
             if message.get("source") == "adapter":
-                st.caption("⚡ Answer from structured telemetry")
+                st.caption(" Answer from structured telemetry")
             else:
                 st.caption("🤖 Answer generated using LLM")
 

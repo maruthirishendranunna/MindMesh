@@ -62,7 +62,7 @@ if __name__ == "__main__":
             continue
 
         for i, doc in enumerate(results, start=1):
-            print(f"\n📄 MATCH {i}")
+            print(f"\n MATCH {i}")
             print("-" * 80)
             print("METADATA:")
             print(doc.metadata)
