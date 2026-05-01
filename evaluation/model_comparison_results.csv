@@ -1,24 +1,181 @@
 "timestamp","dataset","provider","model","query_type","query","expected_keywords","keyword_accuracy_score","response_time_seconds","answer_word_count","answer","error"
-"2026-04-28 20:10:05","f1_adapter","ollama","llama3","metric","speed of hamilton in silverstone","hamilton, speed, silverstone","0.0","29.127","17","169.39 km/h, 302.54 km/h, 21.24 km/h, 184.3 km/h, 119.63 km/h, 207.11 km/h, 270.14 km/h, and 234.46 km/h",""
-"2026-04-28 20:10:35","f1_adapter","ollama","mistral","metric","speed of hamilton in silverstone","hamilton, speed, silverstone","1.0","29.229","34","Speed of Hamilton at Silverstone:
-- Lap 50: 270.14 km/h
-- Lap 48: 207.11 km/h
-- Lap 49: 184.3 km/h
-- Lap 45: 234.46 km/h (not included in the speed range summary, for completeness)",""
-"2026-04-28 20:10:53","f1_adapter","ollama","nemotron-3-nano:4b","metric","speed of hamilton in silverstone","hamilton, speed, silverstone","0.0","18.661","2","119.63 km/h",""
-"2026-04-28 20:11:21","f1_adapter","ollama","llama3","metric","rpm of perez in bahrain","perez, rpm, bahrain","0.0","24.8","8","4757.92, 6571.49, 5014.12, 6818.85, 5257.71, 4063.87, 4214.19, 7712.53",""
-"2026-04-28 20:11:56","f1_adapter","ollama","mistral","metric","rpm of perez in bahrain","perez, rpm, bahrain","1.0","35.252","30","RPM values for Perez in Bahrain: 4757.92 (lap 50), 6571.49 (lap 48), 5014.12 (lap 48), 6818.85 (lap 49), 5257.71 (lap 50), 4063.87 (lap 48), 4214.19 (lap 48), 7712.53 (lap 51)",""
-"2026-04-28 20:12:36","f1_adapter","ollama","nemotron-3-nano:4b","metric","rpm of perez in bahrain","perez, rpm, bahrain","0.33","39.992","10","RPM values: 4063.87, 4214.19, 4757.92, 5014.12, 5257.71, 6571.49, 6818.85, 7712.53.",""
-"2026-04-28 20:13:36","f1_adapter","ollama","llama3","comparison","who has the top speed in silverstone","speed, silverstone","1.0","56.668","17","Driver hamilton from team mercedes has the highest speed in Silverstone with a speed of 302.54 km/h.",""
-"2026-04-28 20:14:40","f1_adapter","ollama","mistral","comparison","who has the top speed in silverstone","speed, silverstone","1.0","63.638","17","Lewis Hamilton from Mercedes has the top speed in Silverstone, with a recorded speed of 305.25 km/h.",""
-"2026-04-28 20:16:05","f1_adapter","ollama","nemotron-3-nano:4b","comparison","who has the top speed in silverstone","speed, silverstone","1.0","84.999","7","Alonso has the top speed in Silverstone.",""
-"2026-04-28 20:16:30","oilgas_adapter","ollama","llama3","metric","pressure of pump1","pump1, pressure","0.0","21.341","2","92.77 psi",""
-"2026-04-28 20:16:56","oilgas_adapter","ollama","mistral","metric","pressure of pump1","pump1, pressure","1.0","26.64","10","The pressure of pump1 at site site2 is 137.0 psi.",""
-"2026-04-28 20:17:38","oilgas_adapter","ollama","nemotron-3-nano:4b","metric","pressure of pump1","pump1, pressure","0.0","41.357","2","92.77 psi",""
-"2026-04-28 20:18:13","oilgas_adapter","ollama","llama3","metric","flow rate of site1","flow, site1","0.0","31.806","2","83.3 lpm",""
-"2026-04-28 20:19:00","oilgas_adapter","ollama","mistral","metric","flow rate of site1","flow, site1","1.0","46.916","46","No relevant data found for the flow_rate directly associated with site1. However, the provided context includes multiple pieces of equipment at site1 with their respective flow rates. These include pump1, pump2, compressor1, and valve1. If a specific equipment's flow rate is required, please provide its name.",""
-"2026-04-28 20:19:35","oilgas_adapter","ollama","nemotron-3-nano:4b","metric","flow rate of site1","flow, site1","0.0","35.07","4","No relevant data found",""
-"2026-04-28 20:19:59","oilgas_adapter","ollama","llama3","metric","status of pump2","pump2, status","0.0","21.142","3","idle and fault",""
-"2026-04-28 20:20:25","oilgas_adapter","ollama","mistral","metric","status of pump2","pump2, status","0.0","25.645","6","fault (at site2)
-running (at site1)",""
-"2026-04-28 20:20:58","oilgas_adapter","ollama","nemotron-3-nano:4b","metric","status of pump2","pump2, status","0.0","33.27","4","Idle, running, or fault",""
+"2026-05-01 07:24:22","f1_adapter","ollama","llama3","metric","speed of hamilton in silverstone","hamilton, speed","0.0","2.215","2","169.39 km/h",""
+"2026-05-01 07:24:24","f1_adapter","ollama","mistral","metric","speed of hamilton in silverstone","hamilton, speed","1.0","2.285","18","The speed of Hamilton in Silverstone varies throughout the race, but on lap 50 it was 270.14 km/h.",""
+"2026-05-01 07:24:28","f1_adapter","ollama","nemotron-3-nano:4b","metric","speed of hamilton in silverstone","hamilton, speed","0.0","3.716","2","119.63 km/h",""
+"2026-05-01 07:24:31","f1_adapter","ollama","llama3","metric","rpm of perez in bahrain","perez, rpm","0.0","0.263","6","4757.92
+6818.85
+5257.71
+4063.87
+4214.19
+7712.53",""
+"2026-05-01 07:24:31","f1_adapter","ollama","mistral","metric","rpm of perez in bahrain","perez, rpm","1.0","0.222","13","RPM of Perez in Bahrain ranges from 4063.87 to 7712.53 (across multiple laps).",""
+"2026-05-01 07:24:33","f1_adapter","ollama","nemotron-3-nano:4b","metric","rpm of perez in bahrain","perez, rpm","0.5","1.779","2","7712.53 rpm",""
+"2026-05-01 07:24:36","f1_adapter","ollama","llama3","comparison","who has the top speed in silverstone","speed","1.0","0.407","10","hamilton from team mercedes with a speed of 270.14 km/h.",""
+"2026-05-01 07:24:36","f1_adapter","ollama","mistral","comparison","who has the top speed in silverstone","speed","1.0","0.46","14","Driver verstappen from team redbull, with a speed of 305.25 km/h at circuit Silverstone.",""
+"2026-05-01 07:24:37","f1_adapter","ollama","nemotron-3-nano:4b","comparison","who has the top speed in silverstone","speed","1.0","1.294","10","Alonso has the highest speed in Silverstone at 305.25 km/h.",""
+"2026-05-01 07:24:40","f1_adapter","ollama","llama3","metric","gear of hamilton in silverstone","gear","0.0","0.235","7","1
+3
+4
+4
+6
+7
+8",""
+"2026-05-01 07:24:40","f1_adapter","ollama","mistral","metric","gear of hamilton in silverstone","gear","0.0","0.182","9","4 (on lap 50) and 6 (on lap 49)",""
+"2026-05-01 07:24:40","f1_adapter","ollama","nemotron-3-nano:4b","metric","gear of hamilton in silverstone","gear","0.0","0.372","1","3",""
+"2026-05-01 07:24:43","f1_adapter","ollama","llama3","metric","fuel level of perez in bahrain","fuel","1.0","0.177","4","Fuel level: 0 kg",""
+"2026-05-01 07:24:43","f1_adapter","ollama","mistral","metric","fuel level of perez in bahrain","fuel","0.0","0.179","7","0 kg (for laps 48 and 50)",""
+"2026-05-01 07:24:44","f1_adapter","ollama","nemotron-3-nano:4b","metric","fuel level of perez in bahrain","fuel","0.0","0.317","2","0 kg",""
+"2026-05-01 07:24:46","f1_adapter","ollama","llama3","metric","drs of hamilton in silverstone","drs","1.0","0.179","3","DRS is 0.",""
+"2026-05-01 07:24:46","f1_adapter","ollama","mistral","metric","drs of hamilton in silverstone","drs","1.0","0.165","9","DRS is 0 for Lewis Hamilton at circuit Silverstone",""
+"2026-05-01 07:24:47","f1_adapter","ollama","nemotron-3-nano:4b","metric","drs of hamilton in silverstone","drs","0.0","0.329","1","0",""
+"2026-05-01 07:24:49","f1_adapter","ollama","llama3","metric","lap of perez in bahrain","lap","0.0","0.141","1","50",""
+"2026-05-01 07:24:49","f1_adapter","ollama","mistral","metric","lap of perez in bahrain","lap","1.0","0.187","9","50 (lap number for Sergio Perez at Circuit Bahrain)",""
+"2026-05-01 07:24:50","f1_adapter","ollama","nemotron-3-nano:4b","metric","lap of perez in bahrain","lap","0.0","0.629","1","50",""
+"2026-05-01 07:24:53","f1_adapter","ollama","llama3","general","which driver is leading","leader","0.0","1.034","104","Based on the provided context, there are multiple snapshots showing different drivers' positions and speeds at different points in time. To determine which driver is currently leading, we need to look for the snapshot with the latest timestamp.
+
+The latest snapshot has a timestamp of ""2026-03-11 21:07:33"". At this point:
+
+* Driver verstappen from team redbull is racing at circuit Bahrain.
+* Current lap is 1 (first lap).
+* Speed is 83.65 km/h.
+* RPM is 5373.6.
+* Gear is 2.
+* Fuel level is 87.49.
+* DRS is 0.
+
+According to this snapshot, Driver verstappen from team Redbull is currently leading the race.",""
+"2026-05-01 07:24:54","f1_adapter","ollama","mistral","general","which driver is leading","leader","0.0","0.616","31","Driver verstappen and perez from team redbull are both leading, as they are on the same lap (44) and their speeds are 57.55 km/h for Verstappen and 58.21 km/h for Perez.",""
+"2026-05-01 07:24:54","f1_adapter","ollama","nemotron-3-nano:4b","general","which driver is leading","leader","0.0","0.387","0","",""
+"2026-05-01 07:24:58","f1_adapter","ollama","llama3","event","is there any accidents happened in Bahrain","accident","1.0","0.86","102","Yes, several accidents were reported in Bahrain:
+
+* Aston Martin driver Stroll had an accident at lap 50 sector 1.
+* Mercedes driver Hamilton had an accident at lap 45 sector 3.
+* Red Bull driver Verstappen had an accident at lap 18 sector 1 and another at lap 48 sector 2.
+* Alonso (Aston Martin) had accidents at laps 21, 23, and 34.
+* Norris (McLaren) had an accident at lap 26 sector 1.
+* Perez (Red Bull) had accidents at laps 19 sector 2 and 48 sector 2.
+* Russell (Mercedes) had accidents at laps 19 sector 1 and 21.",""
+"2026-05-01 07:24:58","f1_adapter","ollama","mistral","event","is there any accidents happened in Bahrain","accident","1.0","0.717","60","Yes, there were multiple accidents that occurred in Bahrain. Specifically, accidents involving drivers astonmartin/alonso (lap 21 sector 1, lap 23 sector 3, and lap 34 sector 2), mercedes/russell (lap 19 sector 1), redbull/verstappen (lap 18 sector 1 and lap 48 sector 2), mclaren/norris (lap 26 sector 1), and redbull/perez (lap 19 sector 2 and lap 48 sector 2) were detected.",""
+"2026-05-01 07:24:59","f1_adapter","ollama","nemotron-3-nano:4b","event","is there any accidents happened in Bahrain","accident","0.0","0.229","0","",""
+"2026-05-01 07:25:01","f1_adapter","ollama","llama3","comparison","which driver has highest rpm","rpm","1.0","0.417","10","Driver piastri from team mclaren with an RPM of 8472.36.",""
+"2026-05-01 07:25:02","f1_adapter","ollama","mistral","comparison","which driver has highest rpm","rpm","1.0","0.49","19","Max Verstappen from team Red Bull has the highest RPM, with a maximum value of 8384.89 at lap 50.",""
+"2026-05-01 07:25:04","f1_adapter","ollama","nemotron-3-nano:4b","comparison","which driver has highest rpm","rpm","1.0","2.27","3","piastri 8472.36 rpm",""
+"2026-05-01 07:25:07","f1_adapter","ollama","llama3","comparison","which driver has lowest speed","speed","1.0","0.45","18","Driver alonso from team astonmartin is racing at circuit Silverstone. Current lap is 44. Speed is 41.01 km/h.",""
+"2026-05-01 07:25:07","f1_adapter","ollama","mistral","comparison","which driver has lowest speed","speed","1.0","0.387","9","Driver piastri from team mclaren has the lowest speed.",""
+"2026-05-01 07:25:09","f1_adapter","ollama","nemotron-3-nano:4b","comparison","which driver has lowest speed","speed","0.0","1.359","3","Piastri: 39.1 km/h",""
+"2026-05-01 07:25:12","f1_adapter","ollama","llama3","general","summarize telemetry for silverstone","silverstone","1.0","0.959","98","Telemetry summary for Silverstone:
+
+* There are six drivers racing at Silverstone: Verstappen, Perez, Hamilton, Russell, Norris, and Piastri.
+* The drivers' current laps range from 40 to 52.
+* Speeds vary greatly, from 0 km/h (accident detected) to over 300 km/h.
+* RPM values are mostly above 4000, with some reaching up to 8000.
+* Gears range from 1 to 8.
+* Fuel levels are consistently at 0%.
+* DRS (Drag Reduction System) is activated for a few drivers.
+
+Note: The telemetry data does not provide detailed information on the accident detections or the reasons behind them.",""
+"2026-05-01 07:25:14","f1_adapter","ollama","mistral","general","summarize telemetry for silverstone","silverstone","1.0","2.17","199","At Silverstone, there are multiple drivers racing with various teams: Red Bull (Verstappen and Perez), Mercedes (Hamilton and Russell), McLaren (Norris, Piastri), and Aston Martin (Alonso).
+
+Key telemetry data for the current race includes:
+- Verstappen and Perez from Red Bull are on lap 45 and 47 respectively. Verstappen's speed is 47.05 km/h, RPM is 4437.02, Gear is 1, and DRS is 0. Perez's speed is 296.27 km/h, RPM is 7449.09, Gear is 7, and DRS is 1.
+- Hamilton from Mercedes is on lap 52 with a speed of 328.06 km/h, RPM is 7130.8, Gear is 8, and DRS is 0. Russell is on lap 47 at 37.39 km/h, RPM is 4075.11, Gear is 1, and DRS is 0.
+- Norris from McLaren is on lap 47 with a speed of 254.77 km/h, RPM is 7537.19, Gear is 6, and DRS is 1. Piastri is on lap 50 at 55.44 km/h, RPM is 4396.09, Gear is 2, and DRS is 0.
+- Alonso from Aston Martin is on lap 50 with a speed of 193.39 km/h, RPM is 7693.08, Gear is 4, and DRS is 0.
+
+There have been accidents detected for drivers Alonso and Russell from Silverstone.",""
+"2026-05-01 07:25:15","f1_adapter","ollama","nemotron-3-nano:4b","general","summarize telemetry for silverstone","silverstone","1.0","0.969","57","- Lap numbers and speeds at Silverstone range from 0‑51; notable speeds include Norris 257.49 km/h (lap 46), Piastri 314.69 km/h (lap 45), Sainz 47.05 km/h (lap 46).  
+- Fuel level is 0 throughout.  
+- No DRS was active (0).  
+- Accident detected for Russell (lap 46).  
+- LAP_CHANGED and ACCIDENT_DETECTED events track race progression and safety.",""
+"2026-05-01 07:25:18","oilgas_adapter","ollama","llama3","metric","pressure of pump1","pump1, pressure","0.0","0.187","2","92.77 psi",""
+"2026-05-01 07:25:18","oilgas_adapter","ollama","mistral","metric","pressure of pump1","pump1, pressure","1.0","0.278","19","The pressure of pump1 at site2 is 129.85 psi and at site1 it is 86.03 psi (multiple instances available).",""
+"2026-05-01 07:25:19","oilgas_adapter","ollama","nemotron-3-nano:4b","metric","pressure of pump1","pump1, pressure","1.0","0.925","9","Pump1 pressure varies: site1 77.2–135.54 psi; site2 86.54–137.0 psi.",""
+"2026-05-01 07:25:22","oilgas_adapter","ollama","llama3","metric","flow rate of site1","flow","0.0","0.25","2","83.3 lpm",""
+"2026-05-01 07:25:23","oilgas_adapter","ollama","mistral","metric","flow rate of site1","flow","1.0","0.906","68","Site1's flow rate values are not directly provided in the context. However, there are several pieces of equipment at site1 with flow rates mentioned: pump1 (83.3 lpm, 55.99 lpm, 87.53 lpm, ...), pump2 (55.98 lpm, 28.08 lpm, 56.14 lpm, ...), compressor1 (31.54 lpm, 76.14 lpm, 70.84 lpm, ...), and valve1 (59.01 lpm, 74.63 lpm, 79.1 lpm, ...). These flow rates refer to different pieces of equipment within site1.",""
+"2026-05-01 07:25:24","oilgas_adapter","ollama","nemotron-3-nano:4b","metric","flow rate of site1","flow","1.0","1.681","11","Site1 flow rate includes pump1 (83.3 lpm) and pump2 (55.98 lpm).",""
+"2026-05-01 07:25:27","oilgas_adapter","ollama","llama3","metric","status of pump2","pump2, status","0.0","0.173","3","idle or fault",""
+"2026-05-01 07:25:27","oilgas_adapter","ollama","mistral","metric","status of pump2","pump2, status","0.0","0.153","6","fault at site2, running at site1",""
+"2026-05-01 07:25:28","oilgas_adapter","ollama","nemotron-3-nano:4b","metric","status of pump2","pump2, status","0.5","0.687","9","Pump2 is idle at site1 and fault at site2.",""
+"2026-05-01 07:25:30","oilgas_adapter","ollama","llama3","metric","temperature of compressor1","temperature","0.0","0.18","2","76.42 C",""
+"2026-05-01 07:25:30","oilgas_adapter","ollama","mistral","metric","temperature of compressor1","temperature","0.0","0.267","17","57.06 C (at site2, when status is idle) or 108.43 C (at site2, when status is fault)",""
+"2026-05-01 07:25:32","oilgas_adapter","ollama","nemotron-3-nano:4b","metric","temperature of compressor1","temperature","1.0","1.478","8","Temperature ranges from 40.81 C to 108.43 C.",""
+"2026-05-01 07:25:35","oilgas_adapter","ollama","llama3","metric","vibration of valve1","vibration","0.0","0.254","8","3.21 mm/s (site site1), 2.08 mm/s (site site2)",""
+"2026-05-01 07:25:35","oilgas_adapter","ollama","mistral","metric","vibration of valve1","vibration","1.0","0.674","42","The vibration of valve1 at site site1 is 3.21, 1.98, 6.39, 7.85, 7.85, 6.47, 5.32, 9.26 mm/s (in the given order). The vibration of valve1 at site site2 is 2.08, 9.27, 5.07, 7.95, 5.99, 5.94, 3.89, 3.98 mm/s (in the given order).",""
+"2026-05-01 07:25:36","oilgas_adapter","ollama","nemotron-3-nano:4b","metric","vibration of valve1","vibration","1.0","1.052","10","Vibration varies mm/s (e.g., 1.79 mm/s, 3.21 mm/s, 5.07 mm/s).",""
+"2026-05-01 07:25:39","oilgas_adapter","ollama","llama3","metric","pressure of compressor1","pressure","0.0","0.178","2","105.91 psi",""
+"2026-05-01 07:25:39","oilgas_adapter","ollama","mistral","metric","pressure of compressor1","pressure","0.0","0.179","4","105.91 psi (at site2)",""
+"2026-05-01 07:25:42","oilgas_adapter","ollama","nemotron-3-nano:4b","metric","pressure of compressor1","pressure","1.0","2.753","10","Site1 pressure range 78.57–135.24 psi; Site2 pressure range 81.63–129.53 psi.",""
+"2026-05-01 07:25:44","oilgas_adapter","ollama","llama3","metric","flow rate of pump2","flow","0.0","0.187","2","67.38 lpm",""
+"2026-05-01 07:25:45","oilgas_adapter","ollama","mistral","metric","flow rate of pump2","flow","1.0","0.623","40","The flow rates for pump2 at site1 are: 55.98 lpm, 28.08 lpm, 56.14 lpm, 30.22 lpm, 16.02 lpm, and 88.66 lpm.
+The flow rates for pump2 at site2 are: 67.38 lpm, 46.16 lpm, 52.55 lpm, 32.5 lpm, and 43.43 lpm.",""
+"2026-05-01 07:25:46","oilgas_adapter","ollama","nemotron-3-nano:4b","metric","flow rate of pump2","flow","0.0","1.276","8","55.98 lpm at site1, 67.38 lpm at site2.",""
+"2026-05-01 07:25:49","oilgas_adapter","ollama","llama3","metric","status of valve1","status","0.0","0.155","1","running",""
+"2026-05-01 07:25:49","oilgas_adapter","ollama","mistral","metric","status of valve1","status","0.0","0.632","54","running (at site1)
+running (at site2)
+idle (at site1)
+idle (at site2)
+fault (at site1)
+idle (at site2)
+running (at site1)
+running (at site2)
+running (at site1)
+running (at site2)
+running (at site1)
+idle (at site2)
+running (at site1)
+running (at site2)
+running (at site1)
+idle (at site2)
+idle (at site1)
+idle (at site2)",""
+"2026-05-01 07:25:50","oilgas_adapter","ollama","nemotron-3-nano:4b","metric","status of valve1","status","0.0","1.069","10","Running, idle, or fault depending on site and operating conditions.",""
+"2026-05-01 07:25:53","oilgas_adapter","ollama","llama3","comparison","which equipment has highest pressure","highest","0.0","0.411","11","Equipment valve1 at site site2 with a pressure of 133.84 psi.",""
+"2026-05-01 07:25:54","oilgas_adapter","ollama","mistral","comparison","which equipment has highest pressure","highest","1.0","0.516","23","Equipment valve1 at site site1 with a pressure of 135.54 psi has the highest pressure among all the equipment provided in the context.",""
+"2026-05-01 07:25:57","oilgas_adapter","ollama","nemotron-3-nano:4b","comparison","which equipment has highest pressure","highest","0.0","3.141","6","compressor1 at site site1, 138.53 psi",""
+"2026-05-01 07:26:00","oilgas_adapter","ollama","llama3","comparison","which equipment has lowest temperature","lowest","0.0","0.509","9","Equipment valve1 at site site2. Temperature is 40.9 C.",""
+"2026-05-01 07:26:01","oilgas_adapter","ollama","mistral","comparison","which equipment has lowest temperature","lowest","1.0","0.456","13","At site site2, the equipment with the lowest temperature is pump2 (76.61 C).",""
+"2026-05-01 07:26:03","oilgas_adapter","ollama","nemotron-3-nano:4b","comparison","which equipment has lowest temperature","lowest","0.0","2.66","4","compressor1 site2 40.81 C",""
+"2026-05-01 07:26:07","oilgas_adapter","ollama","llama3","event","any high temperature alerts","temperature","1.0","1.2","75","Yes, there were high temperature alerts.
+
+Events with HIGH_TEMPERATURE_DETECTED:
+
+* 2026-04-21 23:12:57: site1, equipment pump2, temperature 100.68; compressor1, temperature 90.76; valve1, temperature 105.01
+* 2026-04-21 23:11:57: site1, equipment valve1, temperature 97.48; site2, equipment pump1, temperature 99.62; equipment pump2, temperature 92.69
+* 2026-04-21 23:22:12: site1, equipment compressor1, temperature 91.39; valve1, temperature 99.63; site2, equipment pump2, temperature 93.47; valve1, temperature 97.33
+* 2026-04-21 23:19:27: site1, equipment compressor1, temperature 95.55; site2, equipment pump2, temperature 102.09; valve1, temperature 100.06",""
+"2026-05-01 07:26:08","oilgas_adapter","ollama","mistral","event","any high temperature alerts","temperature","1.0","0.88","70","Yes, multiple high temperature alerts were detected on April 21st, 2026 at site1 and site2. Here are the relevant details:
+
+- At site1: pump2, compressor1, and valve1 had temperatures of 100.68°C, 95.55°C, and 105.01°C respectively.
+- At site1: pump1 and pump2 had temperatures of 100.53°C and 94.29°C respectively at a different time.
+- At site2: pump2, compressor1, and valve1 had temperatures of 102.09°C, 96.49°C, and 94.19°C respectively at different times.",""
+"2026-05-01 07:26:09","oilgas_adapter","ollama","nemotron-3-nano:4b","event","any high temperature alerts","temperature","1.0","1.218","21","Yes, high temperature alerts were recorded at site1 pump2 (100.68 °C) and site2 compressor1 (108.82 °C) among other equipment on 2026‑04‑21.",""
+"2026-05-01 07:26:13","oilgas_adapter","ollama","llama3","metric","summarize telemetry for site1","site1","1.0","2.074","136","Equipment pump1 at site site1:
+Pressure: 102.75-135.54 psi (average: 111.87 psi)
+Temperature: 42.84-106.43 C (average: 83.94 C)
+Flow rate: 17.26-88.66 lpm (average: 55.99 lpm)
+Vibration: 2.02-8.42 mm/s (average: 4.04 mm/s)
+Status: fault, idle, running
+
+Equipment pump2 at site site1:
+Pressure: 92.77-132.74 psi (average: 108.61 psi)
+Temperature: 57.06-106.47 C (average: 75.39 C)
+Flow rate: 28.08-88.66 lpm (average: 56.14 lpm)
+Vibration: 1.67-8.89 mm/s (average: 3.78 mm/s)
+Status: idle, running, fault
+
+Equipment compressor1 at site site1:
+Pressure: 78.57-135.24 psi (average: 123.53 psi)
+Temperature: 52.4-109.15 C (average: 87.01 C)
+Flow rate: 33.65-76.14 lpm (average: 64.34 lpm)
+Vibration: 7.33-9.01 mm/s (average: 1.62 mm/s)
+Status: fault, idle, running
+
+Equipment valve1 at site site1:
+Pressure: 72.3-127.35 psi (average: 93.91 psi)
+Temperature: 52.65-104.97 C (average: 75.39 C)
+Flow rate: 34.38-79.1 lpm (average: 55.99 lpm)
+Vibration: 1.79-9.26 mm/s (average: 6.47 mm/s)
+Status: idle, running, fault",""
+"2026-05-01 07:26:14","oilgas_adapter","ollama","mistral","metric","summarize telemetry for site1","site1","1.0","0.567","59","At site1, pump1's status alternates between running and fault. Pump2's status varies from idle to running with occasional faults. Compressor1 is primarily running, but there are instances of idle and fault states. Valve1 is predominantly running but also experiences occasional idle and fault states. Specific values for pressure, temperature, flow rate, and vibration can be found in the context.",""
+"2026-05-01 07:26:16","oilgas_adapter","ollama","nemotron-3-nano:4b","metric","summarize telemetry for site1","site1","0.0","1.588","12","Pump1 – fault; Pump2 – running; Compressor1 – idle; Valve1 – fault.",""
