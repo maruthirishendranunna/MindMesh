@@ -408,27 +408,8 @@ def get_direct_answer(question: str, context: str):
     equipment = entities.get("equipment")
     metric = entities.get("metric")
 
-    if "what about other" in q or "what about others" in q or "what about the rest" in q:
-        lines = [line.strip() for line in context.splitlines() if line.strip()]
-        relevant = [
-            line for line in lines
-            if line.lower().startswith("equipment ")
-        ]
-
-        if not relevant:
-            return "No other relevant data found."
-
-        results = []
-        for line in relevant[:5]:
-            results.append(line)
-
-        return "Other relevant equipment data:\n- " + "\n- ".join(results)
-
     lines = [line.strip() for line in context.splitlines() if line.strip()]
-    relevant = [
-        line for line in lines
-        if line.lower().startswith("equipment ")
-    ]
+    relevant = [line for line in lines if line.lower().startswith("equipment ")]
 
     if not relevant:
         return None
@@ -437,7 +418,7 @@ def get_direct_answer(question: str, context: str):
     for line in relevant:
         ll = line.lower()
 
-        if site and site not in ll:
+        if site and f"site {site}" not in ll:
             continue
 
         if equipment:
@@ -450,6 +431,7 @@ def get_direct_answer(question: str, context: str):
     if not filtered:
         return None
 
+    # Site-level queries like "flow rate of site1"
     if site and not equipment:
         seen_equipment = set()
         results = []
@@ -495,6 +477,7 @@ def get_direct_answer(question: str, context: str):
             results = sorted(results)
             return f"{metric.replace('_', ' ')} at {site}:\n- " + "\n- ".join(results[:10])
 
+    # Equipment-level queries like "pressure of pump1"
     chosen = filtered[0]
 
     chosen_site_match = re.search(r"site (\w+)", chosen, re.IGNORECASE)
@@ -507,30 +490,25 @@ def get_direct_answer(question: str, context: str):
         m = re.search(r"Pressure is ([0-9.]+) psi", chosen, re.IGNORECASE)
         if m:
             return f"{chosen_equipment} pressure at {chosen_site} is {m.group(1)} psi."
-        return chosen
 
     if metric == "temperature":
         m = re.search(r"Temperature is ([0-9.]+) C", chosen, re.IGNORECASE)
         if m:
             return f"{chosen_equipment} temperature at {chosen_site} is {m.group(1)} C."
-        return chosen
 
     if metric == "flow_rate":
         m = re.search(r"Flow rate is ([0-9.]+) lpm", chosen, re.IGNORECASE)
         if m:
             return f"{chosen_equipment} flow rate at {chosen_site} is {m.group(1)} lpm."
-        return chosen
 
     if metric == "vibration":
         m = re.search(r"Vibration is ([0-9.]+) mm/s", chosen, re.IGNORECASE)
         if m:
             return f"{chosen_equipment} vibration at {chosen_site} is {m.group(1)} mm/s."
-        return chosen
 
     if metric == "status":
         m = re.search(r"Status is ([a-zA-Z0-9_]+)", chosen, re.IGNORECASE)
         if m:
             return f"{chosen_equipment} status at {chosen_site} is {m.group(1)}."
-        return chosen
 
     return chosen

@@ -5,12 +5,22 @@ from mqtt.adapters.loader import get_adapter
 from mqtt.query.query_context_builder import build_query_context
 from mqtt.query.prompt_builder import build_prompt
 
-adapter = get_adapter()
+
+# =========================================
+# RUNTIME HELPERS
+# =========================================
+
+def get_runtime_adapter():
+    return get_adapter()
 
 
 def get_current_model() -> str:
     return os.getenv("LLM_MODEL", "llama3")
 
+
+# =========================================
+# MEMORY HELPERS
+# =========================================
 
 def extract_current_question(question: str) -> str:
     marker = "Current user question:"
@@ -59,6 +69,10 @@ def is_followup_other_query(question: str) -> bool:
     return any(p in q for p in patterns)
 
 
+# =========================================
+# LLM CALL
+# =========================================
+
 def ask_llm(prompt: str) -> str:
     current_model = get_current_model()
 
@@ -88,7 +102,12 @@ def ask_llm(prompt: str) -> str:
         return f"LLM error: {e}"
 
 
+# =========================================
+# MAIN RAG QUERY
+# =========================================
+
 def run_rag_query(question: str, debug: bool = True):
+    adapter = get_runtime_adapter()
     current_model = get_current_model()
 
     effective_question = extract_current_question(question)
@@ -101,6 +120,7 @@ def run_rag_query(question: str, debug: bool = True):
 
     if debug:
         print("\n" + "=" * 80)
+        print(f"RUNTIME DATASET ADAPTER: {os.getenv('DATASET_ADAPTER', 'f1_adapter')}")
         print(f"RETRIEVAL QUESTION: {retrieval_question}")
         print("=" * 80)
         print(f"EFFECTIVE QUESTION: {effective_question}")
@@ -114,6 +134,7 @@ def run_rag_query(question: str, debug: bool = True):
         print("=" * 80)
         print(context)
 
+    # Direct deterministic handling
     if adapter.can_handle_directly(effective_question):
         if debug:
             print("\n⚡ Using adapter-based deterministic handling...\n")
@@ -133,6 +154,7 @@ def run_rag_query(question: str, debug: bool = True):
                 "model": current_model
             }
 
+    # LLM fallback
     query_type = adapter.classify_query(effective_question)
     prompt = build_prompt(effective_question, context, query_type)
 
@@ -161,9 +183,14 @@ def run_rag_query(question: str, debug: bool = True):
     }
 
 
+# =========================================
+# CLI DEBUG MODE
+# =========================================
+
 if __name__ == "__main__":
     print("MindMesh RAG Query Engine")
     print(f"Using Ollama model: {get_current_model()}")
+    print(f"Runtime dataset: {os.getenv('DATASET_ADAPTER', 'f1_adapter')}")
     print("Press Enter without typing anything to exit.")
 
     while True:

@@ -45,30 +45,36 @@ def get_available_adapters():
         if fname == "loader.py":
             continue
 
-        adapter_name = fname[:-3]  # remove .py
-        adapters.append(adapter_name)
+        adapters.append(fname[:-3])
 
     adapters.sort()
     return adapters if adapters else ["f1_adapter"]
 
 
-def set_runtime_dataset(dataset_adapter: str):
-    os.environ["DATASET_ADAPTER"] = dataset_adapter
-
-    # Clear imported modules so new adapter is loaded correctly
+def clear_dataset_runtime_modules():
     modules_to_clear = [
+        "mqtt.config",
         "mqtt.adapters.loader",
         "mqtt.query.query_context_builder",
         "mqtt.query.rag_query_engine",
+        "mqtt.query.prompt_builder",
+        "mqtt.vector_store.search_chunks_langchain",
     ]
 
     for mod in list(sys.modules.keys()):
-        if mod in modules_to_clear or mod.startswith("mqtt.adapters."):
+        if mod in modules_to_clear:
+            sys.modules.pop(mod, None)
+        elif mod.startswith("mqtt.adapters."):
             sys.modules.pop(mod, None)
 
 
-def set_model_env(selected_model: str):
-    os.environ["LLM_MODEL"] = selected_model
+def set_runtime_dataset(dataset_adapter: str):
+    os.environ["DATASET_ADAPTER"] = dataset_adapter
+    clear_dataset_runtime_modules()
+
+
+def set_runtime_model(model_name: str):
+    os.environ["LLM_MODEL"] = model_name
 
 
 # =========================================
@@ -81,16 +87,22 @@ def init_session():
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
-    if "selected_model" not in st.session_state:
-        st.session_state.selected_model = AVAILABLE_MODELS[0]
-
     if "selected_dataset" not in st.session_state:
         st.session_state.selected_dataset = (
             "f1_adapter" if "f1_adapter" in available_datasets else available_datasets[0]
         )
 
+    if "active_dataset" not in st.session_state:
+        st.session_state.active_dataset = st.session_state.selected_dataset
+
+    if "selected_model" not in st.session_state:
+        st.session_state.selected_model = AVAILABLE_MODELS[0]
+
     if "debug_mode" not in st.session_state:
         st.session_state.debug_mode = False
+
+    if "last_dataset_used" not in st.session_state:
+        st.session_state.last_dataset_used = st.session_state.selected_dataset
 
 
 # =========================================
@@ -134,11 +146,18 @@ def build_augmented_question(current_question: str) -> str:
 def run_query_with_memory(question: str, debug_mode: bool, dataset_adapter: str):
     set_runtime_dataset(dataset_adapter)
 
-    # Import only after setting dataset
     from mqtt.query.rag_query_engine import run_rag_query
 
-    augmented_question = build_augmented_question(question)
-    return run_rag_query(augmented_question, debug=debug_mode)
+    # Prevent cross-dataset memory contamination.
+    # On the first query after switching datasets, do not inject previous memory.
+    if dataset_adapter != st.session_state.get("last_dataset_used"):
+        final_question = question.strip()
+    else:
+        final_question = build_augmented_question(question)
+
+    st.session_state.last_dataset_used = dataset_adapter
+
+    return run_rag_query(final_question, debug=debug_mode)
 
 
 # =========================================
@@ -148,8 +167,8 @@ def run_query_with_memory(question: str, debug_mode: bool, dataset_adapter: str)
 init_session()
 available_datasets = get_available_adapters()
 
-set_runtime_dataset(st.session_state.selected_dataset)
-set_model_env(st.session_state.selected_model)
+set_runtime_dataset(st.session_state.active_dataset)
+set_runtime_model(st.session_state.selected_model)
 
 
 # =========================================
@@ -169,6 +188,7 @@ selected_model = st.sidebar.selectbox(
     "Select LLM Model",
     AVAILABLE_MODELS,
     index=AVAILABLE_MODELS.index(st.session_state.selected_model)
+    if st.session_state.selected_model in AVAILABLE_MODELS else 0
 )
 
 debug_mode = st.sidebar.checkbox(
@@ -176,29 +196,32 @@ debug_mode = st.sidebar.checkbox(
     value=st.session_state.debug_mode
 )
 
-dataset_changed = selected_dataset != st.session_state.selected_dataset
-model_changed = selected_model != st.session_state.selected_model
-
-if dataset_changed:
+# Clean dataset switch
+if selected_dataset != st.session_state.selected_dataset:
     st.session_state.selected_dataset = selected_dataset
+    st.session_state.active_dataset = selected_dataset
     st.session_state.messages = []
+    set_runtime_dataset(selected_dataset)
     st.rerun()
 
-if model_changed:
+# Model switch
+if selected_model != st.session_state.selected_model:
     st.session_state.selected_model = selected_model
+    set_runtime_model(selected_model)
     st.rerun()
 
 st.session_state.debug_mode = debug_mode
 
-set_runtime_dataset(st.session_state.selected_dataset)
-set_model_env(st.session_state.selected_model)
+# Always enforce runtime values
+set_runtime_dataset(st.session_state.active_dataset)
+set_runtime_model(st.session_state.selected_model)
 
 if st.sidebar.button("Clear Chat History"):
     st.session_state.messages = []
     st.rerun()
 
 st.sidebar.markdown("---")
-st.sidebar.write(f"**Current dataset:** {st.session_state.selected_dataset}")
+st.sidebar.write(f"**Current dataset:** {st.session_state.active_dataset}")
 st.sidebar.write(f"**Current model:** {st.session_state.selected_model}")
 st.sidebar.write(f"**Debug mode:** {st.session_state.debug_mode}")
 
@@ -223,24 +246,24 @@ dataset_examples = {
 }
 
 example_queries = dataset_examples.get(
-    st.session_state.selected_dataset,
+    st.session_state.active_dataset,
     ["show latest telemetry", "highest value", "what about others"]
 )
 
 for example in example_queries:
-    if st.sidebar.button(example, key=f"example_{st.session_state.selected_dataset}_{example}"):
+    if st.sidebar.button(example, key=f"example_{st.session_state.active_dataset}_{example}"):
         st.session_state.messages.append({
             "role": "user",
             "content": example
         })
 
         with st.spinner(
-            f"Generating answer using {st.session_state.selected_model} on {st.session_state.selected_dataset}..."
+            f"Generating answer using {st.session_state.selected_model} on {st.session_state.active_dataset}..."
         ):
             result = run_query_with_memory(
                 example,
                 st.session_state.debug_mode,
-                st.session_state.selected_dataset
+                st.session_state.active_dataset
             )
 
         st.session_state.messages.append({
@@ -248,7 +271,7 @@ for example in example_queries:
             "content": result["answer"],
             "source": result["source"],
             "model": result["model"],
-            "dataset": st.session_state.selected_dataset
+            "dataset": st.session_state.active_dataset
         })
 
         st.rerun()
@@ -280,7 +303,7 @@ for message in st.session_state.messages:
 
             st.caption(
                 f"Model: {message.get('model', st.session_state.selected_model)} | "
-                f"Dataset: {message.get('dataset', st.session_state.selected_dataset)}"
+                f"Dataset: {message.get('dataset', st.session_state.active_dataset)}"
             )
 
 
@@ -301,12 +324,12 @@ if user_question:
 
     with st.chat_message("assistant"):
         with st.spinner(
-            f"Generating answer using {st.session_state.selected_model} on {st.session_state.selected_dataset}..."
+            f"Generating answer using {st.session_state.selected_model} on {st.session_state.active_dataset}..."
         ):
             result = run_query_with_memory(
                 user_question,
                 st.session_state.debug_mode,
-                st.session_state.selected_dataset
+                st.session_state.active_dataset
             )
 
         st.success(result["answer"])
@@ -317,7 +340,7 @@ if user_question:
             st.caption("🤖 Answer generated using LLM")
 
         st.caption(
-            f"Model: {result['model']} | Dataset: {st.session_state.selected_dataset}"
+            f"Model: {result['model']} | Dataset: {st.session_state.active_dataset}"
         )
 
     st.session_state.messages.append({
@@ -325,5 +348,5 @@ if user_question:
         "content": result["answer"],
         "source": result["source"],
         "model": result["model"],
-        "dataset": st.session_state.selected_dataset
+        "dataset": st.session_state.active_dataset
     })

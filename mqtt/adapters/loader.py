@@ -1,5 +1,6 @@
 import importlib
-from mqtt.config import DATASET_ADAPTER
+import os
+
 
 REQUIRED_ADAPTER_ATTRIBUTES = [
     "INPUT_TOPICS_PROCESSOR",
@@ -25,8 +26,13 @@ REQUIRED_ADAPTER_ATTRIBUTES = [
 ]
 
 
+def get_runtime_dataset():
+    return os.getenv("DATASET_ADAPTER", "f1_adapter")
+
+
 def get_adapter():
-    module_name = f"mqtt.adapters.{DATASET_ADAPTER}"
+    dataset_adapter = get_runtime_dataset()
+    module_name = f"mqtt.adapters.{dataset_adapter}"
     adapter = importlib.import_module(module_name)
 
     missing = []
@@ -36,7 +42,7 @@ def get_adapter():
 
     if missing:
         raise AttributeError(
-            f"Adapter '{DATASET_ADAPTER}' is missing required attributes/functions: {missing}"
+            f"Adapter '{dataset_adapter}' is missing required attributes/functions: {missing}"
         )
 
     return adapter

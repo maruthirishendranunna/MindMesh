@@ -3,25 +3,20 @@ import os
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
-from mqtt.config import DATASET_ADAPTER, EMBED_MODEL
+from mqtt.config import EMBED_MODEL
 from mqtt.adapters.loader import get_adapter
 
 
 # =========================================
-# CONFIG
+# RUNTIME HELPERS
 # =========================================
 
-TELEMETRY_COLLECTION = f"{DATASET_ADAPTER}_telemetry_chunks"
-TELEMETRY_DB = os.path.join("data", f"chroma_db_{DATASET_ADAPTER}")
+def get_runtime_dataset():
+    return os.getenv("DATASET_ADAPTER", "f1_adapter")
 
-TOPIC_COLLECTION = f"{DATASET_ADAPTER}_topic_descriptions"
-TOPIC_DB = os.path.join("data", f"chroma_topics_{DATASET_ADAPTER}")
 
-adapter = get_adapter()
-
-TOP_K_TOPIC = getattr(adapter, "TOP_K_TOPIC", 2)
-TOP_K_TELEMETRY = getattr(adapter, "TOP_K_TELEMETRY", 8)
-TOP_K_FALLBACK = getattr(adapter, "TOP_K_FALLBACK", 10)
+def get_runtime_adapter():
+    return get_adapter()
 
 
 # =========================================
@@ -40,21 +35,44 @@ def load_embeddings():
 # =========================================
 
 def load_topic_store():
+    dataset = get_runtime_dataset()
     embeddings = load_embeddings()
+
     return Chroma(
-        collection_name=TOPIC_COLLECTION,
+        collection_name=f"{dataset}_topic_descriptions",
         embedding_function=embeddings,
-        persist_directory=TOPIC_DB
+        persist_directory=os.path.join("data", f"chroma_topics_{dataset}")
     )
 
 
 def load_telemetry_store():
+    dataset = get_runtime_dataset()
     embeddings = load_embeddings()
+
     return Chroma(
-        collection_name=TELEMETRY_COLLECTION,
+        collection_name=f"{dataset}_telemetry_chunks",
         embedding_function=embeddings,
-        persist_directory=TELEMETRY_DB
+        persist_directory=os.path.join("data", f"chroma_db_{dataset}")
     )
+
+
+# =========================================
+# CONFIG FROM ADAPTER
+# =========================================
+
+def get_top_k_topic():
+    adapter = get_runtime_adapter()
+    return getattr(adapter, "TOP_K_TOPIC", 2)
+
+
+def get_top_k_telemetry():
+    adapter = get_runtime_adapter()
+    return getattr(adapter, "TOP_K_TELEMETRY", 8)
+
+
+def get_top_k_fallback():
+    adapter = get_runtime_adapter()
+    return getattr(adapter, "TOP_K_FALLBACK", 10)
 
 
 # =========================================
@@ -62,6 +80,7 @@ def load_telemetry_store():
 # =========================================
 
 def classify_query(question: str):
+    adapter = get_runtime_adapter()
     return adapter.classify_query(question)
 
 
@@ -70,9 +89,11 @@ def classify_query(question: str):
 # =========================================
 
 def search_topics(question: str):
+    adapter = get_runtime_adapter()
     normalized_question = adapter.normalize_question_text(question)
+
     store = load_topic_store()
-    retriever = store.as_retriever(search_kwargs={"k": TOP_K_TOPIC})
+    retriever = store.as_retriever(search_kwargs={"k": get_top_k_topic()})
     return retriever.invoke(normalized_question)
 
 
@@ -81,6 +102,7 @@ def search_topics(question: str):
 # =========================================
 
 def build_telemetry_query(original_question: str, topic_docs):
+    adapter = get_runtime_adapter()
     query = adapter.build_telemetry_query_from_topics(original_question, topic_docs)
     return query if query else original_question
 
@@ -106,22 +128,46 @@ def search_telemetry(question: str, refined_question: str):
     query_type = classify_query(question)
 
     if query_type in ("metric", "comparison"):
-        docs = search_telemetry_with_filter(refined_question, "snapshots", TOP_K_TELEMETRY)
+        docs = search_telemetry_with_filter(
+            refined_question,
+            "snapshots",
+            get_top_k_telemetry()
+        )
         if docs:
             return docs
-        return search_telemetry_with_filter(refined_question, "events", TOP_K_FALLBACK)
+        return search_telemetry_with_filter(
+            refined_question,
+            "events",
+            get_top_k_fallback()
+        )
 
     if query_type == "event":
-        docs = search_telemetry_with_filter(refined_question, "events", TOP_K_TELEMETRY)
+        docs = search_telemetry_with_filter(
+            refined_question,
+            "events",
+            get_top_k_telemetry()
+        )
         if docs:
             return docs
-        return search_telemetry_with_filter(refined_question, "snapshots", TOP_K_FALLBACK)
+        return search_telemetry_with_filter(
+            refined_question,
+            "snapshots",
+            get_top_k_fallback()
+        )
 
-    docs = search_telemetry_with_filter(refined_question, "snapshots", TOP_K_TELEMETRY)
+    docs = search_telemetry_with_filter(
+        refined_question,
+        "snapshots",
+        get_top_k_telemetry()
+    )
     if docs:
         return docs
 
-    return search_telemetry_with_filter(refined_question, "events", TOP_K_FALLBACK)
+    return search_telemetry_with_filter(
+        refined_question,
+        "events",
+        get_top_k_fallback()
+    )
 
 
 # =========================================
@@ -154,6 +200,8 @@ def unique_preserve_order(items):
 # =========================================
 
 def build_context(original_question: str, refined_question: str, topic_docs, telemetry_docs):
+    adapter = get_runtime_adapter()
+
     topic_texts = []
     telemetry_texts = []
 
@@ -211,6 +259,7 @@ def build_context(original_question: str, refined_question: str, topic_docs, tel
 # =========================================
 
 def build_query_context(question: str) -> str:
+    adapter = get_runtime_adapter()
     normalized_question = adapter.normalize_question_text(question)
 
     topic_docs = search_topics(normalized_question)
@@ -226,11 +275,13 @@ def build_query_context(question: str) -> str:
 # =========================================
 
 def run_query(question: str):
+    adapter = get_runtime_adapter()
     normalized_question = adapter.normalize_question_text(question)
 
     print("\n" + "=" * 80)
     print(f"QUERY: {question}")
     print("=" * 80)
+    print(f"RUNTIME DATASET: {get_runtime_dataset()}")
 
     topic_docs = search_topics(normalized_question)
     refined_question = build_telemetry_query(normalized_question, topic_docs)

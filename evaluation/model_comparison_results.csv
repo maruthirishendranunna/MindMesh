@@ -1,0 +1,24 @@
+"timestamp","dataset","provider","model","query_type","query","expected_keywords","keyword_accuracy_score","response_time_seconds","answer_word_count","answer","error"
+"2026-04-28 20:10:05","f1_adapter","ollama","llama3","metric","speed of hamilton in silverstone","hamilton, speed, silverstone","0.0","29.127","17","169.39 km/h, 302.54 km/h, 21.24 km/h, 184.3 km/h, 119.63 km/h, 207.11 km/h, 270.14 km/h, and 234.46 km/h",""
+"2026-04-28 20:10:35","f1_adapter","ollama","mistral","metric","speed of hamilton in silverstone","hamilton, speed, silverstone","1.0","29.229","34","Speed of Hamilton at Silverstone:
+- Lap 50: 270.14 km/h
+- Lap 48: 207.11 km/h
+- Lap 49: 184.3 km/h
+- Lap 45: 234.46 km/h (not included in the speed range summary, for completeness)",""
+"2026-04-28 20:10:53","f1_adapter","ollama","nemotron-3-nano:4b","metric","speed of hamilton in silverstone","hamilton, speed, silverstone","0.0","18.661","2","119.63 km/h",""
+"2026-04-28 20:11:21","f1_adapter","ollama","llama3","metric","rpm of perez in bahrain","perez, rpm, bahrain","0.0","24.8","8","4757.92, 6571.49, 5014.12, 6818.85, 5257.71, 4063.87, 4214.19, 7712.53",""
+"2026-04-28 20:11:56","f1_adapter","ollama","mistral","metric","rpm of perez in bahrain","perez, rpm, bahrain","1.0","35.252","30","RPM values for Perez in Bahrain: 4757.92 (lap 50), 6571.49 (lap 48), 5014.12 (lap 48), 6818.85 (lap 49), 5257.71 (lap 50), 4063.87 (lap 48), 4214.19 (lap 48), 7712.53 (lap 51)",""
+"2026-04-28 20:12:36","f1_adapter","ollama","nemotron-3-nano:4b","metric","rpm of perez in bahrain","perez, rpm, bahrain","0.33","39.992","10","RPM values: 4063.87, 4214.19, 4757.92, 5014.12, 5257.71, 6571.49, 6818.85, 7712.53.",""
+"2026-04-28 20:13:36","f1_adapter","ollama","llama3","comparison","who has the top speed in silverstone","speed, silverstone","1.0","56.668","17","Driver hamilton from team mercedes has the highest speed in Silverstone with a speed of 302.54 km/h.",""
+"2026-04-28 20:14:40","f1_adapter","ollama","mistral","comparison","who has the top speed in silverstone","speed, silverstone","1.0","63.638","17","Lewis Hamilton from Mercedes has the top speed in Silverstone, with a recorded speed of 305.25 km/h.",""
+"2026-04-28 20:16:05","f1_adapter","ollama","nemotron-3-nano:4b","comparison","who has the top speed in silverstone","speed, silverstone","1.0","84.999","7","Alonso has the top speed in Silverstone.",""
+"2026-04-28 20:16:30","oilgas_adapter","ollama","llama3","metric","pressure of pump1","pump1, pressure","0.0","21.341","2","92.77 psi",""
+"2026-04-28 20:16:56","oilgas_adapter","ollama","mistral","metric","pressure of pump1","pump1, pressure","1.0","26.64","10","The pressure of pump1 at site site2 is 137.0 psi.",""
+"2026-04-28 20:17:38","oilgas_adapter","ollama","nemotron-3-nano:4b","metric","pressure of pump1","pump1, pressure","0.0","41.357","2","92.77 psi",""
+"2026-04-28 20:18:13","oilgas_adapter","ollama","llama3","metric","flow rate of site1","flow, site1","0.0","31.806","2","83.3 lpm",""
+"2026-04-28 20:19:00","oilgas_adapter","ollama","mistral","metric","flow rate of site1","flow, site1","1.0","46.916","46","No relevant data found for the flow_rate directly associated with site1. However, the provided context includes multiple pieces of equipment at site1 with their respective flow rates. These include pump1, pump2, compressor1, and valve1. If a specific equipment's flow rate is required, please provide its name.",""
+"2026-04-28 20:19:35","oilgas_adapter","ollama","nemotron-3-nano:4b","metric","flow rate of site1","flow, site1","0.0","35.07","4","No relevant data found",""
+"2026-04-28 20:19:59","oilgas_adapter","ollama","llama3","metric","status of pump2","pump2, status","0.0","21.142","3","idle and fault",""
+"2026-04-28 20:20:25","oilgas_adapter","ollama","mistral","metric","status of pump2","pump2, status","0.0","25.645","6","fault (at site2)
+running (at site1)",""
+"2026-04-28 20:20:58","oilgas_adapter","ollama","nemotron-3-nano:4b","metric","status of pump2","pump2, status","0.0","33.27","4","Idle, running, or fault",""
