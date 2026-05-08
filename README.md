@@ -1,154 +1,569 @@
-# MindMesh – Intelligent IoT Query System using RAG and LLM
+# MindMesh – Real-Time Telemetry Query System using MQTT and RAG
 
-## Project Overview
-MindMesh is an intelligent IoT query system that allows users to ask natural language questions about real-time sensor data.
-The system uses a Large Language Model (LLM) with Retrieval-Augmented Generation (RAG) to interpret queries, identify relevant MQTT topics, and fetch live telemetry values.
+MindMesh is a real-time telemetry query system that allows users to ask natural language questions over telemetry data. The system uses MQTT for real-time data streaming, ChromaDB for semantic retrieval, and Large Language Models through Ollama for response generation.
 
-## Architecture Highlights
-* LLM-driven query understanding
-* Vector database storing MQTT topic descriptions
-* Real-time telemetry retrieval via MQTT
-* Lightweight user interface
-* Local LLM deployment using Ollama
+The project supports multiple datasets such as Formula 1 telemetry and Oil & Gas telemetry using an adapter-based design.
 
-## Tech Stack
-* Python
-* Mosquitto (MQTT Broker)
-* Paho-MQTT
-* ChromaDB
-* Sentence Transformers
-* Ollama / Llama3
-* LangChain
-* Streamlit
+---
 
-## Project Status
-🔧 Currently in development – building the real-time telemetry pipeline.
+## Features
 
-## Goal
-To design a scalable architecture that separates semantic retrieval from real-time data processing while enabling natural language interaction with IoT systems.
+- Real-time telemetry publishing using MQTT
+- MQTT-based telemetry processing
+- Snapshot and event storage
+- Text chunk generation from telemetry data
+- Embedding generation using Sentence Transformers
+- ChromaDB vector database for semantic retrieval
+- Retrieval-Augmented Generation pipeline
+- Streamlit-based user interface
+- Dynamic dataset switching
+- Dynamic LLM model switching
+- Direct structured answers for simple queries
+- LLM-based answers for complex queries
+- Model comparison and evaluation support
 
-Week 4: 
+---
 
-# MindMesh – Real-Time Telemetry System
+## Supported Datasets
 
-## Project Overview
-This project implements a real-time telemetry monitoring system using MQTT and a future RAG-based AI pipeline.
+Currently supported datasets:
+
+- Formula 1 telemetry
+- Oil & Gas telemetry
+
+Each dataset has its own adapter, publisher, topic descriptions, chunks, and vector database.
+
+---
+
+## Supported Models
+
+The system supports local LLMs through Ollama:
+
+- llama3
+- mistral
+- gemma:2b
+- nemotron-3-nano:4b
+
+Cloud models such as GPT or Gemini can be added later by extending the model call logic in `rag_query_engine.py`.
+
+---
 
 ## Project Structure
-- mqtt/publisher → Telemetry generation
-- mqtt/subscriber → Telemetry reception
-- data → Topic descriptions for vector DB
-- docs → Documentation
 
-## How to Run Publisher
-python mqtt/publisher/f1_mqtt_publisher.py
+```text
+MindMesh/
+│
+├── ui_app.py
+│
+├── mqtt/
+│   ├── config.py
+│   │
+│   ├── adapters/
+│   │   ├── loader.py
+│   │   ├── generic_adapter_template.py
+│   │   ├── f1_adapter.py
+│   │   └── oilgas_adapter.py
+│   │
+│   ├── publisher/
+│   │   ├── f1_mqtt_publisher.py
+│   │   └── oilgas_publisher.py
+│   │
+│   ├── processor/
+│   │   ├── telemetry_processor.py
+│   │   └── telemetry_snapshotter.py
+│   │
+│   ├── chunking/
+│   │   └── chunk_builder.py
+│   │
+│   ├── vector_store/
+│   │   ├── embed_chunks_langchain.py
+│   │   └── ingest_topics.py
+│   │
+│   └── query/
+│       ├── query_context_builder.py
+│       ├── rag_query_engine.py
+│       └── prompt_builder.py
+│
+├── data/
+│   ├── f1_topic_descriptions.xlsx
+│   ├── oilgas_topic_descriptions.xlsx
+│   │
+│   ├── chunks/
+│   │   ├── f1_adapter/
+│   │   └── oilgas_adapter/
+│   │
+│   ├── chroma_db_f1_adapter/
+│   ├── chroma_topics_f1_adapter/
+│   ├── chroma_db_oilgas_adapter/
+│   └── chroma_topics_oilgas_adapter/
+│
+├── evaluation/
+│   ├── model_comparison.py
+│   ├── plot_model_comparison.py
+│   ├── model_comparison_results.csv
+│   ├── model_comparison_summary.csv
+│   ├── model_comparison_summary_by_dataset.csv
+│   │
+│   └── plots_by_dataset/
+│       ├── f1_accuracy_comparison.png
+│       ├── f1_response_time_comparison.png
+│       ├── f1_output_length_comparison.png
+│       ├── f1_combined_comparison.png
+│       ├── oilgas_accuracy_comparison.png
+│       ├── oilgas_response_time_comparison.png
+│       ├── oilgas_output_length_comparison.png
+│       └── oilgas_combined_comparison.png
+│
+├── requirements.txt
+└── README.md
+```
 
-## How to Run Subscriber
-python mqtt/subscriber/f1_mqtt_subscriber.py
+---
 
+## Installation
 
-## Week 2 – Real-Time Analytics, Query Engine & Vector Database
-## Overview
+### 1. Clone the Repository
 
-In Week-2, the project moved beyond basic telemetry streaming and introduced real-time analytics, a structured query engine for live data access, and semantic topic retrieval using a vector database. This week established the core foundation required for integrating the RAG pipeline and LLM in the upcoming phases.
+```bash
+git clone <your-github-repository-url>
+cd MindMesh
+```
 
-## Components Implemented
-🔹 Telemetry Processor – Live Race Analytics
+---
 
-The telemetry processor consumes real-time driver data from MQTT and generates derived race insights.
-These analytics are published back to MQTT as new topics.
+### 2. Create Virtual Environment
 
-Generated analytics:
+```bash
+python -m venv venv
+```
 
-Fastest driver
+Activate it:
 
-Race leader (based on lap progression)
+#### Windows CMD
 
-Team average speed
+```bash
+venv\Scripts\activate
+```
 
-Published topics:
+#### PowerShell
 
-race/fastest_driver
-race/leader_driver
-race/leader_lap
-race/team_avg_speed/<team>
+```powershell
+.\venv\Scripts\Activate.ps1
+```
 
-🔹 Query Engine – Real-Time Data Access Layer
+#### macOS/Linux
 
-The query engine acts as the retrieval interface for the future RAG + LLM pipeline.
+```bash
+source venv/bin/activate
+```
 
-It:
+---
 
-Subscribes to both telemetry and analytics topics
+### 3. Install Python Dependencies
 
-Maintains a real-time topic cache
+```bash
+pip install -r requirements.txt
+```
 
-Provides structured lookup functions for:
+If `requirements.txt` is incomplete, install manually:
 
-Driver metrics
+```bash
+pip install streamlit paho-mqtt pandas openpyxl langchain langchain-chroma langchain-huggingface chromadb sentence-transformers ollama matplotlib
+```
 
-Race leader
+---
 
-Fastest driver
+## External Software Setup
 
-Team performance
+### Install Mosquitto MQTT Broker
 
-This layer allows the LLM to fetch live values instead of static database data.
+Download:
 
-🔹 Vector Database – Semantic Topic Retrieval
+```text
+https://mosquitto.org/download/
+```
 
-Topic descriptions were embedded using Sentence Transformers and stored in ChromaDB.
+Start broker:
 
-This enables:
+```bash
+mosquitto
+```
 
-Natural language → Relevant MQTT topic mapping
+Keep this terminal running.
 
-Example:
+---
 
-Query:
+### Install Ollama
 
-Hamilton speed
+Download:
 
-Top match:
+```text
+https://ollama.com
+```
 
-f1/mercedes/hamilton/speed
+Pull models:
 
-The vector database stores only topic metadata, not live telemetry values, ensuring efficiency and scalability.
+```bash
+ollama pull llama3
+ollama pull mistral
+ollama pull gemma:2b
+ollama pull nemotron-3-nano:4b
+```
 
-## How to Run Week-2 Demo:
-1.Start Mosquitto MQTT broker
+Verify:
 
-2.Run telemetry publisher
+```bash
+ollama list
+```
+
+---
+
+## Dataset Selection for Build Scripts
+
+### Windows CMD
+
+For F1:
+
+```bash
+set DATASET_ADAPTER=f1_adapter
+```
+
+For OilGas:
+
+```bash
+set DATASET_ADAPTER=oilgas_adapter
+```
+
+### PowerShell
+
+For F1:
+
+```powershell
+$env:DATASET_ADAPTER="f1_adapter"
+```
+
+For OilGas:
+
+```powershell
+$env:DATASET_ADAPTER="oilgas_adapter"
+```
+
+The Streamlit UI supports dynamic dataset switching, but build scripts still require the adapter variable to be set.
+
+---
+
+# Running the Full Pipeline
+
+Use separate terminals for:
+- broker
+- publisher
+- processor
+- snapshotter
+
+---
+
+## Step 1 – Start MQTT Broker
+
+```bash
+mosquitto
+```
+
+---
+
+## Step 2 – Set Dataset Adapter
+
+Example for F1:
+
+```bash
+set DATASET_ADAPTER=f1_adapter
+```
+
+Example for OilGas:
+
+```bash
+set DATASET_ADAPTER=oilgas_adapter
+```
+
+---
+
+## Step 3 – Run Publisher
+
+### Formula 1
+
+```bash
 python -m mqtt.publisher.f1_mqtt_publisher
+```
 
-3.Run Subscriber
-python mqtt/subscriber/f1_mqtt_subscriber.py
+### OilGas
 
-4.Run telemetry processor
+```bash
+python -m mqtt.publisher.oilgas_publisher
+```
+
+---
+
+## Step 4 – Run Processor
+
+```bash
 python -m mqtt.processor.telemetry_processor
+```
 
-5.Run query engine
-python -m mqtt.query.query_engine
+---
 
-6.If you have python version 3.13 or 3.14 chroma DB wont work in this version. You need have at least 3.12 version. Here are the steps to install python 3.12 and run ingest_topics code:
-Install winget install Python.Python.3.12(Using CMD)
+## Step 5 – Run Snapshotter
 
-py -0p using this you can verify if the version is in your path variables or not.
+```bash
+python -m mqtt.processor.telemetry_snapshotter
+```
 
-Create virtual environment for your project
-Create venv(locally):
-py -3.12 -m venv .venv
-Activate the venv:
-.\.venv\Scripts\activate
+Allow telemetry to run for 1–3 minutes.
 
-You will now see (.venv) at the beginning of the terminal.
+---
 
-Install required libraries inside venv
-python -m pip install --upgrade pip
-pip install pandas openpyxl chromadb sentence-transformers
+## Step 6 – Build Chunks
 
-7.Run vector ingestion (one-time setup)
+```bash
+python -m mqtt.chunking.chunk_builder
+```
+
+---
+
+## Step 7 – Generate Embeddings
+
+```bash
+python -m mqtt.vector_store.embed_chunks_langchain
+```
+
+---
+
+## Step 8 – Ingest Topic Descriptions
+
+```bash
 python -m mqtt.vector_store.ingest_topics
+```
 
-8.Run semantic retrieval test
-python -m mqtt.vector_store.search_test
+---
+
+## Step 9 – Launch Streamlit UI
+
+```bash
+streamlit run ui_app.py
+```
+
+---
+
+# Using the UI
+
+1. Select dataset:
+   - `f1_adapter`
+   - `oilgas_adapter`
+
+2. Select model:
+   - `llama3`
+   - `mistral`
+   - `gemma:2b`
+   - `nemotron-3-nano:4b`
+
+3. Enter query
+
+4. View generated response
+
+---
+
+# Example Queries
+
+## Formula 1
+
+```text
+speed of hamilton in silverstone
+rpm of perez in bahrain
+who has the top speed in silverstone
+is there any accidents happened in Bahrain
+```
+
+## OilGas
+
+```text
+pressure of pump1
+flow rate of site1
+status of pump2
+which equipment has highest pressure
+```
+
+---
+
+# Model Evaluation
+
+Run evaluation:
+
+```bash
+python -m evaluation.model_comparison
+```
+
+Generated files:
+
+```text
+evaluation/model_comparison_results.csv
+evaluation/model_comparison_summary.csv
+evaluation/model_comparison_summary_by_dataset.csv
+```
+
+Generate graphs:
+
+```bash
+python evaluation/plot_model_comparison.py
+```
+
+Graphs will be stored in:
+
+```text
+evaluation/plots_by_dataset/
+```
+
+---
+
+# Expected Generated Files
+
+After running the pipeline:
+
+```text
+data/chunks/f1_adapter/
+data/chroma_db_f1_adapter/
+data/chroma_topics_f1_adapter/
+
+data/chunks/oilgas_adapter/
+data/chroma_db_oilgas_adapter/
+data/chroma_topics_oilgas_adapter/
+```
+
+Each dataset uses separate chunks and vector databases.
+
+---
+
+# Adding a New Dataset
+
+## Step 1 – Create Adapter
+
+```text
+mqtt/adapters/<dataset>_adapter.py
+```
+
+---
+
+## Step 2 – Create Publisher
+
+```text
+mqtt/publisher/<dataset>_publisher.py
+```
+
+---
+
+## Step 3 – Add Topic Description Excel
+
+```text
+data/<dataset>_topic_descriptions.xlsx
+```
+
+---
+
+## Step 4 – Set Adapter
+
+```bash
+set DATASET_ADAPTER=<dataset>_adapter
+```
+
+---
+
+## Step 5 – Rebuild Pipeline
+
+```bash
+python -m mqtt.chunking.chunk_builder
+python -m mqtt.vector_store.embed_chunks_langchain
+python -m mqtt.vector_store.ingest_topics
+```
+
+The UI automatically detects adapters following:
+
+```text
+<dataset>_adapter.py
+```
+
+---
+
+# Common Issues and Fixes
+
+## Wrong Dataset Answers
+
+Restart Streamlit:
+
+```bash
+streamlit run ui_app.py
+```
+
+Also clear chat history.
+
+---
+
+## No Relevant Data Found
+
+Check folders:
+
+```text
+data/chunks/<dataset>_adapter/
+data/chroma_db_<dataset>_adapter/
+data/chroma_topics_<dataset>_adapter/
+```
+
+If missing:
+
+```bash
+python -m mqtt.chunking.chunk_builder
+python -m mqtt.vector_store.embed_chunks_langchain
+python -m mqtt.vector_store.ingest_topics
+```
+
+---
+
+## Model Not Found
+
+Check installed models:
+
+```bash
+ollama list
+```
+
+Pull model if missing:
+
+```bash
+ollama pull llama3
+```
+
+---
+
+## CSV Permission Error During Evaluation
+
+Close CSV files in Excel before rerunning evaluation.
+
+---
+
+# Team Members
+
+Team MindMesh:
+
+- Maruthi Rishendra Nunna
+- Leela Bhavana Chennupati
+- Chaitanya Upputuri
+- Pranith Bhukya
+
+---
+
+# References
+
+- MQTT: https://mqtt.org/
+- Mosquitto: https://mosquitto.org/
+- Paho MQTT: https://www.eclipse.org/paho/
+- Ollama: https://ollama.com/
+- ChromaDB: https://www.trychroma.com/
+- Sentence Transformers: https://www.sbert.net/
+- LangChain: https://www.langchain.com/
+- Streamlit: https://streamlit.io/
